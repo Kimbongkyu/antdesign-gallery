@@ -151,3 +151,92 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- 상세 ---------- */
+.gx-detail {
+  max-width: 1000px;
+}
+
+.gx-back {
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.gx-ko {
+  font-size: 0.6em;
+  font-weight: 400;
+  opacity: 0.55;
+}
+
+.gx-play {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.gx-stage .ant-card-body {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.gx-ctls {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px 16px;
+}
+
+.gx-ctl {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  min-width: 0;
+}
+
+.gx-ctl-bool {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.gx-code {
+  border: 1px solid var(--gx-line);
+  border-radius: 8px;
+  background: var(--gx-surface);
+  overflow: hidden;
+}
+
+.gx-code-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--gx-line);
+}
+
+.gx-code pre {
+  margin: 0;
+  padding: 12px;
+  overflow-x: auto;
+  font-size: 13px;
+  white-space: pre;
+}
+
+.gx-api-section {
+  margin-bottom: 20px;
+}
+
+.gx-type {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  color: #c41d7f;
+}
+
+.gx-api td {
+  overflow-wrap: anywhere;
+}
