@@ -86,7 +86,7 @@
       ]
     },
     {
-      "section": "Skeleton",
+      "section": "Skeleton › SkeletonTitleProps",
       "rows": [
         {
           "prop": "width",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "section": "Skeleton",
+      "section": "Skeleton › SkeletonParagraphProps",
       "rows": [
         {
           "prop": "rows",

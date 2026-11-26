@@ -8,6 +8,12 @@ import {API_KO} from '../api-ko';
 export function ApiTable({doc}: {doc: ApiDoc}) {
   const [q, setQ] = useState('');
   const ko = API_KO[doc.slug] ?? {};
+  // 한글 설명은 속성이 처음 나오는 행에만 (뒤 구역의 같은 이름, 예: UploadFile.name 은 뜻이 다를 수 있음)
+  const firstRows = useMemo(() => {
+    const seen = new Map<string, ApiRow>();
+    for (const r of doc.sections.flatMap((s) => s.rows)) if (!seen.has(r.prop)) seen.set(r.prop, r);
+    return new Set(seen.values());
+  }, [doc]);
 
   const sections = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -48,7 +54,7 @@ export function ApiTable({doc}: {doc: ApiDoc}) {
       dataIndex: 'desc',
       width: 380,
       render: (d: string, r: ApiRow) =>
-        ko[r.prop] ?? (
+        (firstRows.has(r) ? ko[r.prop] : undefined) ?? (
           <>
             {d} <Tag variant="filled">영문</Tag>
           </>
@@ -70,8 +76,8 @@ export function ApiTable({doc}: {doc: ApiDoc}) {
         style={{maxWidth: 320, marginBottom: 12}}
       />
       {sections.length === 0 && <Empty description="일치하는 속성이 없어요" />}
-      {sections.map((s) => (
-        <div key={s.section} className="gx-api-section">
+      {sections.map((s, i) => (
+        <div key={`${i}-${s.section}`} className="gx-api-section">
           {doc.sections.length > 1 && <Typography.Title level={4}>{s.section}</Typography.Title>}
           <Table<ApiRow>
             size="small"

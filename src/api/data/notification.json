@@ -283,7 +283,7 @@
       ]
     },
     {
-      "section": "Global configuration",
+      "section": "Global configuration › notification.config",
       "rows": [
         {
           "prop": "bottom",

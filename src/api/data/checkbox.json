@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "Checkbox",
+      "section": "Checkbox.Group",
       "rows": [
         {
           "prop": "classNames",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "section": "Methods",
+      "section": "Methods › Checkbox",
       "rows": [
         {
           "prop": "blur()",

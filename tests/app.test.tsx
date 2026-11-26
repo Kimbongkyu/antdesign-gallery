@@ -60,7 +60,11 @@ test('즐겨찾기 가져오기', async () => {
   await userEvent.type(screen.getByPlaceholderText(/붙여넣기/), 'antd:Table,Nope');
   await userEvent.click(screen.getByRole('button', {name: '가져오기'}));
   expect(cardNames()).toEqual(['Table']);
-  expect(screen.getByText('1개를 가져왔어요.')).toBeInTheDocument();
+  expect(screen.getByText('1개를 새로 담았어요.')).toBeInTheDocument();
+  // 이미 있는 이름만 다시 넣으면 0개로 세지 않고 경고로 알린다
+  await userEvent.type(screen.getByPlaceholderText(/붙여넣기/), 'antd:Table');
+  await userEvent.click(screen.getByRole('button', {name: '가져오기'}));
+  expect(screen.getByText('새로 담을 이름이 없어요.')).toBeInTheDocument();
 });
 
 test('카드를 누르면 상세 주소로 간다', async () => {

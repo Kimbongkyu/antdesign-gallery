@@ -153,7 +153,7 @@
       ]
     },
     {
-      "section": "ConfigProvider.useConfig() <Badge>5.3.0+</Badge>",
+      "section": "ConfigProvider.useConfig() (5.3.0+)",
       "rows": [
         {
           "prop": "componentDisabled",

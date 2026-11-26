@@ -65,7 +65,7 @@
         {
           "prop": "defaultValue",
           "desc": "Initial selected option",
-          "type": "string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[]",
+          "type": "string | string[] | number | number[] | LabeledValue | LabeledValue[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -417,7 +417,7 @@
         {
           "prop": "value",
           "desc": "Current selected option (considered as a immutable array)",
-          "type": "string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[]",
+          "type": "string | string[] | number | number[] | LabeledValue | LabeledValue[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -602,7 +602,7 @@
         },
         {
           "prop": "optionFilterProp",
-          "desc": "Which prop value of option will be used for filter if filterOption is true. <br/> If options is set, it should be set to label. <br/> When a string[] is provided, multiple fields are searched using OR matching.",
+          "desc": "Which prop value of option will be used for filter if filterOption is true. If options is set, it should be set to label. When a string[] is provided, multiple fields are searched using OR matching.",
           "type": "string | string[]",
           "default": "value",
           "version": "string[]: 6.1.0",

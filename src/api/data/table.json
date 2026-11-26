@@ -338,7 +338,7 @@
         },
         {
           "prop": "ellipsis",
-          "desc": "The ellipsis cell content, not working with sorter and filters for now.<br />tableLayout would be fixed when ellipsis is true or { showTitle?: boolean }",
+          "desc": "The ellipsis cell content, not working with sorter and filters for now. tableLayout would be fixed when ellipsis is true or { showTitle?: boolean }",
           "type": "boolean | {showTitle?: boolean }",
           "default": "false",
           "version": "showTitle: 4.3.0",

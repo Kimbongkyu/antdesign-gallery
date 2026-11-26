@@ -22,6 +22,8 @@ function clean(cell: string): string {
     .replace(/\\([[\]])/g, '$1')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
+    .replace(/\s*<Badge[^>]*>([^<]*)<\/Badge>/g, ' ($1)')
+    .replace(/\s*<br\s*\/?>\s*/g, ' ')
     .trim();
 }
 
@@ -74,6 +76,7 @@ export function parseApiMarkdown(slug: string, md: string): ApiDoc {
   let name = title;
   let header: string[] | null = null;
   let current: ApiSection | null = null;
+  let sub: {level: number; text: string}[] = []; // ### 이하 소제목 줄기 (Methods › Checkbox)
 
   for (const line of lines) {
     if (/^## /.test(line)) {
@@ -81,12 +84,17 @@ export function parseApiMarkdown(slug: string, md: string): ApiDoc {
       if (h === 'API') inApi = true;
       else if (NOT_API.test(h)) inApi = false;
       else if (inApi) name = h; // Form.Item, Methods 처럼 ## API 뒤에 이어지는 API 구역
+      sub = [];
       header = null;
       continue;
     }
     if (!inApi) continue;
-    if (/^### /.test(line)) {
-      name = clean(line.replace(/^###\s+/, '').replace(/\s*\{#.*\}\s*$/, ''));
+    const hm = line.match(/^(#{3,6})\s+(.*)$/);
+    if (hm) {
+      const level = hm[1].length;
+      sub = sub.filter((x) => x.level < level);
+      sub.push({level, text: clean(hm[2].replace(/\s*\{#.*\}\s*$/, ''))});
+      name = sub.map((x) => x.text).join(' › ');
       header = null;
       continue;
     }

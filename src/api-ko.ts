@@ -303,7 +303,7 @@ export const API_KO: Record<string, Record<string, string>> = {
     size: '전체 크기',
     variant: '입력칸 모양',
     requiredMark: '필수 표시(*) 방식',
-    name: '필드 이름 (Form.Item)',
+    name: '폼 이름 (필드 id 앞머리로 쓰임)',
     label: '라벨 글자 (Form.Item)',
     rules: '검증 규칙 [{required, message, type, pattern}] (Form.Item)',
   },
@@ -346,7 +346,6 @@ export const API_KO: Record<string, Record<string, string>> = {
     placement: '목록 위치: top, bottom',
     autoSize: '내용에 맞춰 높이 자동 조절',
     size: '크기',
-    disabled: '비활성',
   },
   radio: {
     value: '선택값 (Radio.Group)',

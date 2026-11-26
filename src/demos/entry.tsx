@@ -188,7 +188,7 @@ export const ENTRY: Record<string, Demo> = {
         'value={value}',
         'onChange={setValue}',
       ].filter(Boolean);
-      return `import {DatePicker} from 'antd';\nimport dayjs from 'dayjs';\n\n<${tag} ${attrs.join(' ')} />`;
+      return `import {DatePicker} from 'antd';\n\n<${tag} ${attrs.join(' ')} />`;
     },
     note: '값은 dayjs 객체예요. 한글 달력은 ConfigProvider locale={koKR} + dayjs.locale(\'ko\') 로 맞춰요.',
     Preview: ({v}) => {

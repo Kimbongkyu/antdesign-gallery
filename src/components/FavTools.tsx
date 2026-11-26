@@ -10,7 +10,7 @@ const KNOWN = new Set(Object.keys(BY_NAME));
 
 export function FavTools({fav}: {fav: FavApi}) {
   const [text, setText] = useState('');
-  const [msg, setMsg] = useState('');
+  const [added, setAdded] = useState<number | null>(null);
   return (
     <Collapse
       items={[
@@ -32,15 +32,20 @@ export function FavTools({fav}: {fav: FavApi}) {
               />
               <Button
                 onClick={() => {
-                  const names = parseImport(text, KNOWN);
-                  fav.merge(names);
-                  setMsg(`${names.length}개를 가져왔어요.`);
+                  const fresh = parseImport(text, KNOWN).filter((n) => !fav.favs.includes(n));
+                  fav.merge(fresh);
+                  setAdded(fresh.length);
                   setText('');
                 }}
               >
                 가져오기
               </Button>
-              {msg && <Alert type="success" title={msg} />}
+              {added !== null &&
+                (added ? (
+                  <Alert type="success" title={`${added}개를 새로 담았어요.`} />
+                ) : (
+                  <Alert type="warning" title="새로 담을 이름이 없어요." />
+                ))}
             </Space>
           ),
         },

@@ -105,7 +105,7 @@
       ]
     },
     {
-      "section": "Statistic",
+      "section": "Statistic.Countdown (Deprecated)",
       "rows": [
         {
           "prop": "format",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "section": "Statistic",
+      "section": "Statistic.Timer (5.25.0+)",
       "rows": [
         {
           "prop": "type",

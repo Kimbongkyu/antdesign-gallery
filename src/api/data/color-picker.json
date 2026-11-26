@@ -225,7 +225,7 @@
       ]
     },
     {
-      "section": "ColorPicker",
+      "section": "ColorType",
       "rows": [
         {
           "prop": "Color",

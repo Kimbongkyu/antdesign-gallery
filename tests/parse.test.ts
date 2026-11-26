@@ -97,3 +97,21 @@ test('마크다운 이스케이프(\\[ \\] &lt; &gt;)를 풀어 쓴다', () => {
   const rows = parseApiMarkdown('x', md).sections[0].rows;
   expect(rows.map((r) => r.type)).toEqual(['string[]', 'Array<click|hover>']);
 });
+
+test('####·##### 소제목도 구역이 되고, 상위 소제목 아래면 이름을 이어 붙인다', () => {
+  const t = '| Property | Description | Type | Default |\n| --- | --- | --- | --- |\n| a | x | string | - |\n';
+  const md = `---\ntitle: Checkbox\ngroup: Data Entry\n---\n## API\n\n#### Checkbox\n\n${t}\n#### Checkbox.Group\n\n${t}\n##### Option\n\n${t}\n### Methods\n\n#### Checkbox\n\n${t}`;
+  expect(parseApiMarkdown('checkbox', md).sections.map((s) => s.section)).toEqual([
+    'Checkbox',
+    'Checkbox.Group',
+    'Checkbox.Group › Option',
+    'Methods › Checkbox',
+  ]);
+});
+
+test('<Badge>버전</Badge> 은 괄호로 <br/> 은 공백으로', () => {
+  const md = '---\ntitle: Avatar\ngroup: Other\n---\n## API\n\n### Avatar.Group <Badge>4.5.0+</Badge>\n\n| Property | Description | Type | Default |\n| --- | --- | --- | --- |\n| a | one<br/>two | string | - |\n';
+  const doc = parseApiMarkdown('avatar', md);
+  expect(doc.sections[0].section).toBe('Avatar.Group (4.5.0+)');
+  expect(doc.sections[0].rows[0].desc).toBe('one two');
+});

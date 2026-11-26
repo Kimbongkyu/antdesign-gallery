@@ -185,7 +185,7 @@
       ]
     },
     {
-      "section": "Input",
+      "section": "Input › AllowClearConfig",
       "rows": [
         {
           "prop": "clearIcon",
@@ -482,7 +482,7 @@
       ]
     },
     {
-      "section": "Input.OTP",
+      "section": "Input.OTP › VisibilityToggle",
       "rows": [
         {
           "prop": "tabIndex",
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "section": "Input.OTP",
+      "section": "Input.OTP › Input Methods",
       "rows": [
         {
           "prop": "blur",

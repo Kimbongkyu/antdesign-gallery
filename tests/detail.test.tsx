@@ -81,3 +81,17 @@ test('상세: 제목·돌아가기·공식 문서 링크', () => {
   expect(docs).toHaveAttribute('href', 'https://ant.design/components/button');
   expect(docs).toHaveAttribute('target', '_blank');
 });
+
+test('한글 설명은 그 속성이 처음 나오는 구역에만 붙고, 뒤 구역의 같은 이름 속성은 영문', () => {
+  render(<ApiTable doc={API_DOCS.upload} />);
+  const names = screen.getAllByText('name', {selector: 'code'}).map((el) => el.closest('tr')!);
+  expect(within(names[0]).getByText(API_KO.upload.name)).toBeInTheDocument();
+  expect(within(names[1]).getByText('영문')).toBeInTheDocument();
+});
+
+test('모든 속성 표가 React 경고(중복 key 등) 없이 그려진다', () => {
+  const err = vi.spyOn(console, 'error').mockImplementation(() => {});
+  for (const doc of Object.values(API_DOCS)) render(<ApiTable doc={doc} />).unmount();
+  expect(err.mock.calls.map((c) => String(c[0]).slice(0, 120))).toEqual([]);
+  err.mockRestore();
+});

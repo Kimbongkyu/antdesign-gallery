@@ -209,7 +209,7 @@
       ]
     },
     {
-      "section": "ItemType",
+      "section": "ItemType › MenuItemType",
       "rows": [
         {
           "prop": "danger",
@@ -270,7 +270,7 @@
       ]
     },
     {
-      "section": "ItemType",
+      "section": "ItemType › SubMenuType",
       "rows": [
         {
           "prop": "children",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "section": "ItemType",
+      "section": "ItemType › MenuItemGroupType",
       "rows": [
         {
           "prop": "children",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "section": "ItemType",
+      "section": "ItemType › MenuDividerType",
       "rows": [
         {
           "prop": "dashed",

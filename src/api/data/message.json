@@ -126,7 +126,7 @@
       ]
     },
     {
-      "section": "Global static methods",
+      "section": "Global static methods › message.config",
       "rows": [
         {
           "prop": "duration",

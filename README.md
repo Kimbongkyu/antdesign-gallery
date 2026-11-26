@@ -31,5 +31,5 @@ npm run build
 ## antd 버전 올리기
 
 1. `package.json` 의 `antd` 버전과 `src/api/slugs.ts` 의 `ANTD_TAG` 를 새 버전으로 변경
-2. `npm install` 후 `npm run fetch-api` — 새 버전 문서에서 `src/api/data/*.json` 을 다시 만든다
+2. `npm install` 후 `npm run fetch-api` (Node 22.18 이상: .ts 를 바로 실행) — 새 버전 문서에서 `src/api/data/*.json` 을 다시 만든다
 3. `npm test` — 폐지된 속성을 쓰는 데모(antd 경고)나 사라진 속성의 한글 설명이 있으면 실패하니 고친다

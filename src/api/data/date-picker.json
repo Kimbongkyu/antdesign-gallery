@@ -1022,7 +1022,7 @@
       ]
     },
     {
-      "section": "RangePicker",
+      "section": "RangePicker › formatType",
       "rows": [
         {
           "prop": "GenericFn",
