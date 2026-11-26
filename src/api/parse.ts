@@ -52,6 +52,17 @@ function frontmatter(md: string): {title: string; group: string} {
   return {title, group: inline ?? nested ?? ''};
 }
 
+// 공통 속성 표를 다른 파일에서 끼워 넣는 <embed src="./shared/x.md"></embed> (Tooltip·Popover 등)
+const EMBED = /^<embed src="([^"]+)"><\/embed>\s*$/gm;
+
+export function embedSrcs(md: string): string[] {
+  return [...md.matchAll(EMBED)].map((m) => m[1]);
+}
+
+export function inlineEmbeds(md: string, files: Record<string, string>): string {
+  return md.replace(EMBED, (line, src: string) => files[src] ?? line);
+}
+
 export function parseApiMarkdown(slug: string, md: string): ApiDoc {
   const {title, group} = frontmatter(md);
   const sections: ApiSection[] = [];

@@ -39,6 +39,179 @@
           "deprecated": false
         }
       ]
+    },
+    {
+      "section": "Popover",
+      "rows": [
+        {
+          "prop": "align",
+          "desc": "Please refer to the settings dom-align",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "arrow",
+          "desc": "Change arrow's visible state and change whether the arrow is pointed at the center of target.",
+          "type": "boolean | { pointAtCenter: boolean }",
+          "default": "true",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "autoAdjustOverflow",
+          "desc": "Whether to adjust popup placement automatically when popup is off screen",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "The background color",
+          "type": "string",
+          "default": "-",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpen",
+          "desc": "Whether the floating tooltip card is open by default",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyTooltipOnHide",
+          "desc": "Whether destroy dom when close",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether destroy dom when close",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "fresh",
+          "desc": "Tooltip will cache content when it is closed by default. Setting this property will always keep updating",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "The DOM container of the tip, the default behavior is to create a div element in body",
+          "type": "(triggerNode: HTMLElement) => HTMLElement",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mouseEnterDelay",
+          "desc": "Delay in seconds, before tooltip is shown on mouse enter",
+          "type": "number",
+          "default": "0.1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mouseLeaveDelay",
+          "desc": "Delay in seconds, before tooltip is hidden on mouse leave",
+          "type": "number",
+          "default": "0.1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "overlayClassName",
+          "desc": "Class name of the tooltip card, please use classNames.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "overlayStyle",
+          "desc": "Style of the tooltip card, please use styles.root",
+          "type": "React.CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "overlayInnerStyle",
+          "desc": "Style of the tooltip inner content, please use styles.container instead",
+          "type": "React.CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "placement",
+          "desc": "The position of the tooltip relative to the target, which can be one of top left right bottom topLeft topRight bottomLeft bottomRight leftTop leftBottom rightTop rightBottom",
+          "type": "string",
+          "default": "top",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "trigger",
+          "desc": "Tooltip trigger mode. Could be multiple by passing an array",
+          "type": "hover | focus | click | contextMenu | Array&lt;string>",
+          "default": "hover",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether the floating tooltip card is open or not. Use visible under 4.23.0 (why?)",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "zIndex",
+          "desc": "Config z-index of Tooltip",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback executed when visibility of the tooltip card is changed",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "4.23.0",
+          "deprecated": false
+        }
+      ]
     }
   ]
 }

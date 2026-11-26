@@ -4,6 +4,35 @@
   "group": "Feedback",
   "sections": [
     {
+      "section": "Common API",
+      "rows": [
+        {
+          "prop": "active",
+          "desc": "Show animation effect",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Skeleton component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Skeleton component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
       "section": "Skeleton",
       "rows": [
         {

@@ -3,12 +3,17 @@ import {API_DOCS} from '../src/api';
 import {API_KO} from '../src/api-ko';
 import {DEMOS, defaultValues} from '../src/demos';
 import {Providers} from '../src/main';
-import {BY_NAME, ENTRIES} from '../src/registry';
+import {BY_NAME, ENTRIES, GROUPS} from '../src/registry';
 
-// 데모를 다 만든 그룹. 그룹을 끝낼 때마다 늘린다.
-const DONE_GROUPS = ['general', 'layout', 'other', 'navigation', 'feedback', 'entry'];
+// 모든 그룹 (73개 전부 데모와 한글 속성 설명이 있어야 한다)
+const DONE_GROUPS = GROUPS.map((g) => g.id);
 
-test.each(Object.entries(DEMOS))('%s 데모가 오류 없이 그려진다', (_name, demo) => {
+// 컴포넌트 자체가 폐지 예정이라 antd가 늘 내는 경고 (데모 note 로 안내함)
+const KNOWN_WARNING: Record<string, RegExp> = {
+  List: /\[antd: List\] The `List` component is deprecated/,
+};
+
+test.each(Object.entries(DEMOS))('%s 데모가 오류 없이 그려진다', (name, demo) => {
   if (demo.noPreview) {
     expect(demo.code).toBeDefined();
     return;
@@ -19,7 +24,8 @@ test.each(Object.entries(DEMOS))('%s 데모가 오류 없이 그려진다', (_na
       <demo.Preview v={defaultValues(demo)} />
     </Providers>,
   );
-  expect(errors).not.toHaveBeenCalled();
+  const unexpected = errors.mock.calls.map((c) => String(c[0])).filter((m) => !KNOWN_WARNING[name]?.test(m));
+  expect(unexpected).toEqual([]);
   errors.mockRestore();
 });
 
@@ -35,4 +41,8 @@ test.each(DONE_GROUPS)('%s 그룹: 모든 컴포넌트에 데모와 한글 속�
         Math.min(5, API_DOCS[e.slug].sections.flatMap((s) => s.rows).filter((r) => !r.deprecated).length),
       );
   }
+});
+
+test('73개 컴포넌트 모두 데모가 있다', () => {
+  expect(ENTRIES.filter((e) => !DEMOS[e.name]).map((e) => e.name)).toEqual([]);
 });

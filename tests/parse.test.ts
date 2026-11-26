@@ -1,5 +1,5 @@
 import {readFileSync} from 'node:fs';
-import {parseApiMarkdown, type ApiDoc, type ApiRow} from '../src/api/parse';
+import {embedSrcs, inlineEmbeds, parseApiMarkdown, type ApiDoc, type ApiRow} from '../src/api/parse';
 
 const read = (f: string) => readFileSync(`tests/fixtures/${f}`, 'utf8');
 const row = (doc: ApiDoc, prop: string): ApiRow => {
@@ -73,4 +73,20 @@ test('## API 뒤의 2단계 API 제목(Form.Item 등)도 구역으로 이어 읽
   const names = form.sections.map((s) => s.section);
   expect(names).toEqual(expect.arrayContaining(['Form', 'Form.Item', 'Form.List', 'Form.Provider', 'FormInstance']));
   expect(names.some((n) => /FAQ|Design Token|Semantic|faq/i.test(n))).toBe(false);
+});
+
+test('embedSrcs: <embed src> 경로를 모은다', () => {
+  expect(embedSrcs('a\n<embed src="./shared/x.en-US.md"></embed>\nb\n<embed src="../t/y.md"></embed>')).toEqual([
+    './shared/x.en-US.md',
+    '../t/y.md',
+  ]);
+});
+
+test('inlineEmbeds: embed 줄을 내용으로 바꿔 API 표가 이어서 읽힌다', () => {
+  const md = '---\ntitle: Tip\ngroup: Data Display\n---\n## API\n\n### Common API\n\n<embed src="./shared/p.md"></embed>\n\n## FAQ\n';
+  const shared = '| Property | Description | Type | Default |\n| --- | --- | --- | --- |\n| placement | Position | string | `top` |\n';
+  const doc = parseApiMarkdown('tip', inlineEmbeds(md, {'./shared/p.md': shared}));
+  expect(doc.sections).toEqual([
+    {section: 'Common API', rows: [{prop: 'placement', desc: 'Position', type: 'string', default: 'top', version: '', deprecated: false}]},
+  ]);
 });

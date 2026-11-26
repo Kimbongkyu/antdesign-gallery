@@ -252,3 +252,13 @@ html {
   color: #0958d9;
   font-size: 13px;
 }
+
+.gx-slide {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+}
