@@ -1,0 +1,1054 @@
+{
+  "slug": "date-picker",
+  "title": "DatePicker",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Common API",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "className",
+          "desc": "The picker className",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dateRender",
+          "desc": "Custom rendering function for date cells, >= 5.4.0 use cellRender instead.",
+          "type": "function(currentDate: dayjs, today: dayjs) => React.ReactNode",
+          "default": "-",
+          "version": "< 5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "cellRender",
+          "desc": "Custom rendering function for picker cells",
+          "type": "(current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "components",
+          "desc": "Custom panels, input, and footer buttons",
+          "type": "Components",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpen",
+          "desc": "Initial open state of picker",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Determine whether the DatePicker is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledDate",
+          "desc": "Specify the date that cannot be selected",
+          "type": "(currentDate: dayjs, info: { from?: dayjs, type: Picker }) => boolean",
+          "default": "-",
+          "version": "info: 5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownClassName",
+          "desc": "The className of popup calendar, please use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format, support multi-format matching when it is an array, display the first one shall prevail. refer to dayjs#format. for example: Custom Format",
+          "type": "formatType",
+          "default": "@rc-component/picker",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "order",
+          "desc": "Auto order date when multiple or range selection",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "To customize the className of the popup calendar, use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "4.23.0",
+          "deprecated": true
+        },
+        {
+          "prop": "preserveInvalidOnBlur",
+          "desc": "Don't clear the input on blur even when the typed value is invalid",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "To set the container of the floating layer, while the default is to create a div element in body",
+          "type": "function(trigger)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "inputReadOnly",
+          "desc": "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "locale",
+          "desc": "Localization configuration",
+          "type": "object",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "minDate",
+          "desc": "The minimum date, which also limits the range of panel switching",
+          "type": "dayjs",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maxDate",
+          "desc": "The maximum date, which also limits the range of panel switching",
+          "type": "dayjs",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "The picker panel mode（ Cannot select year or month anymore? )",
+          "type": "time | date | month | year | decade",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "needConfirm",
+          "desc": "Need click confirm button to trigger value change. Default false when multiple",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "nextIcon",
+          "desc": "The custom next icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "The open state of picker",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "panelRender",
+          "desc": "Customize panel render",
+          "type": "(panelNode) => ReactNode",
+          "default": "-",
+          "version": "4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "picker",
+          "desc": "Set picker type",
+          "type": "date | week | month | quarter | year",
+          "default": "date",
+          "version": "quarter: 4.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "The placeholder of date input",
+          "type": "string | \\[string,string]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "The position where the selection box pops up",
+          "type": "bottomLeft bottomRight topLeft topRight",
+          "default": "bottomLeft",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupStyle",
+          "desc": "To customize the style of the popup calendar, use styles.popup.root instead",
+          "type": "CSSProperties",
+          "default": "{}",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "prefix",
+          "desc": "The custom prefix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "presets",
+          "desc": "The preset ranges for quick selection, Since 5.8.0, preset value supports callback function.",
+          "type": "{ label: React.ReactNode, value: Dayjs | (() => Dayjs) }\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prevIcon",
+          "desc": "The custom prev icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "previewValue",
+          "desc": "When the user selects the date hover option, the value of the input field undergoes a temporary change",
+          "type": "false | hover",
+          "default": "hover",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "To determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "To customize the style of the input box",
+          "type": "CSSProperties",
+          "default": "{}",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The custom suffix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "suffixIcon",
+          "desc": "The custom suffix icon, please use suffix instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "superNextIcon",
+          "desc": "The custom super next icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "superPrevIcon",
+          "desc": "The custom super prev icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "clearIcon",
+          "desc": "(Only supports global configuration) Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "×",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of picker",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Callback when click the clear button",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback function, can be executed whether the popup calendar is popped up or closed",
+          "type": "function(open)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPanelChange",
+          "desc": "Callback when picker panel mode is changed",
+          "type": "function(value, mode)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Callback when a date is selected, please use onCalendarChange instead",
+          "type": "function(value)",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "Components",
+      "rows": [
+        {
+          "prop": "nowButton",
+          "desc": "Custom Today/Now button",
+          "type": "React.ComponentType<any> | string",
+          "default": "button",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "okButton",
+          "desc": "Custom confirmation button",
+          "type": "React.ComponentType<any> | string",
+          "default": "Small primary Button",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Common Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DatePicker",
+      "rows": [
+        {
+          "prop": "defaultPickerValue",
+          "desc": "Default panel date, will be reset when panel open",
+          "type": "dayjs",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date, if start time or end time is null or undefined, the date range will be an open interval",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledTime",
+          "desc": "To specify the time that cannot be selected",
+          "type": "function(date)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY-MM-DD",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Enable multiple selection. Not support showTime",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "pickerValue",
+          "desc": "Panel date. Used for controlled switching of panel date. Work with onPanelChange",
+          "type": "dayjs",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "(mode) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showNow",
+          "desc": "Show the fast access of current datetime",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "showTime",
+          "desc": "To provide an additional time selection",
+          "type": "object | boolean",
+          "default": "TimePicker Options",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showTime.defaultValue",
+          "desc": "Use showTime.defaultOpenValue instead",
+          "type": "dayjs",
+          "default": "dayjs()",
+          "version": "5.27.3",
+          "deprecated": true
+        },
+        {
+          "prop": "showTime.defaultOpenValue",
+          "desc": "To set default time of selected date, demo",
+          "type": "dayjs",
+          "default": "dayjs()",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showWeek",
+          "desc": "Show week info when in DatePicker",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(date: dayjs | null, dateString: string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOk",
+          "desc": "Callback when click ok button",
+          "type": "function()",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPanelChange",
+          "desc": "Callback function for panel changing",
+          "type": "function(value, mode)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DatePicker\\[picker=year]",
+      "rows": [
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Enable multiple selection",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "() => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Customize tag render, only applies when multiple is set",
+          "type": "(props) => ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(date: dayjs | null, dateString: string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DatePicker\\[picker=quarter]",
+      "rows": [
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY-\\QQ",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Enable multiple selection",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "() => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Customize tag render, only applies when multiple is set",
+          "type": "(props) => ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(date: dayjs | null, dateString: string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DatePicker\\[picker=month]",
+      "rows": [
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY-MM",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Enable multiple selection",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "() => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Customize tag render, only applies when multiple is set",
+          "type": "(props) => ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(date: dayjs | null, dateString: string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DatePicker\\[picker=week]",
+      "rows": [
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY-wo",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Enable multiple selection",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "(mode) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Customize tag render, only applies when multiple is set",
+          "type": "(props) => ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(date: dayjs | null, dateString: string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showWeek",
+          "desc": "Show week info when in DatePicker",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.14.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RangePicker",
+      "rows": [
+        {
+          "prop": "allowEmpty",
+          "desc": "Allow start or end input leave empty",
+          "type": "\\[boolean, boolean]",
+          "default": "\\[false, false]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cellRender",
+          "desc": "Custom rendering function for picker cells",
+          "type": "(current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dateRender",
+          "desc": "Custom rendering function for date cells, >= 5.4.0 use cellRender instead.",
+          "type": "function(currentDate: dayjs, today: dayjs) => React.ReactNode",
+          "default": "-",
+          "version": "< 5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultPickerValue",
+          "desc": "Default panel date, will be reset when panel open",
+          "type": "\\[dayjs, dayjs]",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "To set default date",
+          "type": "\\[dayjs, dayjs]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "If disable start or end",
+          "type": "\\[boolean, boolean]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledTime",
+          "desc": "To specify the time that cannot be selected",
+          "type": "function(date: dayjs, partial: start | end, info: { from?: dayjs })",
+          "default": "-",
+          "version": "info.from: 5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the date format. refer to dayjs#format",
+          "type": "formatType",
+          "default": "YYYY-MM-DD HH:mm:ss",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "id",
+          "desc": "Config input ids",
+          "type": "{ start?: string, end?: string }",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "pickerValue",
+          "desc": "Panel date. Used for controlled switching of panel date. Work with onPanelChange",
+          "type": "\\[dayjs, dayjs]",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "presets",
+          "desc": "The preset ranges for quick selection, Since 5.8.0, preset value supports callback function.",
+          "type": "{ label: React.ReactNode, value: \\[(Dayjs | (() => Dayjs)), (Dayjs | (() => Dayjs))] }\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Render extra footer in panel",
+          "type": "() => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "separator",
+          "desc": "Set separator between inputs",
+          "type": "React.ReactNode",
+          "default": "<SwapRightOutlined />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showTime",
+          "desc": "To provide an additional time selection",
+          "type": "object | boolean",
+          "default": "TimePicker Options",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showTime.defaultValue",
+          "desc": "Use showTime.defaultOpenValue instead",
+          "type": "\\[dayjs, dayjs]",
+          "default": "\\[dayjs(), dayjs()]",
+          "version": "5.27.3",
+          "deprecated": true
+        },
+        {
+          "prop": "showTime.defaultOpenValue",
+          "desc": "To set default time of selected date, demo",
+          "type": "\\[dayjs, dayjs]",
+          "default": "\\[dayjs(), dayjs()]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set date",
+          "type": "\\[dayjs, dayjs]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onCalendarChange",
+          "desc": "Callback function, can be executed when the start time or the end time of the range is changing. info argument is added in 4.4.0",
+          "type": "function(dates: \\[dayjs, dayjs], dateStrings: \\[string, string], info: { range:start|end })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function, can be executed when the selected time is changing",
+          "type": "function(dates: \\[dayjs, dayjs] | null, dateStrings: \\[string, string] | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFocus",
+          "desc": "Trigger when get focus",
+          "type": "function(event, { range: 'start' | 'end' })",
+          "default": "-",
+          "version": "range: 5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onBlur",
+          "desc": "Trigger when lose focus",
+          "type": "function(event, { range: 'start' | 'end' })",
+          "default": "-",
+          "version": "range: 5.14.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RangePicker",
+      "rows": [
+        {
+          "prop": "GenericFn",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "Array<Generic",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "{",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

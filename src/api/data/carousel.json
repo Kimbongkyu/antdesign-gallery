@@ -1,0 +1,169 @@
+{
+  "slug": "carousel",
+  "title": "Carousel",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Carousel",
+      "rows": [
+        {
+          "prop": "arrows",
+          "desc": "Whether to show switch arrows",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "autoplay",
+          "desc": "Whether to scroll automatically, you can specify autoplay={{ dotDuration: true }} to display the progress bar",
+          "type": "boolean | { dotDuration?: boolean }",
+          "default": "false",
+          "version": "dotDuration: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "autoplaySpeed",
+          "desc": "Delay between each auto scroll (in milliseconds)",
+          "type": "number",
+          "default": "3000",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "adaptiveHeight",
+          "desc": "Adjust the slide's height automatically",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dotPlacement",
+          "desc": "The position of the dots, which can be one of top bottom start end",
+          "type": "string",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dotPosition",
+          "desc": "The position of the dots, which can be one of top bottom left right start end, please use dotPlacement instead",
+          "type": "string",
+          "default": "bottom",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dots",
+          "desc": "Whether to show the dots at the bottom of the gallery, object for dotsClass",
+          "type": "boolean | { className?: string }",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "draggable",
+          "desc": "Enable scrollable via dragging on desktop",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fade",
+          "desc": "Whether to use fade transition",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "infinite",
+          "desc": "Infinitely wrap around contents",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "speed",
+          "desc": "Animation speed in milliseconds",
+          "type": "number",
+          "default": "500",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "easing",
+          "desc": "Transition interpolation function name",
+          "type": "string",
+          "default": "linear",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "effect",
+          "desc": "Transition effect",
+          "type": "scrollx | fade",
+          "default": "scrollx",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "afterChange",
+          "desc": "Callback function called after the current index changes",
+          "type": "(current: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "beforeChange",
+          "desc": "Callback function called before the current index changes",
+          "type": "(current: number, next: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "waitForAnimate",
+          "desc": "Whether to wait for the animation when switching",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "goTo(slideNumber, dontAnimate)",
+          "desc": "Go to slide index, if dontAnimate=true, it happens without animation",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "next()",
+          "desc": "Change current slide to next slide",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prev()",
+          "desc": "Change current slide to previous slide",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

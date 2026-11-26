@@ -1,0 +1,342 @@
+{
+  "slug": "input-number",
+  "title": "InputNumber",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "InputNumber",
+      "rows": [
+        {
+          "prop": "addonAfter",
+          "desc": "The label text displayed after (on the right side of) the input field, please use Space.Compact instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "addonBefore",
+          "desc": "The label text displayed before (on the left side of) the input field, please use Space.Compact instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button (cleared value: null)",
+          "type": "boolean | AllowClearConfig",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "changeOnBlur",
+          "desc": "Trigger onChange when blur. e.g. reset value in range by blur",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.11.0",
+          "deprecated": false
+        },
+        {
+          "prop": "changeOnWheel",
+          "desc": "Allows control with mouse wheel",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "controls",
+          "desc": "Whether to show +- controls, or set custom arrow icons",
+          "type": "boolean | { upIcon?: React.ReactNode; downIcon?: React.ReactNode; }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "decimalSeparator",
+          "desc": "Decimal separator",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "Placeholder",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "The initial value",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "If the input is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "formatter",
+          "desc": "Specifies the format of the value presented",
+          "type": "function(value: number | string, info: { userTyping: boolean, input: string }): string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "keyboard",
+          "desc": "If keyboard behavior is enabled",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "max",
+          "desc": "The max value",
+          "type": "number",
+          "default": "Number.MAX_SAFE_INTEGER",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "min",
+          "desc": "The min value",
+          "type": "number",
+          "default": "Number.MIN_SAFE_INTEGER",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "parser",
+          "desc": "Specifies the value extracted from formatter",
+          "type": "function(string): number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "precision",
+          "desc": "The precision of input value. Will use formatter when config of formatter",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "readOnly",
+          "desc": "If the input is readonly",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The prefix icon for the Input",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The suffix icon for the Input",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The height of input box",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "step",
+          "desc": "The number to which the current value is increased or decreased. It can be an integer or decimal",
+          "type": "number | string",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "stringMode",
+          "desc": "Set value as string to support high precision decimals. Will return string value by onChange",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.13.0",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "Show input or spinner",
+          "type": "'input' | 'spinner'",
+          "default": "'input'",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The current value of the component",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "The callback triggered when the value is changed",
+          "type": "function(value: number | string | null)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Called when the clear button is activated",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onPressEnter",
+          "desc": "The callback function that is triggered when Enter key is pressed",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onStep",
+          "desc": "The callback function that is triggered when click up or down buttons / Keyboard / Wheel",
+          "type": "(value: number, info: { offset: number, type: 'up' | 'down', emitter: 'handler' | 'keydown' | 'wheel' }) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Ref",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "-",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "(option?: { preventScroll?: boolean, cursor?: 'start' | 'end' | 'all' })",
+          "default": "",
+          "version": "cursor - 5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "nativeElement",
+          "desc": "The native DOM element",
+          "type": "-",
+          "default": "",
+          "version": "5.17.3",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

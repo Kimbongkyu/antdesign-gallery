@@ -1,0 +1,169 @@
+{
+  "slug": "segmented",
+  "title": "Segmented",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Segmented",
+      "rows": [
+        {
+          "prop": "block",
+          "desc": "Option to fit width to its parent\\'s width",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Segmented component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Default selected value",
+          "type": "string | number",
+          "default": "Value of first item in options",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable all segments",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "The callback function that is triggered when the state changes",
+          "type": "function(value: string | number)",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "Set children optional",
+          "type": "string\\[] | number\\[] | SegmentedItemType\\[]",
+          "default": "[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "Orientation",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the Segmented.",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Segmented component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "vertical",
+          "desc": "Orientation. Simultaneously existing with orientation, orientation takes priority",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Currently selected value",
+          "type": "string | number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "shape of Segmented",
+          "type": "default | round",
+          "default": "default",
+          "version": "5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "The name property of all input[type=\"radio\"] children. if not set, it will fallback to a randomly generated name",
+          "type": "string",
+          "default": "",
+          "version": "5.23.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "SegmentedItemType",
+      "rows": [
+        {
+          "prop": "disabled",
+          "desc": "Disabled state of segmented item",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "className",
+          "desc": "The additional css class",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Display icon for Segmented item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Display text for Segmented item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tooltip",
+          "desc": "tooltip for Segmented item",
+          "type": "string | TooltipProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Value for Segmented item",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

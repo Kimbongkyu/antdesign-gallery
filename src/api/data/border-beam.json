@@ -1,0 +1,113 @@
+{
+  "slug": "border-beam",
+  "title": "BorderBeam",
+  "group": "Other",
+  "sections": [
+    {
+      "section": "BorderBeam",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Decorated content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "Beam color configuration. Supports a single color string or gradient stops. percent uses the 0 ~ 100 input range and BorderBeam reserves tail space for the transparent fade",
+          "type": "string | { color: string; percent: number }[]",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "count",
+          "desc": "Number of evenly distributed beams. It should be a positive integer",
+          "type": "number",
+          "default": "1",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "duration",
+          "desc": "Time in seconds for the beam to complete one loop",
+          "type": "number",
+          "default": "6",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Per-beam configurations. The array length determines the number of beams and takes precedence over count. Omitted item properties inherit the top-level color, lineWidth, outset, and size",
+          "type": "BorderBeamItem[]",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "lineWidth",
+          "desc": "Width of the beam line. Numbers are treated as pixels",
+          "type": "number | string",
+          "default": "1px",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "outset",
+          "desc": "Outset distance of the beam layer from the container edge. Set to 0 for clipped containers",
+          "type": "number | string",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Size of the visible beam segment. Numbers are treated as pixels",
+          "type": "number | string",
+          "default": "100",
+          "version": "6.5.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "BorderBeamItem",
+      "rows": [
+        {
+          "prop": "color",
+          "desc": "Color configuration for this beam",
+          "type": "string | { color: string; percent: number }[]",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "lineWidth",
+          "desc": "Line width for this beam. Numbers are treated as pixels",
+          "type": "number | string",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "outset",
+          "desc": "Outset distance for this beam",
+          "type": "number | string",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Size of this beam's visible segment. Numbers are treated as pixels",
+          "type": "number | string",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

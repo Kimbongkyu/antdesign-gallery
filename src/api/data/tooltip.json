@@ -1,0 +1,44 @@
+{
+  "slug": "tooltip",
+  "title": "Tooltip",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Tooltip",
+      "rows": [
+        {
+          "prop": "title",
+          "desc": "The text shown in the tooltip",
+          "type": "ReactNode | () => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "The background color. After using this attribute, the internal text color will adapt automatically",
+          "type": "string",
+          "default": "-",
+          "version": "5.27.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Semantic DOM class",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Semantic DOM style",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

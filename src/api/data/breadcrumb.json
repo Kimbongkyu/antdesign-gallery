@@ -1,0 +1,150 @@
+{
+  "slug": "breadcrumb",
+  "title": "Breadcrumb",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Breadcrumb",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownIcon",
+          "desc": "Custom dropdown icon",
+          "type": "ReactNode",
+          "default": "<DownOutlined />",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "The routing stack information of router (>=5.3.0 recommended, use Breadcrumb.Item children for older versions)",
+          "type": "[ItemType\\[\\]](#itemtype)",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "itemRender",
+          "desc": "Custom item renderer, work with react-router, see example",
+          "type": "(route, params, routes, paths) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "params",
+          "desc": "Routing parameters",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "separator",
+          "desc": "Custom separator",
+          "type": "ReactNode",
+          "default": "/",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RouteItemType",
+      "rows": [
+        {
+          "prop": "className",
+          "desc": "The additional css class",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownProps",
+          "desc": "The dropdown props",
+          "type": "Dropdown",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "href",
+          "desc": "Target of hyperlink. Can not work with path",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "path",
+          "desc": "Connected path. Each path will connect with prev one. Can not work with href",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "menu",
+          "desc": "The menu props",
+          "type": "MenuProps",
+          "default": "-",
+          "version": "4.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Set the handler to handle click event",
+          "type": "(e:MouseEvent) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "item name",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "SeparatorType",
+      "rows": [
+        {
+          "prop": "type",
+          "desc": "Mark as separator",
+          "type": "separator",
+          "default": "",
+          "version": "5.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "separator",
+          "desc": "Custom separator",
+          "type": "ReactNode",
+          "default": "/",
+          "version": "5.3.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

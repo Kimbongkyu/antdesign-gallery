@@ -1,0 +1,190 @@
+{
+  "slug": "message",
+  "title": "Message",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Message",
+      "rows": [
+        {
+          "prop": "content",
+          "desc": "The content of the message",
+          "type": "ReactNode | config",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "duration",
+          "desc": "Time(seconds) before auto-dismiss, don't dismiss if set to 0",
+          "type": "number",
+          "default": "3",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Specify a function that will be called when the message is closed",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Message",
+      "rows": [
+        {
+          "prop": "className",
+          "desc": "Customized CSS class",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "content",
+          "desc": "The content of the message",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "duration",
+          "desc": "Time(seconds) before auto-dismiss, don't dismiss if set to 0",
+          "type": "number",
+          "default": "3",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Customized Icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pauseOnHover",
+          "desc": "keep the timer running or not on hover",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "The unique identifier of the Message",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "Customized inline style",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Specify a function that will be called when the message is clicked",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Specify a function that will be called when the message is closed",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Global static methods",
+      "rows": [
+        {
+          "prop": "duration",
+          "desc": "Time before auto-dismiss, in seconds",
+          "type": "number",
+          "default": "3",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Return the mount node for Message, but still display at fullScreen",
+          "type": "() => HTMLElement",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Max message show, drop oldest if exceed limit",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefixCls",
+          "desc": "The prefix className of message node",
+          "type": "string",
+          "default": "ant-message",
+          "version": "4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rtl",
+          "desc": "Whether to enable RTL mode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "stack",
+          "desc": "Messages will be stacked when amount is over threshold. Only the latest message is shown in the collapsed stack",
+          "type": "boolean | { threshold: number }",
+          "default": "false",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "top",
+          "desc": "Distance from top",
+          "type": "string | number",
+          "default": "8",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

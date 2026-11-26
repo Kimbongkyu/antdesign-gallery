@@ -1,0 +1,153 @@
+{
+  "slug": "rate",
+  "title": "Rate",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Rate",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to allow clear when click again",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "allowHalf",
+          "desc": "Whether to allow semi selection",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "character",
+          "desc": "The custom character of rate",
+          "type": "ReactNode | (RateProps) => ReactNode",
+          "default": "&lt;StarFilled />",
+          "version": "function(): 4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "count",
+          "desc": "Star count",
+          "type": "number",
+          "default": "5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "The default value",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "If read only, unable to interact",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "keyboard",
+          "desc": "Support keyboard operation",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Star size",
+          "type": "'small' | 'medium' | 'large'",
+          "default": "'medium'",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tooltips",
+          "desc": "Customize tooltip by each character",
+          "type": "TooltipProps[] | string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The current value",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onBlur",
+          "desc": "Callback when component lose focus",
+          "type": "function()",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when select value",
+          "type": "function(value: number)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFocus",
+          "desc": "Callback when component get focus",
+          "type": "function()",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onHoverChange",
+          "desc": "Callback when hover item",
+          "type": "function(value: number)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onKeyDown",
+          "desc": "Callback when keydown on component",
+          "type": "function(event)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

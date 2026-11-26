@@ -1,0 +1,310 @@
+{
+  "slug": "color-picker",
+  "title": "ColorPicker",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "ColorPicker",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Allow clearing color selected",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "arrow",
+          "desc": "Configuration for popup arrow",
+          "type": "boolean | { pointAtCenter: boolean }",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Trigger of ColorPicker",
+          "type": "React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Default value of color",
+          "type": "ColorType",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultFormat",
+          "desc": "Default format of color",
+          "type": "rgb | hex | hsb",
+          "default": "hex",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable ColorPicker",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledAlpha",
+          "desc": "Disable Alpha",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledFormat",
+          "desc": "Disable format of color",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyTooltipOnHide",
+          "desc": "Whether destroy dom when close",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.7.0",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether destroy dom when close",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "Format of color",
+          "type": "rgb | hex | hsb",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "Configure single or gradient color",
+          "type": "'single' | 'gradient' | ('single' | 'gradient')[]",
+          "default": "single",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether to show popup",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "presets",
+          "desc": "Preset colors",
+          "type": "PresetColorType",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Placement of popup",
+          "type": "The design of the placement parameter is the same as the Tooltips component.",
+          "default": "bottomLeft",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "panelRender",
+          "desc": "Custom Render Panel",
+          "type": "(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode",
+          "default": "-",
+          "version": "5.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "showText",
+          "desc": "Show color text",
+          "type": "boolean | (color: Color) => React.ReactNode",
+          "default": "-",
+          "version": "5.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Setting the trigger size",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "5.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "trigger",
+          "desc": "ColorPicker trigger mode",
+          "type": "hover | click",
+          "default": "click",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Value of color",
+          "type": "ColorType",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when value is changed",
+          "type": "(value: Color, css: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChangeComplete",
+          "desc": "Called when color pick ends. Will not change the display color when value controlled by onChangeComplete",
+          "type": "(value: Color) => void",
+          "default": "-",
+          "version": "5.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onFormatChange",
+          "desc": "Callback when format is changed",
+          "type": "(format: 'hex' | 'rgb' | 'hsb') => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback when open is changed",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Called when clear",
+          "type": "() => void",
+          "default": "-",
+          "version": "5.6.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ColorPicker",
+      "rows": [
+        {
+          "prop": "Color",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "{",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Color",
+      "rows": [
+        {
+          "prop": "toCssString",
+          "desc": "Convert to CSS support format",
+          "type": "() => string",
+          "default": "",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "toHex",
+          "desc": "Convert to hex format characters, the return type like: 1677ff",
+          "type": "() => string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toHexString",
+          "desc": "Convert to hex format color string, the return type like: #1677ff",
+          "type": "() => string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toHsb",
+          "desc": "Convert to hsb object",
+          "type": "() => ({ h: number, s: number, b: number, a: number })",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toHsbString",
+          "desc": "Convert to hsb format color string, the return type like: hsb(215, 91%, 100%)",
+          "type": "() => string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toRgb",
+          "desc": "Convert to rgb object",
+          "type": "() => ({ r: number, g: number, b: number, a: number })",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toRgbString",
+          "desc": "Convert to rgb format color string, the return type like: rgb(22, 119, 255)",
+          "type": "() => string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

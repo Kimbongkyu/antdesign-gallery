@@ -1,0 +1,339 @@
+{
+  "slug": "mentions",
+  "title": "Mentions",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Mention",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "autoSize",
+          "desc": "Textarea height autosize feature, can be set to true | false or an object { minRows: 2, maxRows: 6 }",
+          "type": "boolean | object",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Default value",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filterOption",
+          "desc": "Customize filter option logic",
+          "type": "false | (input: string, option: OptionProps) => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "Set the mount HTML node for suggestions",
+          "type": "() => HTMLElement",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Indicate loading state",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "notFoundContent",
+          "desc": "Set mentions content when not match",
+          "type": "ReactNode",
+          "default": "No data",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Set popup placement",
+          "type": "top | bottom",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize the dropdown menu rendering",
+          "type": "(menu: React.ReactElement) => ReactNode",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "Set trigger prefix keyword",
+          "type": "string | string\\[]",
+          "default": "@",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "split",
+          "desc": "Set split string before and after selected mention",
+          "type": "string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the input box",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning' | 'success' | 'validating'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "validateSearch",
+          "desc": "Custom validation for search text. Return false to hide suggestions.",
+          "type": "(text: string, split?: string) => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Set value of mentions",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onBlur",
+          "desc": "Trigger when mentions lose focus",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when value changed",
+          "type": "(text: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Callback when click the clear button",
+          "type": "() => void",
+          "default": "-",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onFocus",
+          "desc": "Trigger when mentions get focus",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onResize",
+          "desc": "The callback function that is triggered when textarea resize",
+          "type": "function({ width, height })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "Trigger when prefix hit",
+          "type": "(text: string, prefix: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Trigger when user select the option",
+          "type": "(option: OptionProps, prefix: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPopupScroll",
+          "desc": "Trigger when mentions scroll",
+          "type": "(e: Event) => void",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "Option Configuration",
+          "type": "Options",
+          "default": "\\[]",
+          "version": "5.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Mention methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Option",
+      "rows": [
+        {
+          "prop": "value",
+          "desc": "Value inserted when selected",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Title of the option",
+          "type": "React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "The key value of the option",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Optional",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "className",
+          "desc": "className",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "The style of the option",
+          "type": "React.CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

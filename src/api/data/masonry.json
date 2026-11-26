@@ -1,0 +1,121 @@
+{
+  "slug": "masonry",
+  "title": "Masonry",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Masonry",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "columns",
+          "desc": "Number of columns, can be a fixed value or a responsive configuration",
+          "type": "number | { xs?: number; sm?: number; md?: number }",
+          "default": "3",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fresh",
+          "desc": "Whether to continuously monitor the size changes of child items",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gutter",
+          "desc": "Spacing, can be a fixed value, responsive configuration, or a configuration for horizontal and vertical spacing",
+          "type": "Gap | \\[Gap, Gap\\]",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Masonry items",
+          "type": "MasonryItem[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "itemRender",
+          "desc": "Custom item rendering function",
+          "type": "(item: MasonryItem) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onLayoutChange",
+          "desc": "Callback for column sorting changes",
+          "type": "({ key: React.Key; column: number }[]) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "MasonryItem",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Custom display content, takes precedence over itemRender",
+          "type": "React.ReactNode",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "column",
+          "desc": "Specifies the column to which the item belongs",
+          "type": "number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "data",
+          "desc": "Custom data storage",
+          "type": "T",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "height",
+          "desc": "Height of the item",
+          "type": "number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Unique identifier for the item",
+          "type": "string | number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

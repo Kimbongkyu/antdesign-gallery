@@ -1,0 +1,392 @@
+{
+  "slug": "menu",
+  "title": "Menu",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Menu",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpenKeys",
+          "desc": "Array with the keys of default opened sub menus",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultSelectedKeys",
+          "desc": "Array with the keys of default selected menu items",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "expandIcon",
+          "desc": "custom expand icon of submenu",
+          "type": "ReactNode | (props: SubMenuProps & { isSubMenu: boolean }) => ReactNode",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "forceSubMenuRender",
+          "desc": "Render submenu into DOM before it becomes visible",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "inlineCollapsed",
+          "desc": "Specifies the collapsed status when menu is inline mode",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "inlineIndent",
+          "desc": "Indent (in pixels) of inline menu items on each level",
+          "type": "number",
+          "default": "24",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Menu item content",
+          "type": "[ItemType\\[\\]](#itemtype)",
+          "default": "-",
+          "version": "4.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "Type of menu",
+          "type": "vertical | horizontal | inline",
+          "default": "vertical",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Allows selection of multiple items",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "openKeys",
+          "desc": "Array with the keys of currently opened sub-menus",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "overflowedIndicator",
+          "desc": "Customized the ellipsis icon when menu is collapsed horizontally",
+          "type": "ReactNode",
+          "default": "<EllipsisOutlined />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectable",
+          "desc": "Allows selecting menu items",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectedKeys",
+          "desc": "Array with the keys of currently selected menu items",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "subMenuCloseDelay",
+          "desc": "Delay time to hide submenu when mouse leaves (in seconds)",
+          "type": "number",
+          "default": "0.1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "subMenuOpenDelay",
+          "desc": "Delay time to show submenu when mouse enters, (in seconds)",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tooltip",
+          "desc": "Config tooltip props for menu items in inline collapsed mode. Set to false to disable.",
+          "type": "false | TooltipProps",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "theme",
+          "desc": "Color theme of the menu",
+          "type": "light | dark",
+          "default": "light",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "triggerSubMenuAction",
+          "desc": "Which action can trigger submenu open/close",
+          "type": "hover | click",
+          "default": "hover",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Called when a menu item is clicked",
+          "type": "function({ key, keyPath, domEvent, itemData })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDeselect",
+          "desc": "Called when a menu item is deselected (multiple mode only)",
+          "type": "function({ key, keyPath, selectedKeys, domEvent, itemData })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Called when sub-menus are opened or closed",
+          "type": "function(openKeys: string\\[])",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Called when a menu item is selected",
+          "type": "function({ key, keyPath, selectedKeys, domEvent, itemData })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Custom popup renderer for submenu",
+          "type": "(node: ReactElement, props: { item: SubMenuProps; keys: string[] }) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ItemType",
+      "rows": [
+        {
+          "prop": "danger",
+          "desc": "Display the danger style",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether menu item is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "The extra of the menu item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "The icon of the menu item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Unique ID of the menu item",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Menu label",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Set display title for collapsed item",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ItemType",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Sub-menus or sub-menu items",
+          "type": "[ItemType\\[\\]](#itemtype)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether sub-menu is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Icon of sub menu",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Unique ID of the sub-menu",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Menu label",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "Sub-menu class name, not working when mode=\"inline\"",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupOffset",
+          "desc": "Sub-menu offset, not working when mode=\"inline\"",
+          "type": "\\[number, number]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "theme",
+          "desc": "Color theme of the SubMenu (inherits from Menu by default)",
+          "type": "light | dark",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTitleClick",
+          "desc": "Callback executed when the sub-menu title is clicked",
+          "type": "function({ key, domEvent })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Custom popup renderer for current sub-menu",
+          "type": "(node: ReactElement, props: { item: SubMenuProps; keys: string[] }) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ItemType",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Sub-menu items",
+          "type": "[MenuItemType\\[\\]](#menuitemtype)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "The title of the group",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ItemType",
+      "rows": [
+        {
+          "prop": "dashed",
+          "desc": "Whether line is dashed",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "flex",
+  "title": "Flex",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Flex",
+      "rows": [
+        {
+          "prop": "vertical",
+          "desc": "Is direction of the flex vertical, use flex-direction: column",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "wrap",
+          "desc": "Set whether the element is displayed in a single line or in multiple lines",
+          "type": "flex-wrap | boolean",
+          "default": "nowrap",
+          "version": "boolean: 5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "justify",
+          "desc": "Sets the alignment of elements in the direction of the main axis",
+          "type": "justify-content",
+          "default": "normal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "align",
+          "desc": "Sets the alignment of elements in the direction of the cross axis",
+          "type": "align-items",
+          "default": "normal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "flex",
+          "desc": "flex CSS shorthand properties",
+          "type": "flex",
+          "default": "normal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gap",
+          "desc": "Sets the gap between grids",
+          "type": "small | medium | large | string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "component",
+          "desc": "custom element type",
+          "type": "React.ComponentType",
+          "default": "div",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "direction of the flex",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

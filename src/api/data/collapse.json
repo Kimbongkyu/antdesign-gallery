@@ -1,0 +1,270 @@
+{
+  "slug": "collapse",
+  "title": "Collapse",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Collapse",
+      "rows": [
+        {
+          "prop": "accordion",
+          "desc": "If true, Collapse renders as Accordion",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "activeKey",
+          "desc": "Key of the active panel",
+          "type": "string\\[] | string <br/> number\\[] | number",
+          "default": "No default value. In accordion mode, it's the key of the first panel",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Toggles rendering of the border around the collapse block",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsible",
+          "desc": "Specify how to trigger Collapse. Either by clicking icon or by clicking any area in header or disable collapse functionality itself",
+          "type": "header | icon | disabled",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultActiveKey",
+          "desc": "Key of the initial active panel",
+          "type": "string\\[] | string <br/> number\\[] | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyInactivePanel",
+          "desc": "Destroy Inactive Panel",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Destroy Inactive Panel",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "expandIcon",
+          "desc": "Customize the collapse expand icon",
+          "type": "(panelProps) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "expandIconPlacement",
+          "desc": "Set expand icon placement",
+          "type": "start | end",
+          "default": "start",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "expandIconPosition",
+          "desc": "Set expand icon position, Please use expandIconPlacement instead",
+          "type": "start | end",
+          "default": "-",
+          "version": "4.21.0",
+          "deprecated": true
+        },
+        {
+          "prop": "ghost",
+          "desc": "Make the collapse borderless and its background transparent",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of collapse",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback function executed when active panel is changed",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "collapse items content",
+          "type": "ItemType",
+          "default": "-",
+          "version": "5.6.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ItemType",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Semantic structure className",
+          "type": "Record<header | body, string>",
+          "default": "-",
+          "version": "5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsible",
+          "desc": "Specify whether the panel be collapsible or the trigger area of collapsible",
+          "type": "header | icon | disabled",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Body area content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "The extra element in the corner",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Forced render of content on panel, instead of lazy rendering after clicking on header",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Unique key identifying the panel from among its siblings",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Title of the panel",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showArrow",
+          "desc": "If false, panel will not show arrow icon. If false, collapsible can't be set as icon",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Semantic DOM style",
+          "type": "Record<header | body, CSSProperties>",
+          "default": "-",
+          "version": "5.21.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Collapse.Panel",
+      "rows": [
+        {
+          "prop": "collapsible",
+          "desc": "Specify whether the panel be collapsible or the trigger area of collapsible",
+          "type": "header | icon | disabled",
+          "default": "-",
+          "version": "4.9.0 (icon: 4.24.0)",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "The extra element in the corner",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Forced render of content on panel, instead of lazy rendering after clicking on header",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "header",
+          "desc": "Title of the panel",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Unique key identifying the panel from among its siblings",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showArrow",
+          "desc": "If false, panel will not show arrow icon. If false, collapsible can't be set as icon",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

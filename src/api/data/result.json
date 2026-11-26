@@ -1,0 +1,68 @@
+{
+  "slug": "result",
+  "title": "Result",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Result",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "Operating area",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Custom back icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Result status, decide icons and colors",
+          "type": "success | error | info | warning | 404 | 403 | 500",
+          "default": "info",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "subTitle",
+          "desc": "The subTitle",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

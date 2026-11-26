@@ -1,0 +1,358 @@
+{
+  "slug": "tabs",
+  "title": "Tabs",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Tabs",
+      "rows": [
+        {
+          "prop": "activeKey",
+          "desc": "Current TabPane's key",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "addIcon",
+          "desc": "Customize add icon, only works with type=\"editable-card\"",
+          "type": "ReactNode",
+          "default": "<PlusOutlined />",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "animated",
+          "desc": "Whether to change tabs with animation.",
+          "type": "boolean | { inkBar: boolean, tabPane: boolean }",
+          "default": "{ inkBar: true, tabPane: false }",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "centered",
+          "desc": "Centers tabs",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultActiveKey",
+          "desc": "Initial active TabPane's key, if activeKey is not set",
+          "type": "string",
+          "default": "The key of first tab",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hideAdd",
+          "desc": "Hide plus icon or not. Only works while type=\"editable-card\"",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "indicator",
+          "desc": "Customize size and align of indicator",
+          "type": "{ size?: number | (origin: number) => number; align: start | center | end; }",
+          "default": "-",
+          "version": "5.13.0",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Configure tab content",
+          "type": "TabItemType",
+          "default": "[]",
+          "version": "4.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "more",
+          "desc": "Customize the collapse menu",
+          "type": "MoreProps",
+          "default": "{ icon: <EllipsisOutlined /> , trigger: 'hover' }",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "removeIcon",
+          "desc": "The custom icon of remove, only works with type=\"editable-card\"",
+          "type": "ReactNode",
+          "default": "<CloseOutlined />",
+          "version": "5.15.0",
+          "deprecated": false
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "className for more dropdown, please use classNames.popup instead",
+          "type": "string",
+          "default": "-",
+          "version": "4.21.0",
+          "deprecated": true
+        },
+        {
+          "prop": "renderTabBar",
+          "desc": "Replace the TabBar",
+          "type": "(props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Preset tab bar size",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabBarExtraContent",
+          "desc": "Extra content in tab bar",
+          "type": "ReactNode | {left?: ReactNode, right?: ReactNode}",
+          "default": "-",
+          "version": "object: 4.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabBarGutter",
+          "desc": "The gap between tabs",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabBarStyle",
+          "desc": "Tab bar style object",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabPlacement",
+          "desc": "Placement of tabs",
+          "type": "top | end | bottom | start",
+          "default": "top",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabPosition",
+          "desc": "Position of tabs, please use tabPlacement instead",
+          "type": "top | right | bottom | left",
+          "default": "top",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyInactiveTabPane",
+          "desc": "Whether destroy inactive TabPane when change tab, use destroyOnHidden instead",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether destroy inactive TabPane when change tab",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Basic style of tabs",
+          "type": "line | card | editable-card",
+          "default": "line",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback executed when active tab is changed",
+          "type": "(activeKey: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onEdit",
+          "desc": "Callback executed when tab is added or removed. Only works while type=\"editable-card\"",
+          "type": "(action === 'add' ? event : targetKey, action) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTabClick",
+          "desc": "Callback executed when tab is clicked",
+          "type": "(key: string, event: MouseEvent) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTabScroll",
+          "desc": "Trigger when tab scroll",
+          "type": "({ direction: left | right | top | bottom }) => void",
+          "default": "-",
+          "version": "4.3.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "TabItemType",
+      "rows": [
+        {
+          "prop": "closeIcon",
+          "desc": "Customize close icon in TabPane's head. Only works while type=\"editable-card\". 5.7.0: close button will be hidden when setting to null or false",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyInactiveTabPane",
+          "desc": "Whether destroy inactive TabPane when change tab, use destroyOnHidden instead",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.11.0",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether destroy inactive TabPane when change tab",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Set TabPane disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Forced render of content in tabs, not lazy render after clicking on tabs",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "TabPane's key",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Tab header text element",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Tab header icon element",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.12.0",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Tab content element",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether a close (x) button is visible, Only works while type=\"editable-card\"",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "MoreProps",
+      "rows": [
+        {
+          "prop": "icon",
+          "desc": "The custom icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize the dropdown menu render",
+          "type": "(menu: ReactElement, info: { restTabs: Tab[], onClose: () => void }) => ReactElement",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "visible",
+          "desc": "Whether the dropdown menu is open, use open instead",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "DropdownProps",
+          "desc": "Support other Dropdown props",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onVisibleChange",
+          "desc": "Called when the dropdown open state changes, use onOpenChange instead",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "layout",
+  "title": "Layout",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Layout",
+      "rows": [
+        {
+          "prop": "hasSider",
+          "desc": "Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Layout.Sider",
+      "rows": [
+        {
+          "prop": "breakpoint",
+          "desc": "Breakpoints of the responsive layout",
+          "type": "xs | sm | md | lg | xl | xxl | xxxl",
+          "default": "-",
+          "version": "xxxl: 6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Sider component, supports object or function",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsed",
+          "desc": "To set the current status",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsedWidth",
+          "desc": "Width of the collapsed sidebar, by setting to 0 a special trigger will appear",
+          "type": "number",
+          "default": "80",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsible",
+          "desc": "Whether can be collapsed",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultCollapsed",
+          "desc": "To set the initial status",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "reverseArrow",
+          "desc": "Reverse direction of arrow, for a sider that expands from the right",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Sider component, supports object or function",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "theme",
+          "desc": "Color theme of the sidebar",
+          "type": "light | dark",
+          "default": "dark",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "trigger",
+          "desc": "Specify the customized trigger, set to null to hide the trigger",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Width of the sidebar",
+          "type": "number | string",
+          "default": "200",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "zeroWidthTriggerStyle",
+          "desc": "To customize the styles of the special trigger that appears when collapsedWidth is 0",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onBreakpoint",
+          "desc": "The callback function, executed when breakpoints changed",
+          "type": "(broken) => {}",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onCollapse",
+          "desc": "The callback function, executed by clicking the trigger or activating the responsive layout",
+          "type": "(collapsed, type) => {}",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "slug": "statistic",
+  "title": "Statistic",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Statistic",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Statistic component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "decimalSeparator",
+          "desc": "The decimal separator",
+          "type": "string",
+          "default": ".",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "formatter",
+          "desc": "Customize value display logic",
+          "type": "(value) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "groupSeparator",
+          "desc": "Group separator",
+          "type": "string",
+          "default": ",",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Loading status of Statistic",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "precision",
+          "desc": "The precision of input value",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The prefix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Statistic component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The suffix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Display title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Display value",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "valueStyle",
+          "desc": "Set value section style, please use styles.content instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "Statistic",
+      "rows": [
+        {
+          "prop": "format",
+          "desc": "Format as dayjs",
+          "type": "string",
+          "default": "HH:mm:ss",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The prefix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The suffix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Display title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Set target countdown time",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "valueStyle",
+          "desc": "Set value section style",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFinish",
+          "desc": "Trigger when time's up",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when time's changing",
+          "type": "(value: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Statistic",
+      "rows": [
+        {
+          "prop": "type",
+          "desc": "Timer direction, count down or count up",
+          "type": "countdown | countup",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "Format as dayjs",
+          "type": "string",
+          "default": "HH:mm:ss",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The prefix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The suffix node of value",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Display title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Target time for countdown, or start time for countup (timestamp in ms)",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "valueStyle",
+          "desc": "Set value section style",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFinish",
+          "desc": "Trigger when time's up, only called when type is countdown",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when time's changing",
+          "type": "(value: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "slug": "button",
+  "title": "Button",
+  "group": "General",
+  "sections": [
+    {
+      "section": "Button",
+      "rows": [
+        {
+          "prop": "autoInsertSpace",
+          "desc": "We add a space between two Chinese characters by default, which removed by setting autoInsertSpace to false.",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "block",
+          "desc": "Option to fit button width to its parent width",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "Set button color",
+          "type": "default | primary | danger | PresetColors",
+          "default": "primary when variant=\"solid\"",
+          "version": "default, primary and danger: 5.21.0, PresetColors: 5.23.0, solid default color: 6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "danger",
+          "desc": "Syntactic sugar. Set the danger status of button. will follow color if provided",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disabled state of button",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "ghost",
+          "desc": "Make background transparent and invert text and border colors",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "href",
+          "desc": "Redirect url of link button",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "htmlType",
+          "desc": "Set the original html type of button, see: MDN",
+          "type": "submit | reset | button",
+          "default": "button",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Set the icon component of button",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "iconPlacement",
+          "desc": "Set the icon position of button",
+          "type": "start | end",
+          "default": "start",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "iconPosition",
+          "desc": "Set the icon position of button, please use iconPlacement instead",
+          "type": "start | end",
+          "default": "start",
+          "version": "5.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "loading",
+          "desc": "Set the loading status of button",
+          "type": "boolean | { delay: number, icon: ReactNode }",
+          "default": "false",
+          "version": "icon: 5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "loadingIcon",
+          "desc": "(Only supports global configuration) Set the loading icon of button",
+          "type": "ReactNode",
+          "default": "<LoadingOutlined />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Set the handler to handle click event",
+          "type": "(event: React.MouseEvent<HTMLElement, MouseEvent>) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "Can be used to set button shape",
+          "type": "default | circle | round",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of button",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "target",
+          "desc": "Same as target attribute of a, works when href is specified",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Syntactic sugar. Set button type. Will follow variant & color if provided",
+          "type": "primary | dashed | link | text | default",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Set button variant",
+          "type": "outlined | dashed | solid | filled | text | link",
+          "default": "-",
+          "version": "5.21.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

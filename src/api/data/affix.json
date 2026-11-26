@@ -1,0 +1,44 @@
+{
+  "slug": "affix",
+  "title": "Affix",
+  "group": "Other",
+  "sections": [
+    {
+      "section": "Affix",
+      "rows": [
+        {
+          "prop": "offsetBottom",
+          "desc": "Offset from the bottom of the viewport (in pixels)",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "offsetTop",
+          "desc": "Offset from the top of the viewport (in pixels)",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "target",
+          "desc": "Specifies the scrollable area DOM node",
+          "type": "() => Window | HTMLElement | null",
+          "default": "() => window",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback for when Affix state is changed",
+          "type": "(affixed?: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

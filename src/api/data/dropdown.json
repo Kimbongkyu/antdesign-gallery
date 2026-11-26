@@ -1,0 +1,148 @@
+{
+  "slug": "dropdown",
+  "title": "Dropdown",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Dropdown",
+      "rows": [
+        {
+          "prop": "arrow",
+          "desc": "Whether the dropdown arrow should be visible",
+          "type": "boolean | { pointAtCenter: boolean }",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "autoAdjustOverflow",
+          "desc": "Whether to adjust dropdown placement automatically when dropdown is off screen",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Dropdown component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether the dropdown menu is disabled",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyPopupOnHide",
+          "desc": "Whether destroy dropdown when hidden, use destroyOnHidden instead",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether destroy dropdown when hidden",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownRender",
+          "desc": "Customize dropdown content, use popupRender instead",
+          "type": "(menus: ReactNode) => ReactNode",
+          "default": "-",
+          "version": "4.24.0",
+          "deprecated": true
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize popup content",
+          "type": "(menus: ReactNode) => ReactNode",
+          "default": "-",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "To set the container of the dropdown menu. The default is to create a div element in body, but you can reset it to the scrolling area and make a relative reposition. Example on CodePen",
+          "type": "(triggerNode: HTMLElement) => HTMLElement",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "menu",
+          "desc": "The menu props",
+          "type": "MenuProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "overlayClassName",
+          "desc": "The class name of the dropdown root element, please use classNames.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "overlayStyle",
+          "desc": "The style of the dropdown root element, please use styles.root instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "placement",
+          "desc": "Placement of popup menu: top topLeft topRight bottom bottomLeft bottomRight left leftTop leftBottom right rightTop rightBottom",
+          "type": "string",
+          "default": "bottomLeft",
+          "version": "left leftTop leftBottom right rightTop rightBottom: 6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Dropdown component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "trigger",
+          "desc": "The trigger mode which executes the dropdown action. Note that hover can't be used on touchscreens",
+          "type": "Array&lt;click|hover|contextMenu>",
+          "default": "\\[hover]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether the dropdown menu is currently open",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Called when the open state is changed",
+          "type": "(open: boolean, info: { source: 'trigger' | 'menu' }) => void",
+          "default": "-",
+          "version": "info.source: 5.11.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

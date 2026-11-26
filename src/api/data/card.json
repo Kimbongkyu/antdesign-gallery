@@ -1,0 +1,214 @@
+{
+  "slug": "card",
+  "title": "Card",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Card",
+      "rows": [
+        {
+          "prop": "actions",
+          "desc": "The action list, shows at the bottom of the Card",
+          "type": "Array&lt;ReactNode>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "activeTabKey",
+          "desc": "Current TabPane's key",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Toggles rendering of the border around the card, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "bodyStyle",
+          "desc": "Style of card body, please use styles.body instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Card",
+          "type": "outlined | borderless",
+          "default": "outlined",
+          "version": "5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cover",
+          "desc": "Card cover",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultActiveTabKey",
+          "desc": "Initial active TabPane's key, if activeTabKey is not set",
+          "type": "string",
+          "default": "The key of first tab",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "Content to render in the top-right corner of the card",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hoverable",
+          "desc": "Lift up when hovering card",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "headStyle",
+          "desc": "Style of card head, please use styles.header instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "loading",
+          "desc": "Shows a loading indicator while the contents of the card are being fetched",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Size of card",
+          "type": "medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabBarExtraContent",
+          "desc": "Extra content in tab bar",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabList",
+          "desc": "List of TabPane's head",
+          "type": "TabItemType[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tabProps",
+          "desc": "Tabs",
+          "type": "-",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Card title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Card style type, can be set to inner or not set",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTabChange",
+          "desc": "Callback when tab is switched",
+          "type": "(key) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Card.Grid",
+      "rows": [
+        {
+          "prop": "hoverable",
+          "desc": "Lift up when hovering card grid",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Card.Meta",
+      "rows": [
+        {
+          "prop": "avatar",
+          "desc": "Avatar or icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "Description content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Title content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

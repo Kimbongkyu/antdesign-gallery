@@ -1,0 +1,132 @@
+{
+  "slug": "qr-code",
+  "title": "QRCode",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "QRCode",
+      "rows": [
+        {
+          "prop": "value",
+          "desc": "scanned text",
+          "type": "string | string[]",
+          "default": "-",
+          "version": "string[]: 5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "render type",
+          "type": "canvas | svg",
+          "default": "canvas",
+          "version": "5.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "include image url (only image link are supported)",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "QRCode size",
+          "type": "number",
+          "default": "160",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "iconSize",
+          "desc": "include image size",
+          "type": "number | { width: number; height: number }",
+          "default": "40",
+          "version": "5.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "QRCode Color",
+          "type": "string",
+          "default": "#000",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "bgColor",
+          "desc": "QRCode Background Color",
+          "type": "string",
+          "default": "transparent",
+          "version": "5.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "marginSize",
+          "desc": "Quiet zone size (in modules). 0 means no margin",
+          "type": "number",
+          "default": "0",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "errorLevel",
+          "desc": "Error Code Level",
+          "type": "'L' | 'M' | 'Q' | 'H'",
+          "default": "M",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "boostLevel",
+          "desc": "If enabled, the Error Correction Level of the result may be higher than the specified Error Correction Level",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "QRCode status",
+          "type": "active | expired | loading | scanned",
+          "default": "active",
+          "version": "scanned: 5.13.0",
+          "deprecated": false
+        },
+        {
+          "prop": "statusRender",
+          "desc": "custom status render",
+          "type": "(info: StatusRenderInfo) => React.ReactNode",
+          "default": "-",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

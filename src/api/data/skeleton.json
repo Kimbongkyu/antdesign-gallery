@@ -1,0 +1,181 @@
+{
+  "slug": "skeleton",
+  "title": "Skeleton",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Skeleton",
+      "rows": [
+        {
+          "prop": "active",
+          "desc": "Show animation effect",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "avatar",
+          "desc": "Show avatar placeholder",
+          "type": "boolean | SkeletonAvatar",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Display the skeleton when true",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "paragraph",
+          "desc": "Show paragraph placeholder",
+          "type": "boolean | SkeletonParagraphProps",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "round",
+          "desc": "Show paragraph and title radius when true",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Show title placeholder",
+          "type": "boolean | SkeletonTitleProps",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Skeleton",
+      "rows": [
+        {
+          "prop": "width",
+          "desc": "Set the width of title",
+          "type": "number | string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Skeleton",
+      "rows": [
+        {
+          "prop": "rows",
+          "desc": "Set the row count of paragraph",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Set the width of paragraph. When width is an Array, it can set the width of each row. Otherwise only set the last row width",
+          "type": "number | string | Array&lt;number | string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Skeleton.Avatar",
+      "rows": [
+        {
+          "prop": "active",
+          "desc": "Show animation effect, only valid when used avatar independently",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "Set the shape of avatar",
+          "type": "circle | square",
+          "default": "circle",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of avatar",
+          "type": "number | large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Skeleton.Button",
+      "rows": [
+        {
+          "prop": "active",
+          "desc": "Show animation effect",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "block",
+          "desc": "Option to fit button width to its parent width",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "Set the shape of button",
+          "type": "circle | round | square | default",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of button",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Skeleton.Input",
+      "rows": [
+        {
+          "prop": "active",
+          "desc": "Show animation effect",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of input",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "slug": "steps",
+  "title": "Steps",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Steps",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "current",
+          "desc": "To set the current step, counting from 0. You can overwrite this state by using status of Step",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "direction",
+          "desc": "To specify the direction of the step bar, horizontal or vertical",
+          "type": "string",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "iconRender",
+          "desc": "Custom render icon, please use items.icon first",
+          "type": "(oriNode, info: { index, active, item }) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "initial",
+          "desc": "Set the initial step, counting from 0",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "labelPlacement",
+          "desc": "Place title and content with horizontal or vertical direction",
+          "type": "string",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Maximum number of step items to display (>= 3). Hidden ranges are collapsed into disabled ellipsis steps.",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "To specify the orientation of the step bar, horizontal or vertical",
+          "type": "string",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "percent",
+          "desc": "Progress circle percentage of current step in process status (only works on basic Steps)",
+          "type": "number",
+          "default": "-",
+          "version": "4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "progressDot",
+          "desc": "Steps with progress dot style, customize the progress dot by setting it to a function. Please use type=\"dot\" instead. titlePlacement will be vertical",
+          "type": "boolean | (iconDot, { index, status, title, content }) => ReactNode",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "responsive",
+          "desc": "Change to vertical direction when screen width smaller than 532px",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "To specify the size of the step bar, medium and small are currently supported",
+          "type": "string",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "To specify the status of current step, can be set to one of the following values: wait process finish error",
+          "type": "string",
+          "default": "process",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "titlePlacement",
+          "desc": "Place title and content with horizontal or vertical direction",
+          "type": "string",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Type of steps, can be set to one of the following values: default dot inline navigation panel",
+          "type": "string",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Config style variant",
+          "type": "filled | outlined",
+          "default": "filled",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when Step is changed",
+          "type": "(current) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "StepItem content",
+          "type": "StepItem",
+          "default": "[]",
+          "version": "4.24.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "StepItem",
+      "rows": [
+        {
+          "prop": "content",
+          "desc": "Description of the step, optional property",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "Description of the step, optional property",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable click",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Icon of the step, optional property",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "To specify the status. It will be automatically set by current of Steps if not configured. Optional values are: wait process finish error",
+          "type": "string",
+          "default": "wait",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "subTitle",
+          "desc": "Subtitle of the step",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Title of the step",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

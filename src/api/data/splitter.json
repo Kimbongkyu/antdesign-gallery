@@ -1,0 +1,193 @@
+{
+  "slug": "splitter",
+  "title": "Splitter",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Splitter",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsible",
+          "desc": "motion to enable collapse animation, icon to customize collapse icons. Set aria-label on a custom icon to override the localized control name",
+          "type": "{ motion?: boolean; icon?: { start?: ReactNode; end?: ReactNode } }",
+          "default": "-",
+          "version": "6.4.0, aria-label: 6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "collapsibleIcon",
+          "desc": "custom collapsible icon",
+          "type": "{start?: ReactNode; end?: ReactNode}",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Destroy panel content when collapsed (size is 0). Applies to all panels, can be overridden per panel",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "draggerIcon",
+          "desc": "custom dragger icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "layout",
+          "desc": "Layout direction",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "lazy",
+          "desc": "Lazy mode",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onCollapse",
+          "desc": "Callback when expanding or collapsing",
+          "type": "(collapsed: boolean[], sizes: number[]) => void",
+          "default": "-",
+          "version": "5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "Orientation direction",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "vertical",
+          "desc": "Orientation. Simultaneously existing with orientation, orientation takes priority",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onDraggerDoubleClick",
+          "desc": "Callback triggered when the dragger is double-clicked",
+          "type": "(index: number) => void",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onResize",
+          "desc": "Panel size change callback",
+          "type": "(sizes: number[]) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onResizeEnd",
+          "desc": "Drag end callback",
+          "type": "(sizes: number[]) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onResizeStart",
+          "desc": "Callback before dragging starts",
+          "type": "(sizes: number[]) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Panel",
+      "rows": [
+        {
+          "prop": "collapsible",
+          "desc": "Quick folding",
+          "type": "boolean | { start?: boolean; end?: boolean; showCollapsibleIcon?: boolean | 'auto' }",
+          "default": "false",
+          "version": "showCollapsibleIcon: 5.27.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultSize",
+          "desc": "Initial panel size support number for px or 'percent%' usage",
+          "type": "number | string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Destroy panel content when collapsed (size is 0). Overrides Splitter's destroyOnHidden",
+          "type": "boolean",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "max",
+          "desc": "Maximum threshold support number for px or 'percent%' usage",
+          "type": "number | string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "min",
+          "desc": "Minimum threshold support number for px or 'percent%' usage",
+          "type": "number | string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "resizable",
+          "desc": "Whether to enable drag and drop",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Controlled panel size support number for px or 'percent%' usage",
+          "type": "number | string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

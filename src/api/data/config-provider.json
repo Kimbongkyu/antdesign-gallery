@@ -1,0 +1,206 @@
+{
+  "slug": "config-provider",
+  "title": "ConfigProvider",
+  "group": "Other",
+  "sections": [
+    {
+      "section": "ConfigProvider",
+      "rows": [
+        {
+          "prop": "componentDisabled",
+          "desc": "Config antd component disabled",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "componentSize",
+          "desc": "Config antd component size",
+          "type": "small | medium | large",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "csp",
+          "desc": "Set Content Security Policy config",
+          "type": "{ nonce: string }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "direction",
+          "desc": "Set direction of layout. See demo",
+          "type": "ltr | rtl",
+          "default": "ltr",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "To set the container of the popup element. The default is to create a div element in body",
+          "type": "(trigger?: HTMLElement) => HTMLElement | ShadowRoot",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getTargetContainer",
+          "desc": "Config Affix, Anchor scroll target container",
+          "type": "() => HTMLElement | Window | ShadowRoot",
+          "default": "() => window",
+          "version": "4.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "iconPrefixCls",
+          "desc": "Set icon prefix className",
+          "type": "string",
+          "default": "anticon",
+          "version": "4.11.0",
+          "deprecated": false
+        },
+        {
+          "prop": "locale",
+          "desc": "Language package setting, you can find the packages in antd/locale",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupMatchSelectWidth",
+          "desc": "Determine whether the dropdown menu and the select input are the same width. Default set min-width same as input. Will ignore when value less than select width. false will disable virtual scroll",
+          "type": "boolean | number",
+          "default": "-",
+          "version": "5.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "popupOverflow",
+          "desc": "Select like component popup logic. Can set to show in viewport or follow window scroll",
+          "type": "'viewport' | 'scroll' <InlinePopover previewURL=\"https://user-images.githubusercontent.com/5378891/230344474-5b9f7e09-0a5d-49e8-bae8-7d2abed6c837.png\"></InlinePopover>",
+          "default": "'viewport'",
+          "version": "5.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "prefixCls",
+          "desc": "Set prefix className",
+          "type": "string",
+          "default": "ant",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "renderEmpty",
+          "desc": "Set empty content of components. Ref Empty",
+          "type": "function(componentName: string): ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "theme",
+          "desc": "Set theme, ref Customize Theme",
+          "type": "Theme",
+          "default": "-",
+          "version": "5.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Set variant of data entry components",
+          "type": "outlined | filled | borderless",
+          "default": "-",
+          "version": "5.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "virtual",
+          "desc": "Disable virtual scroll when set to false",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "warning",
+          "desc": "Config warning level, when strict is false, it will aggregate deprecated information into a single message",
+          "type": "{ strict: boolean }",
+          "default": "-",
+          "version": "5.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "autoInsertSpaceInButton",
+          "desc": "Button auto spacing config, please use button={{ autoInsertSpace: boolean }} instead",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownMatchSelectWidth",
+          "desc": "Determine whether the dropdown menu and the select input are the same width, please use popupMatchSelectWidth instead",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "ConfigProvider.useConfig() <Badge>5.3.0+</Badge>",
+      "rows": [
+        {
+          "prop": "componentDisabled",
+          "desc": "antd component disabled state",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "componentSize",
+          "desc": "antd component size state",
+          "type": "small | medium | large",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "WaveConfig",
+      "rows": [
+        {
+          "prop": "disabled",
+          "desc": "Whether to disable wave effect",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showEffect",
+          "desc": "Customized wave effect",
+          "type": "(node: HTMLElement, info: { className, token, component }) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "triggerType",
+          "desc": "The event that triggers wave effect",
+          "type": "click | pointerdown | pointerup | mousedown | mouseup",
+          "default": "click",
+          "version": "6.4.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

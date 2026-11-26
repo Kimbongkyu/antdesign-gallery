@@ -1,0 +1,153 @@
+{
+  "slug": "avatar",
+  "title": "Avatar",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Avatar",
+      "rows": [
+        {
+          "prop": "alt",
+          "desc": "This attribute defines the alternative text describing the image",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gap",
+          "desc": "Letter type unit distance between left and right sides",
+          "type": "number",
+          "default": "4",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Custom icon type for an icon avatar",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "The shape of avatar",
+          "type": "circle | square",
+          "default": "circle",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the avatar",
+          "type": "number | large | medium | small | { xs: number, sm: number, ...}",
+          "default": "medium",
+          "version": "4.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "src",
+          "desc": "The address of the image for an image avatar or image element",
+          "type": "string | ReactNode",
+          "default": "-",
+          "version": "ReactNode: 4.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "srcSet",
+          "desc": "A list of sources to use for different screen resolutions",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "draggable",
+          "desc": "Whether the picture is allowed to be dragged",
+          "type": "boolean | 'true' | 'false'",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "crossOrigin",
+          "desc": "CORS settings attributes",
+          "type": "'anonymous' | 'use-credentials' | ''",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onError",
+          "desc": "Handler when img load error, return false to prevent default fallback behavior",
+          "type": "() => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Avatar.Group <Badge>4.5.0+</Badge>",
+      "rows": [
+        {
+          "prop": "max",
+          "desc": "Set maximum display related configurations",
+          "type": "{ count?: number; style?: CSSProperties; popover?: PopoverProps }",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Deprecated, please use max={{ count: number }}",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxPopoverPlacement",
+          "desc": "Deprecated, please use max={{ popover: PopoverProps }}",
+          "type": "top | bottom",
+          "default": "top",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxPopoverTrigger",
+          "desc": "Deprecated, please use max={{ popover: PopoverProps }}",
+          "type": "hover | focus | click",
+          "default": "hover",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxStyle",
+          "desc": "Deprecated, please use max={{ style: CSSProperties }}",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the avatar",
+          "type": "number | large | medium | small | { xs: number, sm: number, ...}",
+          "default": "medium",
+          "version": "4.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "shape",
+          "desc": "The shape of the avatar",
+          "type": "circle | square",
+          "default": "circle",
+          "version": "5.8.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

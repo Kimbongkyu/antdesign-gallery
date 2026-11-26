@@ -1,0 +1,288 @@
+{
+  "slug": "list",
+  "title": "List",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "List",
+      "rows": [
+        {
+          "prop": "bordered",
+          "desc": "Toggles rendering of the border around the list",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dataSource",
+          "desc": "DataSource array for list",
+          "type": "any\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "footer",
+          "desc": "List footer renderer",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "grid",
+          "desc": "The grid type of list. You can set grid to something like {gutter: 16, column: 4}",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "header",
+          "desc": "List header renderer",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "itemLayout",
+          "desc": "The layout of list",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Shows a loading indicator while the contents of the list are being fetched",
+          "type": "boolean | SpinProps (more)",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadMore",
+          "desc": "Shows a load more content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "locale",
+          "desc": "The i18n text including empty text",
+          "type": "object",
+          "default": "{emptyText: No Data}",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pagination",
+          "desc": "Pagination config, hide it by setting it to false",
+          "type": "boolean | object",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "renderItem",
+          "desc": "Customize list item when using dataSource",
+          "type": "(item: T, index: number) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rowKey",
+          "desc": "Item's unique value, could be an Item's key which holds a unique value of type React.Key or function that receives Item and returns a React.Key",
+          "type": "keyof T | (item: T) => React.Key",
+          "default": "\"key\"",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Size of list",
+          "type": "default | large | small",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "split",
+          "desc": "Toggles rendering of the split under the list item",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "pagination",
+      "rows": [
+        {
+          "prop": "position",
+          "desc": "The specify the position of Pagination",
+          "type": "top | bottom | both",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "align",
+          "desc": "The specify the alignment of Pagination",
+          "type": "start | center | end",
+          "default": "end",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "List grid props",
+      "rows": [
+        {
+          "prop": "column",
+          "desc": "The column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gutter",
+          "desc": "The spacing between grid",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xs",
+          "desc": "<576px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "sm",
+          "desc": "≥576px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "md",
+          "desc": "≥768px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "lg",
+          "desc": "≥992px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xl",
+          "desc": "≥1200px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xxl",
+          "desc": "≥1600px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xxxl",
+          "desc": "≥1920px column of grid",
+          "type": "number",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "List.Item",
+      "rows": [
+        {
+          "prop": "actions",
+          "desc": "The actions content of list item. If itemLayout is vertical, shows the content on bottom, otherwise shows content on the far right",
+          "type": "Array&lt;ReactNode>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Semantic structure className",
+          "type": "Record<actions | extra, string>",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "The extra content of list item. If itemLayout is vertical, shows the content on right, otherwise shows content on the far right",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Semantic DOM style",
+          "type": "Record<actions | extra, CSSProperties>",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "List.Item.Meta",
+      "rows": [
+        {
+          "prop": "avatar",
+          "desc": "The avatar of list item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "The description of list item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title of list item",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

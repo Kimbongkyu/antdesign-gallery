@@ -1,0 +1,462 @@
+{
+  "slug": "tree",
+  "title": "Tree",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Tree props",
+      "rows": [
+        {
+          "prop": "allowDrop",
+          "desc": "Whether to allow dropping on the node",
+          "type": "({ dropNode, dropPosition }) => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "autoExpandParent",
+          "desc": "Whether to automatically expand a parent treeNode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "blockNode",
+          "desc": "Whether treeNode fill remaining horizontal space",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "checkable",
+          "desc": "Add a Checkbox before the treeNodes",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "checkedKeys",
+          "desc": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other",
+          "type": "string\\[] | {checked: string\\[], halfChecked: string\\[]}",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "checkStrictly",
+          "desc": "Check treeNode precisely; parent treeNode and children treeNodes are not associated",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultCheckedKeys",
+          "desc": "Specifies the keys of the default checked treeNodes",
+          "type": "string\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultExpandAll",
+          "desc": "Whether to expand all treeNodes by default",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultExpandedKeys",
+          "desc": "Specify the keys of the default expanded treeNodes",
+          "type": "string\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultExpandParent",
+          "desc": "If auto expand parent treeNodes when init",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultSelectedKeys",
+          "desc": "Specifies the keys of the default selected treeNodes",
+          "type": "string\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether the tree is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "draggable",
+          "desc": "Specifies whether this Tree or the node is draggable. Use icon: false to disable drag handler icon",
+          "type": "boolean | ((node: DataNode) => boolean) | { icon?: React.ReactNode | false, nodeDraggable?: (node: DataNode) => boolean }",
+          "default": "false",
+          "version": "config: 4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "expandedKeys",
+          "desc": "(Controlled) Specifies the keys of the expanded treeNodes",
+          "type": "string\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fieldNames",
+          "desc": "Customize node title, key, children field name",
+          "type": "object",
+          "default": "{ title: title, key: key, children: children }",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "filterTreeNode",
+          "desc": "Defines a function to filter (highlight) treeNodes. When the function returns true, the corresponding treeNode will be highlighted",
+          "type": "function(node)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "height",
+          "desc": "A positive value sets the maximum height of the Tree's vertical scroll area with either virtual setting. The Tree grows with its content when height is omitted or 0.",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Insert a custom icon before the title. Need to set showIcon to true",
+          "type": "ReactNode | (props) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadData",
+          "desc": "Load data asynchronously",
+          "type": "function(node)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadedKeys",
+          "desc": "(Controlled) Set loaded tree nodes. Need to work with loadData",
+          "type": "string\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "motion",
+          "desc": "Custom motion config for the tree",
+          "type": "CSSMotionProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Allows selecting multiple treeNodes",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rootStyle",
+          "desc": "Style on the root element, please use styles.root instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "4.20.0",
+          "deprecated": true
+        },
+        {
+          "prop": "selectable",
+          "desc": "Whether it can be selected",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectedKeys",
+          "desc": "(Controlled) Specifies the keys of the selected treeNodes, multiple selection needs to set multiple to true",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showIcon",
+          "desc": "Controls whether to display the icon node (no default style)",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showLine",
+          "desc": "Shows a connecting line",
+          "type": "boolean | {showLeafIcon: ReactNode | ((props: AntTreeNodeProps) => ReactNode)}",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "switcherIcon",
+          "desc": "Customize expand/collapse icons for tree nodes (Will not rotate automatically in showLine mode)",
+          "type": "ReactNode | ((props: AntTreeNodeProps) => ReactNode)",
+          "default": "-",
+          "version": "renderProps: 4.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "switcherLoadingIcon",
+          "desc": "Customize loading icons for tree nodes",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "titleRender",
+          "desc": "Customize tree node title render",
+          "type": "(nodeData) => ReactNode",
+          "default": "-",
+          "version": "4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "treeData",
+          "desc": "The treeNodes data Array, if set it then you need not to construct children TreeNode. (key should be unique across the whole array)",
+          "type": "array&lt;{ key, title, children, \\[disabled, selectable] }>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "virtual",
+          "desc": "Whether to virtualize node rendering when height is positive",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onCheck",
+          "desc": "Callback function for when the onCheck event occurs",
+          "type": "function(checkedKeys, e:{checked: boolean, checkedNodes, node, event, halfCheckedKeys})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDoubleClick",
+          "desc": "Callback function for when the user double clicks a treeNode",
+          "type": "function(event, node)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDragEnd",
+          "desc": "Callback function for when the onDragEnd event occurs",
+          "type": "function({event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDragEnter",
+          "desc": "Callback function for when the onDragEnter event occurs",
+          "type": "function({event, node, expandedKeys})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDragLeave",
+          "desc": "Callback function for when the onDragLeave event occurs",
+          "type": "function({event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDragOver",
+          "desc": "Callback function for when the onDragOver event occurs",
+          "type": "function({event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDragStart",
+          "desc": "Callback function for when the onDragStart event occurs",
+          "type": "function({event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDrop",
+          "desc": "Callback function for when the onDrop event occurs",
+          "type": "function({event, node, dragNode, dragNodesKeys})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onExpand",
+          "desc": "Callback function for when a treeNode is expanded or collapsed",
+          "type": "function(expandedKeys, {expanded: boolean, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onLoad",
+          "desc": "Callback function for when a treeNode is loaded",
+          "type": "function(loadedKeys, {event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onRightClick",
+          "desc": "Callback function for when the user right clicks a treeNode",
+          "type": "function({event, node})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Callback function for when the user clicks a treeNode",
+          "type": "function(selectedKeys, e:{selected: boolean, selectedNodes, node, event})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "TreeNode props",
+      "rows": [
+        {
+          "prop": "checkable",
+          "desc": "When Tree is checkable, set TreeNode display Checkbox or not",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disableCheckbox",
+          "desc": "Disables the checkbox of the treeNode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disables the treeNode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Customize icon. When you pass component, whose render will receive full TreeNode props as component props",
+          "type": "ReactNode | (props) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isLeaf",
+          "desc": "Determines if this is a leaf node (effective when loadData is specified). false will force the TreeNode to be treated as a parent node",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Used with (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys. P.S.: It must be unique in all of treeNodes of the tree",
+          "type": "string",
+          "default": "(internal calculated position of treeNode)",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectable",
+          "desc": "Set whether the treeNode can be selected",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Title",
+          "type": "ReactNode",
+          "default": "---",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DirectoryTree props",
+      "rows": [
+        {
+          "prop": "expandAction",
+          "desc": "Directory opening logic, options: false | click | doubleClick",
+          "type": "string | boolean",
+          "default": "click",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

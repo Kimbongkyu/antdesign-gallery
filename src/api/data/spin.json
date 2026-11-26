@@ -1,0 +1,100 @@
+{
+  "slug": "spin",
+  "title": "Spin",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Spin",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "delay",
+          "desc": "Specifies a delay in milliseconds for loading state (prevent flush)",
+          "type": "number (milliseconds)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "Customize description content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "fullscreen",
+          "desc": "Display a backdrop with the Spin component",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.11.0",
+          "deprecated": false
+        },
+        {
+          "prop": "indicator",
+          "desc": "React node of the spinning indicator",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "percent",
+          "desc": "The progress percentage, when set to auto, it will be an indeterminate progress",
+          "type": "number | 'auto'",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of Spin, options: small, medium and large",
+          "type": "string",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "spinning",
+          "desc": "Whether Spin is visible",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tip",
+          "desc": "Customize description content when Spin has children. Deprecated, use description instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "wrapperClassName",
+          "desc": "The className of wrapper when Spin has children. Deprecated, use classNames.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    }
+  ]
+}

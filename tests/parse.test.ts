@@ -67,3 +67,10 @@ test('열이 적은 표(메서드)는 머리글 이름으로 맞춘다', () => {
     deprecated: false,
   });
 });
+
+test('## API 뒤의 2단계 API 제목(Form.Item 등)도 구역으로 이어 읽고, Design Token·FAQ 등에서 멈춘다', () => {
+  const form = parseApiMarkdown('form', read('form.en-US.md'));
+  const names = form.sections.map((s) => s.section);
+  expect(names).toEqual(expect.arrayContaining(['Form', 'Form.Item', 'Form.List', 'Form.Provider', 'FormInstance']));
+  expect(names.some((n) => /FAQ|Design Token|Semantic|faq/i.test(n))).toBe(false);
+});

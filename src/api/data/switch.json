@@ -1,0 +1,137 @@
+{
+  "slug": "switch",
+  "title": "Switch",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Switch",
+      "rows": [
+        {
+          "prop": "checked",
+          "desc": "Determine whether the Switch is checked",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "checkedChildren",
+          "desc": "The content to be shown when the state is checked",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultChecked",
+          "desc": "Whether to set the initial state",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Alias for defaultChecked",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.12.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable switch",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Loading state of switch",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the Switch, options: medium small",
+          "type": "'medium' | 'small'",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "unCheckedChildren",
+          "desc": "The content to be shown when the state is unchecked",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Alias for checked",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.12.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when the checked state is changing",
+          "type": "function(checked: boolean, event: Event)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Trigger when clicked",
+          "type": "function(checked: boolean, event: Event)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

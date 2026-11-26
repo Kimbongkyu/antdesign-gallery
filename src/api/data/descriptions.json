@@ -1,0 +1,145 @@
+{
+  "slug": "descriptions",
+  "title": "Descriptions",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Descriptions",
+      "rows": [
+        {
+          "prop": "bordered",
+          "desc": "Whether to display the border",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "colon",
+          "desc": "Change default props colon value of Descriptions.Item. Indicates whether the colon after the label is displayed",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "column",
+          "desc": "The number of DescriptionItems in a row, could be an object (like { xs: 8, sm: 16, md: 24}) or a number",
+          "type": "number | Partial<Record<Breakpoint, number>>",
+          "default": "3",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "contentStyle",
+          "desc": "Customize content style, Please use styles.content instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "4.10.0",
+          "deprecated": true
+        },
+        {
+          "prop": "extra",
+          "desc": "The action area of the description list, placed at the top-right",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Describe the contents of the list item",
+          "type": "DescriptionsItem[]",
+          "default": "-",
+          "version": "5.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "labelStyle",
+          "desc": "Customize label style, Please use styles.label instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "4.10.0",
+          "deprecated": true
+        },
+        {
+          "prop": "layout",
+          "desc": "Define description layout",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set the size of the list. Can be set to medium,small, or not filled",
+          "type": "large | medium | small",
+          "default": "large",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title of the description list, placed at the top",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "DescriptionItem",
+      "rows": [
+        {
+          "prop": "contentStyle",
+          "desc": "Customize content style, Please use styles.content instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": true
+        },
+        {
+          "prop": "label",
+          "desc": "The description of the content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "labelStyle",
+          "desc": "Customize label style, Please use styles.label instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": true
+        },
+        {
+          "prop": "span",
+          "desc": "The number of columns included(filled Fill the remaining part of the current row)",
+          "type": "number | filled | Screens",
+          "default": "1",
+          "version": "screens: 5.9.0, filled: 5.22.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

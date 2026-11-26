@@ -1,0 +1,419 @@
+{
+  "slug": "auto-complete",
+  "title": "AutoComplete",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "AutoComplete",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "backfill",
+          "desc": "If backfill selected item the input when using keyboard",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Customize input element",
+          "type": "HTMLInputElement | HTMLTextAreaElement | React.ReactElement&lt;InputProps>",
+          "default": "&lt;Input />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dataSource",
+          "desc": "Data source of autocomplete options, please use options instead",
+          "type": "DataSourceItemType[]",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "defaultActiveFirstOption",
+          "desc": "Whether active first option by default",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpen",
+          "desc": "Initial open state of dropdown",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Initial selected option",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether disabled select",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownClassName",
+          "desc": "The className of dropdown menu, please use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownMatchSelectWidth",
+          "desc": "Determine whether the dropdown menu and the input are the same width, please use popupMatchSelectWidth instead",
+          "type": "boolean | number",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownRender",
+          "desc": "Customize dropdown content, use popupRender instead",
+          "type": "(originNode: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "4.24.0",
+          "deprecated": true
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize dropdown content",
+          "type": "(originNode: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownStyle",
+          "desc": "The style of dropdown menu, use styles.popup.root instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "The className of dropdown menu, use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "4.23.0",
+          "deprecated": true
+        },
+        {
+          "prop": "popupMatchSelectWidth",
+          "desc": "Determine whether the dropdown menu and the select input are the same width. Default set min-width same as input. Will ignore when value less than select width. false will disable virtual scroll",
+          "type": "boolean | number",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filterOption",
+          "desc": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded",
+          "type": "boolean | function(inputValue, option)",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "Parent node of the dropdown. Default to body, if you encountered positioning problems during scroll, try changing to the scrollable area and position relative to it. Example",
+          "type": "function(triggerNode)",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "notFoundContent",
+          "desc": "Specify content to show when no result matches",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Controlled open state of dropdown",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "Select options. Will get better perf than jsx definition",
+          "type": "{ label, value }\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "The placeholder of input",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showSearch",
+          "desc": "search for configuration",
+          "type": "true | Object",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the input box",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The custom suffix",
+          "type": "ReactNode | (props) => ReactNode",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "suffixIcon",
+          "desc": "The custom suffix icon. Please use suffix instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "value",
+          "desc": "Selected option",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0",
+          "deprecated": false
+        },
+        {
+          "prop": "virtual",
+          "desc": "Disable virtual scroll when set to false",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onBlur",
+          "desc": "Called when leaving the component",
+          "type": "function()",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Called when selecting an option or changing an input value",
+          "type": "function(value)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDropdownVisibleChange",
+          "desc": "Called when dropdown open, use onOpenChange instead",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Called when dropdown open",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFocus",
+          "desc": "Called when entering the component",
+          "type": "function()",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "Called when searching items",
+          "type": "function(value)",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Called when a option is selected. param is option's value and option instance",
+          "type": "function(value, option)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Called when clear",
+          "type": "function",
+          "default": "-",
+          "version": "4.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onInputKeyDown",
+          "desc": "Called when key pressed",
+          "type": "(event: KeyboardEvent) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPopupScroll",
+          "desc": "Called when dropdown scrolls",
+          "type": "(event: UIEvent) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "showSearch",
+      "rows": [
+        {
+          "prop": "filterOption",
+          "desc": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded",
+          "type": "boolean | function(inputValue, option)",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "Called when searching items",
+          "type": "function(value)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "popover",
+  "title": "Popover",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Popover",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "content",
+          "desc": "Content of the card",
+          "type": "ReactNode | () => ReactNode",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Title of the card",
+          "type": "ReactNode | () => ReactNode",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

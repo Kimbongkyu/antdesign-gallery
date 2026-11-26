@@ -1,0 +1,905 @@
+{
+  "slug": "form",
+  "title": "Form",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Form",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "colon",
+          "desc": "Configure the default value of colon for Form.Item. Indicates whether the colon after the label is displayed (only effective when prop layout is horizontal)",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Set form component disable, only available for antd components",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "component",
+          "desc": "Set the Form rendering element. Do not create a DOM node for false",
+          "type": "ComponentType | false",
+          "default": "form",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fields",
+          "desc": "Control of form fields through state management (such as redux). Not recommended for non-strong demand. View example",
+          "type": "FieldData\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "form",
+          "desc": "Form control instance created by Form.useForm(). Automatically created when not provided",
+          "type": "FormInstance",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "feedbackIcons",
+          "desc": "Can be passed custom icons while Form.Item element has hasFeedback",
+          "type": "FeedbackIcons",
+          "default": "-",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "initialValues",
+          "desc": "Set value by Form initialization or reset",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "labelAlign",
+          "desc": "Label text alignment",
+          "type": "start | end",
+          "default": "end",
+          "version": "6.7.0: left → start, right → end",
+          "deprecated": false
+        },
+        {
+          "prop": "labelWrap",
+          "desc": "whether label can be wrap",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "labelCol",
+          "desc": "Label layout, like <Col> component. Set span offset value like {span: 3, offset: 12} or sm: {span: 3, offset: 12}",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "layout",
+          "desc": "Form layout. By default, horizontal stacks labels above controls when the viewport width is 575px or less. Use the xs settings in labelCol and wrapperCol to customize column widths on narrow screens",
+          "type": "horizontal | vertical | inline",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "Form name. Will be the prefix of Field id",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "preserve",
+          "desc": "Keep field value even when field removed. You can get the preserve field value by getFieldsValue(true)",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "requiredMark",
+          "desc": "Required mark style. Can use required mark or optional mark. You can not config to single Form.Item since this is a Form level config",
+          "type": "boolean | optional | ((label: ReactNode, info: { required: boolean }) => ReactNode)",
+          "default": "true",
+          "version": "renderProps: 5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollToFirstError",
+          "desc": "Auto scroll to first failed field when submit",
+          "type": "boolean | Options | { focus: boolean }",
+          "default": "false",
+          "version": "focus: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set field component size (antd components only)",
+          "type": "small | medium | large",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tooltip",
+          "desc": "Config tooltip props",
+          "type": "TooltipProps & { icon?: ReactNode }",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "validateMessages",
+          "desc": "Validation prompt template, description see below",
+          "type": "ValidateMessages",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validateTrigger",
+          "desc": "Config field validate trigger",
+          "type": "string | string\\[]",
+          "default": "onChange",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variant of components inside form",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "wrapperCol",
+          "desc": "The layout for input controls, same as labelCol",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFieldsChange",
+          "desc": "Trigger when field updated",
+          "type": "function(changedFields, allFields)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFinish",
+          "desc": "Trigger after submitting the form and verifying data successfully",
+          "type": "function(values)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFinishFailed",
+          "desc": "Trigger after submitting the form and verifying data failed",
+          "type": "function({ values, errorFields, outOfDate })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onValuesChange",
+          "desc": "Trigger when value updated",
+          "type": "function(changedValues, allValues)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "clearOnDestroy",
+          "desc": "Clear form values when the form is unmounted",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Form.Item",
+      "rows": [
+        {
+          "prop": "colon",
+          "desc": "Used with label, whether to display : after label text.",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dependencies",
+          "desc": "Set the dependency field. See below",
+          "type": "NamePath\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "extra",
+          "desc": "The extra prompt message. It is similar to help. Usage example: to display error message and prompt message at the same time",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getValueFromEvent",
+          "desc": "Specify how to get value from event or other onChange arguments",
+          "type": "(..args: any\\[]) => any",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getValueProps",
+          "desc": "Additional props with sub component (It's not recommended to generate dynamic function prop by getValueProps. Please pass it to child component directly)",
+          "type": "(value: any) => Record<string, any>",
+          "default": "-",
+          "version": "4.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "hasFeedback",
+          "desc": "Used with validateStatus, this option specifies the validation status icon. Recommended to be used only with Input. Also, It can get feedback icons via icons prop.",
+          "type": "boolean | { icons: FeedbackIcons }",
+          "default": "false",
+          "version": "icons: 5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "help",
+          "desc": "The prompt message. If not provided, the prompt message will be generated by the validation rule.",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hidden",
+          "desc": "Whether to hide Form.Item (still collect and validate value)",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "htmlFor",
+          "desc": "Set sub label htmlFor",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "initialValue",
+          "desc": "Config sub default value. Form initialValues get higher priority when conflict",
+          "type": "string",
+          "default": "-",
+          "version": "4.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Label text. When there is no need for a label but it needs to be aligned with a colon, it can be set to null",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "null: 5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "labelAlign",
+          "desc": "Label text alignment",
+          "type": "start | end",
+          "default": "end",
+          "version": "6.7.0: left → start, right → end",
+          "deprecated": false
+        },
+        {
+          "prop": "labelCol",
+          "desc": "The layout of label. You can set span offset to something like {span: 3, offset: 12} or sm: {span: 3, offset: 12} same as with <Col>. You can set labelCol on Form which will not affect nest Item. If both exists, use Item first",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "messageVariables",
+          "desc": "The default validate field info, description see below",
+          "type": "Record&lt;string, string>",
+          "default": "-",
+          "version": "4.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "Field name, support array",
+          "type": "NamePath",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "normalize",
+          "desc": "Normalize value from component value before passing to Form instance. Do not support async",
+          "type": "(value, prevValue, prevValues) => any",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "noStyle",
+          "desc": "No style for true, used as a pure field control. Will inherit parent Form.Item validateStatus if self validateStatus not configured, unless the field has its own errors or warnings or is validating",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "preserve",
+          "desc": "Keep field value even when field removed",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "required",
+          "desc": "Display required style. When not set, it will be generated by the validation rule. Set it to false to disable the style.",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rules",
+          "desc": "Rules for field validation. Click here to see an example",
+          "type": "Rule\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "shouldUpdate",
+          "desc": "Custom field update logic. See below",
+          "type": "boolean | (prevValue, curValue) => boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "tooltip",
+          "desc": "Config tooltip content",
+          "type": "ReactNode | (TooltipProps & { icon?: ReactNode })",
+          "default": "-",
+          "version": "4.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "trigger",
+          "desc": "When to collect the value of children node. Click here to see an example",
+          "type": "string",
+          "default": "onChange",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validateDebounce",
+          "desc": "Delay milliseconds to start validation",
+          "type": "number",
+          "default": "-",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "validateFirst",
+          "desc": "Whether stop validate on first rule of error for this field. Will parallel validate when parallel configured",
+          "type": "boolean | parallel",
+          "default": "false",
+          "version": "parallel: 4.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "validateStatus",
+          "desc": "The validation status. If not provided, it will be generated by validation rule. options: success warning error validating",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validateTrigger",
+          "desc": "When to validate the value of children node",
+          "type": "string | string\\[]",
+          "default": "onChange",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "valuePropName",
+          "desc": "Props of children node, for example, the prop of Switch or Checkbox is checked. This prop is an encapsulation of getValueProps, which will be invalid after customizing getValueProps",
+          "type": "string",
+          "default": "value",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "wrapperCol",
+          "desc": "The layout for input controls, same as labelCol. You can set wrapperCol on Form which will not affect nest Item. If both exists, use Item first",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "layout",
+          "desc": "Form item layout",
+          "type": "horizontal | vertical",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Form.List",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Render function",
+          "type": "(fields: Field\\[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "initialValue",
+          "desc": "Config sub default value. Form initialValues get higher priority when conflict",
+          "type": "any\\[]",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "Field name, support array. List is also a field, so it will return all the values by getFieldsValue. You can change this logic by config",
+          "type": "NamePath",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rules",
+          "desc": "Validate rules, only support customize validator. Should work with ErrorList",
+          "type": "{ validator, message }\\[]",
+          "default": "-",
+          "version": "4.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "operation",
+      "rows": [
+        {
+          "prop": "add",
+          "desc": "add form item",
+          "type": "(defaultValue?: any, insertIndex?: number) => void",
+          "default": "insertIndex",
+          "version": "4.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "move",
+          "desc": "move form item",
+          "type": "(from: number, to: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "remove",
+          "desc": "remove form item",
+          "type": "(index: number | number\\[]) => void",
+          "default": "number\\[]",
+          "version": "4.5.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Form.ErrorList",
+      "rows": [
+        {
+          "prop": "errors",
+          "desc": "Error list",
+          "type": "ReactNode\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Form.Provider",
+      "rows": [
+        {
+          "prop": "onFormChange",
+          "desc": "Triggered when a sub form field updates",
+          "type": "function(formName: string, info: { changedFields, forms })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFormFinish",
+          "desc": "Triggered when a sub form submits",
+          "type": "function(formName: string, info: { values, forms })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "FormInstance",
+      "rows": [
+        {
+          "prop": "getFieldError",
+          "desc": "Get the error messages by the field name",
+          "type": "(name: NamePath) => string\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getFieldInstance",
+          "desc": "Get field instance",
+          "type": "(name: NamePath) => any",
+          "default": "",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getFieldsError",
+          "desc": "Get the error messages by the fields name. Return as an array",
+          "type": "(nameList?: NamePath\\[]) => FieldError\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getFieldsValue",
+          "desc": "Get values by a set of field names. Return according to the corresponding structure. Default return mounted field value, but you can use getFieldsValue(true) to get all values",
+          "type": "GetFieldsValue",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getFieldValue",
+          "desc": "Get the value by the field name",
+          "type": "(name: NamePath) => any",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isFieldsTouched",
+          "desc": "Check if fields have been operated. Check if all fields is touched when allTouched is true",
+          "type": "(nameList?: NamePath\\[], allTouched?: boolean) => boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isFieldTouched",
+          "desc": "Check if a field has been operated",
+          "type": "(name: NamePath) => boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isFieldValidating",
+          "desc": "Check field if is in validating",
+          "type": "(name: NamePath) => boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "resetFields",
+          "desc": "Reset fields to initialValues",
+          "type": "(fields?: NamePath\\[]) => void",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollToField",
+          "desc": "Scroll to field position",
+          "type": "(name: NamePath, options: ScrollOptions | { focus: boolean }) => void",
+          "default": "",
+          "version": "focus: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "setFields",
+          "desc": "Set fields status",
+          "type": "(fields: FieldData\\[]) => void",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "setFieldValue",
+          "desc": "Set fields value(Will directly pass to form store and **reset validation message**. If you do not want to modify passed object, please clone first)",
+          "type": "(name: NamePath, value: any) => void",
+          "default": "",
+          "version": "4.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "setFieldsValue",
+          "desc": "Set fields value(Will directly pass to form store and **reset validation message**. If you do not want to modify passed object, please clone first). Use setFieldValue instead if you want to only config single value in Form.List",
+          "type": "(values) => void",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "submit",
+          "desc": "Submit the form. It's the same as clicking the submit button",
+          "type": "() => void",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validateFields",
+          "desc": "Validate fields. Use recursive to validate all the field in the path",
+          "type": "(nameList?: NamePath\\[], config?: ValidateConfig) => Promise",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "FieldData",
+      "rows": [
+        {
+          "prop": "errors",
+          "desc": "Error messages",
+          "type": "string\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "warnings",
+          "desc": "Warning messages",
+          "type": "string\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "Field name path",
+          "type": "NamePath\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "touched",
+          "desc": "Whether is operated",
+          "type": "boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validating",
+          "desc": "Whether is in validating",
+          "type": "boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Field value",
+          "type": "any",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Rule",
+      "rows": [
+        {
+          "prop": "defaultField",
+          "desc": "Validate rule for all array elements, valid when type is array",
+          "type": "rule",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "enum",
+          "desc": "Match enum value. You need to set type to enum to enable this",
+          "type": "any\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fields",
+          "desc": "Validate rule for child elements, valid when type is array or object",
+          "type": "Record&lt;string, rule>",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "len",
+          "desc": "Length of string, number, array",
+          "type": "number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "max",
+          "desc": "type required: max length of string, number, array",
+          "type": "number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "message",
+          "desc": "Error message. Will auto generate by template if not provided",
+          "type": "string | ReactElement",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "min",
+          "desc": "type required: min length of string, number, array",
+          "type": "number",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pattern",
+          "desc": "Regex pattern",
+          "type": "RegExp",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "required",
+          "desc": "Required field",
+          "type": "boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "transform",
+          "desc": "Transform value to the rule before validation",
+          "type": "(value) => any",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Normally string |number |boolean |url | email | tel. More type to ref here",
+          "type": "string",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validateTrigger",
+          "desc": "Set validate trigger event. Must be the sub set of validateTrigger in Form.Item",
+          "type": "string | string\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validator",
+          "desc": "Customize validation rule. Accept Promise as return. See example",
+          "type": "(rule, value) => Promise",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "warningOnly",
+          "desc": "Warning only. Not block form submit",
+          "type": "boolean",
+          "default": "",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "whitespace",
+          "desc": "Failed if only has whitespace, only work with type: 'string' rule",
+          "type": "boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "WatchOptions",
+      "rows": [
+        {
+          "prop": "form",
+          "desc": "Form instance",
+          "type": "FormInstance",
+          "default": "Current form in context",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "preserve",
+          "desc": "Whether to watch the field which has no matched Form.Item",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.4.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

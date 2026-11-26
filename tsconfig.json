@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
-    "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom/vitest"]
+    "types": ["node", "vite/client", "vitest/globals", "@testing-library/jest-dom/vitest"]
   },
   "include": ["src", "tests", "vite.config.ts", "vitest.config.ts"]
 }

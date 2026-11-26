@@ -1,0 +1,395 @@
+{
+  "slug": "time-picker",
+  "title": "TimePicker",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "TimePicker",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "addon",
+          "desc": "Called from time picker panel to render an addon to its bottom, please use renderExtraFooter instead",
+          "type": "() => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "cellRender",
+          "desc": "Custom rendering function for picker cells",
+          "type": "(current: number, info: { originNode: React.ReactElement, today: dayjs, range?: 'start' | 'end', subType: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "changeOnScroll",
+          "desc": "Trigger selection when scroll the column",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "components",
+          "desc": "Custom panels, input, and footer buttons. See DatePicker Components",
+          "type": "Components",
+          "default": "-",
+          "version": "nowButton and okButton: 6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "To set default time",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Determine whether the TimePicker is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledTime",
+          "desc": "To specify the time that cannot be selected",
+          "type": "DisabledTime",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "To set the time format",
+          "type": "string",
+          "default": "HH:mm:ss",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "To set the container of the floating layer, while the default is to create a div element in body",
+          "type": "function(trigger)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hideDisabledOptions",
+          "desc": "Whether hide the options that can not be selected",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hourStep",
+          "desc": "Interval between hours in picker",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "inputReadOnly",
+          "desc": "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "minuteStep",
+          "desc": "Interval between minutes in picker",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "needConfirm",
+          "desc": "Need click confirm button to trigger value change",
+          "type": "boolean",
+          "default": "-",
+          "version": "5.14.0",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether to popup panel",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "Display when there's no value",
+          "type": "string | \\[string, string]",
+          "default": "Select a time",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "The position where the selection box pops up",
+          "type": "bottomLeft bottomRight topLeft topRight",
+          "default": "bottomLeft",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "The className of panel, please use classNames.popup instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "popupStyle",
+          "desc": "The style of panel, please use styles.popup instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "prefix",
+          "desc": "The custom prefix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "previewValue",
+          "desc": "When the user selects the time hover option, the value of the input field undergoes a temporary change",
+          "type": "false | hover",
+          "default": "hover",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "renderExtraFooter",
+          "desc": "Called from time picker panel to render some addon to its bottom",
+          "type": "() => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "secondStep",
+          "desc": "Interval between seconds in picker",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showNow",
+          "desc": "Whether to show Now button on panel",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "To determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning' | 'success' | 'validating'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The custom suffix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "suffixIcon",
+          "desc": "The custom suffix icon, please use suffix instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "use12Hours",
+          "desc": "Display as 12 hours format, with default format h:mm:ss a",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set time",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of picker",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onCalendarChange",
+          "desc": "Callback function, can be executed when the start time or the end time of the range is changing. info argument is added in 4.4.0",
+          "type": "function(dates: \\[dayjs, dayjs], dateStrings: \\[string, string], info: { range:start|end })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "A callback function, can be executed when the selected time is changing",
+          "type": "function(time: dayjs, timeString: string): void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Callback when click the clear button",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "A callback function which will be called while panel opening/closing",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RangePicker",
+      "rows": [
+        {
+          "prop": "disabledTime",
+          "desc": "To specify the time that cannot be selected",
+          "type": "RangeDisabledTime",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "order",
+          "desc": "Order start and end time",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.1.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

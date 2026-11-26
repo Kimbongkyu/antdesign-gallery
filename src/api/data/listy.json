@@ -1,0 +1,179 @@
+{
+  "slug": "listy",
+  "title": "Listy",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Listy",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "group",
+          "desc": "Grouping config, see Group below",
+          "type": "Group<T, K>",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "height",
+          "desc": "Height of the scroll container; content scrolls when it overflows",
+          "type": "number",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "itemRender",
+          "desc": "Render a single row",
+          "type": "(item: T, index: number) => ReactNode",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Data source of the list",
+          "type": "T[]",
+          "default": "[]",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rowHoverable",
+          "desc": "Whether rows are hoverable",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rowKey",
+          "desc": "Unique key of an item, a field name or a getter",
+          "type": "keyof T | (item: T, index: number) => Key",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollWidth",
+          "desc": "Horizontal scroll width of the content; scrolls horizontally when it exceeds the container, only works with virtual",
+          "type": "number",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "sticky",
+          "desc": "Whether group headers stick to the top",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "virtual",
+          "desc": "Whether to enable virtual scrolling, rendering only rows in view, requires height",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onScroll",
+          "desc": "Native scroll event handler",
+          "type": "React.UIEventHandler<HTMLElement>",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Group",
+      "rows": [
+        {
+          "prop": "key",
+          "desc": "Compute the group key an item belongs to; items with the same key are grouped together",
+          "type": "(item: T) => K",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Render the group header; receives the group key and its items",
+          "type": "(groupKey: K, items: T[]) => ReactNode",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Ref",
+      "rows": [
+        {
+          "prop": "scrollTo",
+          "desc": "Scroll to a position, an item, or a group",
+          "type": "(config?: ListyScrollToConfig) => void",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Ref",
+      "rows": [
+        {
+          "prop": "number",
+          "desc": "Scroll to a pixel offset (scrollTop)",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "{ top?, left? }",
+          "desc": "Scroll to an absolute pixel position",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "{ key, align?, offset? }",
+          "desc": "Scroll to the item whose rowKey matches key",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "{ groupKey, align?, offset? }",
+          "desc": "Scroll to a group header",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

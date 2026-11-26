@@ -1,0 +1,227 @@
+{
+  "slug": "progress",
+  "title": "Progress",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Progress",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "format",
+          "desc": "The template function of the content",
+          "type": "function(percent, successPercent)",
+          "default": "(percent) => percent + %",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "percent",
+          "desc": "To set the completion percentage",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "railColor",
+          "desc": "The color of unfilled part",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showInfo",
+          "desc": "Whether to display the progress value and the status icon",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "To set the status of the Progress, options: success exception normal active(line only)",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "strokeColor",
+          "desc": "The color of progress bar",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "strokeLinecap",
+          "desc": "To set the style of the progress linecap",
+          "type": "round | butt | square, see stroke-linecap",
+          "default": "round",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "success",
+          "desc": "Configs of successfully progress bar",
+          "type": "{ percent: number, strokeColor: string }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "trailColor",
+          "desc": "The color of unfilled part. Please use railColor instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "type",
+          "desc": "To set the type, options: line circle dashboard",
+          "type": "string",
+          "default": "line",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Progress size",
+          "type": "number | \\[number | string, number] | { width: number, height: number } | \"small\" | \"medium\"",
+          "default": "\"medium\"",
+          "version": "5.3.0, Object: 5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "`type=\"line\"`",
+      "rows": [
+        {
+          "prop": "steps",
+          "desc": "The total step count",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rounding",
+          "desc": "The function to round the value",
+          "type": "(step: number) => number",
+          "default": "Math.round",
+          "version": "5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "strokeColor",
+          "desc": "The color of progress bar, render linear-gradient when passing an object, could accept string[] when has steps.",
+          "type": "string | string[] | { from: string; to: string; direction: string }",
+          "default": "-",
+          "version": "4.21.0: string[]",
+          "deprecated": false
+        },
+        {
+          "prop": "percentPosition",
+          "desc": "Progress value position, passed in object, align indicates the horizontal position of the value, type indicates whether the value is inside or outside the progress bar",
+          "type": "{ align: string; type: string }",
+          "default": "{ align: \\\"end\\\", type: \\\"outer\\\" }",
+          "version": "5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "`type=\"circle\"`",
+      "rows": [
+        {
+          "prop": "steps",
+          "desc": "The total step count. When passing an object, count refers to the number of steps, and gap refers to the distance between them. When passing a number, the default value for gap is 2.",
+          "type": "number | { count: number, gap: number }",
+          "default": "-",
+          "version": "5.16.0",
+          "deprecated": false
+        },
+        {
+          "prop": "strokeColor",
+          "desc": "The color of circular progress, render gradient when passing an object",
+          "type": "string | { number%: string }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "strokeWidth",
+          "desc": "To set the width of the circular progress, unit: percentage of the canvas width",
+          "type": "number",
+          "default": "6",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "`type=\"dashboard\"`",
+      "rows": [
+        {
+          "prop": "steps",
+          "desc": "The total step count. When passing an object, count refers to the number of steps, and gap refers to the distance between them. When passing a number, the default value for gap is 2.",
+          "type": "number | { count: number, gap: number }",
+          "default": "-",
+          "version": "5.16.0",
+          "deprecated": false
+        },
+        {
+          "prop": "gapDegree",
+          "desc": "The gap degree of half circle, 0 ~ 295",
+          "type": "number",
+          "default": "75",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gapPlacement",
+          "desc": "The gap placement, options: top bottom start end",
+          "type": "string",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gapPosition",
+          "desc": "The gap position, options: top bottom left right, please use gapPlacement instead",
+          "type": "string",
+          "default": "bottom",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "strokeWidth",
+          "desc": "To set the width of the dashboard progress, unit: percentage of the canvas width",
+          "type": "number",
+          "default": "6",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

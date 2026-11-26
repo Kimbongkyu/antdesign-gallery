@@ -1,0 +1,329 @@
+{
+  "slug": "drawer",
+  "title": "Drawer",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Drawer",
+      "rows": [
+        {
+          "prop": "afterOpenChange",
+          "desc": "Callback after the animation ends when switching drawers",
+          "type": "function(open)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bodyStyle",
+          "desc": "Style of the drawer body, please use styles.body instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "className",
+          "desc": "Config Drawer Panel className. Use rootClassName if want to config top DOM style",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Drawer component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether to show a close button. The position can be configured with placement",
+          "type": "boolean | { closeIcon?: React.ReactNode; disabled?: boolean; placement?: 'start' | 'end' }",
+          "default": "true",
+          "version": "placement: 5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "contentWrapperStyle",
+          "desc": "Style of the drawer wrapper, please use styles.wrapper instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnClose",
+          "desc": "Whether to unmount child components on closing drawer or not, please use destroyOnHidden instead",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether to unmount child components on closing drawer or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "drawerStyle",
+          "desc": "Style of the drawer panel, please use styles.section instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "extra",
+          "desc": "Extra actions area at corner",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "footer",
+          "desc": "The footer for Drawer",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "footerStyle",
+          "desc": "Style of the drawer footer, please use styles.footer instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Pre-render Drawer component forcibly",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focusable",
+          "desc": "Configuration for focus management in the Drawer",
+          "type": "{ trap?: boolean, focusTriggerAfterClose?: boolean }",
+          "default": "-",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "mounted node and display window for Drawer",
+          "type": "HTMLElement | () => HTMLElement | Selectors | false",
+          "default": "body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "headerStyle",
+          "desc": "Style of the drawer header part, please use styles.header instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "height",
+          "desc": "Placement is top or bottom, height of the Drawer dialog, please use size instead",
+          "type": "string | number",
+          "default": "378",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "keyboard",
+          "desc": "Whether support press esc to close",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Show the Skeleton",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Mask effect",
+          "type": "boolean | { enabled?: boolean, blur?: boolean, closable?: boolean }",
+          "default": "true",
+          "version": "mask.closable: 6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maskClosable",
+          "desc": "Clicking on the mask (area outside the Drawer) to close the Drawer or not",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maskStyle",
+          "desc": "Style of the drawer mask, please use styles.mask instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxSize",
+          "desc": "Maximum size (width or height depending on placement) when resizable",
+          "type": "number",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether the Drawer dialog is visible or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "The placement of the Drawer",
+          "type": "top | right | bottom | left",
+          "default": "right",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "push",
+          "desc": "Nested drawers push behavior",
+          "type": "boolean | { distance: string | number }",
+          "default": "{ distance: 180 }",
+          "version": "4.5.0+",
+          "deprecated": false
+        },
+        {
+          "prop": "resizable",
+          "desc": "Enable resizable by dragging",
+          "type": "boolean | ResizableConfig",
+          "default": "-",
+          "version": "boolean: 6.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rootStyle",
+          "desc": "Style of wrapper element which **contains mask** compare to style",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "preset size of drawer, default 378px and large 736px, or a custom number",
+          "type": "'default' | 'large' | number | string",
+          "default": "'default'",
+          "version": "4.17.0, string: 6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "Style of Drawer panel. Use styles.body if want to config body only",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Drawer component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title for Drawer",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Width of the Drawer dialog, please use size instead",
+          "type": "string | number",
+          "default": "378",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "zIndex",
+          "desc": "The z-index of the Drawer",
+          "type": "number",
+          "default": "1000",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Specify a callback that will be called when a user clicks mask, close button or Cancel button",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "drawerRender",
+          "desc": "Custom drawer content render",
+          "type": "(node: ReactNode) => ReactNode",
+          "default": "-",
+          "version": "5.18.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ResizableConfig",
+      "rows": [
+        {
+          "prop": "onResizeStart",
+          "desc": "Callback when resize starts",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onResize",
+          "desc": "Callback during resizing",
+          "type": "(size: number) => void",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onResizeEnd",
+          "desc": "Callback when resize ends",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

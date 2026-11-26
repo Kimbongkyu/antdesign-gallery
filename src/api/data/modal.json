@@ -1,0 +1,542 @@
+{
+  "slug": "modal",
+  "title": "Modal",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Modal",
+      "rows": [
+        {
+          "prop": "afterClose",
+          "desc": "Specify a function that will be called when modal is closed completely",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cancelButtonProps",
+          "desc": "The cancel button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cancelText",
+          "desc": "Text of the Cancel button",
+          "type": "ReactNode",
+          "default": "Cancel",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "centered",
+          "desc": "Centered Modal",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the Modal component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether a close (x) button is visible on top right or not",
+          "type": "boolean | ClosableType",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon. 5.7.0: close button will be hidden when setting to null or false",
+          "type": "ReactNode",
+          "default": "&lt;CloseOutlined />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "confirmLoading",
+          "desc": "Whether to apply loading visual effect for OK button or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyOnClose",
+          "desc": "Whether to unmount child components on onClose",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "destroyOnHidden",
+          "desc": "Whether to unmount child components on onClose",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "focusTriggerAfterClose",
+          "desc": "Whether need to focus trigger element after dialog is closed. Please use focusable.focusTriggerAfterClose instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.9.0",
+          "deprecated": true
+        },
+        {
+          "prop": "footer",
+          "desc": "Footer content, set as footer={null} when you don't need default buttons",
+          "type": "ReactNode | (originNode: ReactNode, extra: { OkBtn: React.FC, CancelBtn: React.FC }) => ReactNode",
+          "default": "(OK and Cancel buttons)",
+          "version": "renderFunction: 5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Force render Modal",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focusable",
+          "desc": "Configuration for focus management in the Modal",
+          "type": "{ trap?: boolean, focusTriggerAfterClose?: boolean }",
+          "default": "-",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "The mounted node for Modal but still display at fullscreen",
+          "type": "HTMLElement | () => HTMLElement | Selectors | false",
+          "default": "document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "keyboard",
+          "desc": "Whether support press esc to close",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Mask effect",
+          "type": "boolean | {enabled?: boolean, blur?: boolean, closable?: boolean}",
+          "default": "true",
+          "version": "mask.closable: 6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maskClosable",
+          "desc": "Whether to close the modal dialog when the mask (area outside the modal) is clicked. Please use mask.closable instead.",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "modalRender",
+          "desc": "Custom modal content render",
+          "type": "(node: ReactNode) => ReactNode",
+          "default": "-",
+          "version": "4.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "okButtonProps",
+          "desc": "The ok button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okText",
+          "desc": "Text of the OK button",
+          "type": "ReactNode",
+          "default": "OK",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okType",
+          "desc": "Button type of the OK button",
+          "type": "string",
+          "default": "primary",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "Style of floating layer, typically used at least for adjusting the position",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the Modal component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Show the skeleton",
+          "type": "boolean",
+          "default": "",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollLock",
+          "desc": "Whether to lock body scroll when modal opens",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The modal dialog's title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether the modal dialog is visible or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Width of the modal dialog",
+          "type": "string | number | Breakpoint",
+          "default": "520",
+          "version": "Breakpoint: 5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "wrapClassName",
+          "desc": "The class name of the container of the modal dialog",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "zIndex",
+          "desc": "The z-index of the Modal",
+          "type": "number",
+          "default": "1000",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onCancel",
+          "desc": "Specify a function that will be called when a user clicks mask, close button on top right or Cancel button",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOk",
+          "desc": "Specify a function that will be called when a user clicks the OK button",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "afterOpenChange",
+          "desc": "Callback when the animation ends when Modal is turned on and off",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Modal.method()",
+      "rows": [
+        {
+          "prop": "afterClose",
+          "desc": "Specify a function that will be called when modal is closed completely",
+          "type": "function",
+          "default": "-",
+          "version": "4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "autoFocusButton",
+          "desc": "Specify which button to autofocus. Please use focusable.autoFocusButton instead",
+          "type": "null | ok | cancel",
+          "default": "ok",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "cancelButtonProps",
+          "desc": "The cancel button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cancelText",
+          "desc": "Text of the Cancel button with Modal.confirm",
+          "type": "string",
+          "default": "Cancel",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "centered",
+          "desc": "Centered Modal",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "className",
+          "desc": "The className of container",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether a close (x) button is visible on top right of the confirm dialog or not",
+          "type": "boolean | ClosableType",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "undefined",
+          "version": "4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "content",
+          "desc": "Content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focusable.autoFocusButton",
+          "desc": "Specify which button to autofocus",
+          "type": "null | ok | cancel",
+          "default": "ok",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "footer",
+          "desc": "Footer content, set as footer: null when you don't need default buttons",
+          "type": "ReactNode | (originNode: ReactNode, extra: { OkBtn: React.FC, CancelBtn: React.FC }) => ReactNode",
+          "default": "-",
+          "version": "renderFunction: 5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Return the mount node for Modal",
+          "type": "HTMLElement | () => HTMLElement | Selectors | false",
+          "default": "document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Custom icon",
+          "type": "ReactNode",
+          "default": "&lt;ExclamationCircleFilled />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "keyboard",
+          "desc": "Whether support press esc to close",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Mask effect",
+          "type": "boolean | {enabled?: boolean, blur?: boolean, closable?: boolean}",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maskClosable",
+          "desc": "Whether to close the modal dialog when the mask (area outside the modal) is clicked. Please use mask.closable instead.",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "scrollLock",
+          "desc": "Whether to lock body scroll when modal opens",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "okButtonProps",
+          "desc": "The ok button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okText",
+          "desc": "Text of the OK button",
+          "type": "string",
+          "default": "OK",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okType",
+          "desc": "Button type of the OK button",
+          "type": "string",
+          "default": "primary",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "Style of floating layer, typically used at least for adjusting the position",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Width of the modal dialog",
+          "type": "string | number",
+          "default": "416",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "wrapClassName",
+          "desc": "The class name of the container of the modal dialog",
+          "type": "string",
+          "default": "-",
+          "version": "4.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "zIndex",
+          "desc": "The z-index of the Modal",
+          "type": "number",
+          "default": "1000",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onCancel",
+          "desc": "Click to onCancel the callback, the parameter is the closing function, if it returns a promise, resolve means normal closing, reject means not closing",
+          "type": "function(close)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onOk",
+          "desc": "Click to onOk the callback, the parameter is the closing function, if it returns a promise, resolve means normal closing, reject means not closing",
+          "type": "function(close)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ClosableType",
+      "rows": [
+        {
+          "prop": "afterClose",
+          "desc": "Specify a function that will be called when modal is closed completely",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "undefined",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether disabled close icon",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Trigger when modal close",
+          "type": "Function",
+          "default": "undefined",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

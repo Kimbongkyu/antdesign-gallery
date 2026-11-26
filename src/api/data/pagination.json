@@ -1,0 +1,204 @@
+{
+  "slug": "pagination",
+  "title": "Pagination",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Pagination",
+      "rows": [
+        {
+          "prop": "align",
+          "desc": "Align",
+          "type": "start | center | end",
+          "default": "-",
+          "version": "5.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "components",
+          "desc": "Customize internal components",
+          "type": "{ sizeChanger?: React.ComponentType }",
+          "default": "-",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "current",
+          "desc": "Current page number",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultCurrent",
+          "desc": "Default initial page number",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultPageSize",
+          "desc": "Default number of data items per page",
+          "type": "number",
+          "default": "10",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable pagination",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "hideOnSinglePage",
+          "desc": "Whether to hide pager on single page",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "itemRender",
+          "desc": "To customize item's innerHTML",
+          "type": "(page, type: 'page' | 'prev' | 'next', originalElement) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pageSize",
+          "desc": "Number of data items per page",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pageSizeOptions",
+          "desc": "Specify the sizeChanger options",
+          "type": "number\\[]",
+          "default": "\\[10, 20, 50, 100]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "responsive",
+          "desc": "If size is not specified, Pagination would resize according to the width of the window",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showLessItems",
+          "desc": "Show less page items",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showQuickJumper",
+          "desc": "Determine whether you can jump to pages directly",
+          "type": "boolean | { goButton: ReactNode }",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showSizeChanger",
+          "desc": "Determine whether to show pageSize select",
+          "type": "boolean | SelectProps",
+          "default": "-",
+          "version": "SelectProps: 5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "showTitle",
+          "desc": "Show page item's title",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showTotal",
+          "desc": "To display the total number and range",
+          "type": "function(total, range)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "simple",
+          "desc": "Whether to use simple mode",
+          "type": "boolean | { readOnly?: boolean }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Component size",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "total",
+          "desc": "Total number of data items",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "totalBoundaryShowSizeChanger",
+          "desc": "When total larger than it, showSizeChanger will be true",
+          "type": "number",
+          "default": "50",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Called when the page number or pageSize is changed. When pageSize changes, the third parameter info.recommendPage provides a recommended page number based on the new page size to help preserve the user's data position",
+          "type": "function(page, pageSize, info?)",
+          "default": "-",
+          "version": "info: 6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onShowSizeChange",
+          "desc": "Called when pageSize is changed",
+          "type": "function(current, size)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

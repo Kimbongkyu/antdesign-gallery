@@ -1,0 +1,535 @@
+{
+  "slug": "input",
+  "title": "Input",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Input",
+      "rows": [
+        {
+          "prop": "addonAfter",
+          "desc": "The label text displayed after (on the right side of) the input field, please use Space.Compact instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "addonBefore",
+          "desc": "The label text displayed before (on the left side of) the input field, please use Space.Compact instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.5.0",
+          "deprecated": true
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "count",
+          "desc": "Character count config",
+          "type": "CountConfig",
+          "default": "-",
+          "version": "5.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "The initial input content",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether the input is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "id",
+          "desc": "The ID for input",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxLength",
+          "desc": "The maximum number of characters in Input",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The prefix icon for the Input",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showCount",
+          "desc": "Whether to show character count",
+          "type": "boolean | { formatter: (info: { value: string, count: number, maxLength?: number }) => ReactNode }",
+          "default": "false",
+          "version": "4.18.0 info.value: 4.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the input box. Note: in the context of a form, the medium size is used",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The suffix icon for the Input",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "The type of input, see: MDN( use Input.TextArea instead of type=\"textarea\")",
+          "type": "string",
+          "default": "text",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The input content value",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when user input",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPressEnter",
+          "desc": "The callback function that is triggered when Enter key is pressed",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Callback when click the clear button",
+          "type": "() => void",
+          "default": "-",
+          "version": "5.20.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.TextArea",
+      "rows": [
+        {
+          "prop": "autoSize",
+          "desc": "Height auto size feature, can be set to true | false or an object { minRows: 2, maxRows: 6 }",
+          "type": "boolean | object",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.Search",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "enterButton",
+          "desc": "false displays the default button color, true uses the primary color, or you can provide a custom button. Conflicts with addonAfter.",
+          "type": "ReactNode",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loading",
+          "desc": "Search box with loading",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key",
+          "type": "function(value, event, { source: \"input\" | \"clear\" })",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "searchIcon",
+          "desc": "Customize the search icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.Password",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Semantic DOM class",
+          "type": "Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "iconRender",
+          "desc": "Custom toggle button",
+          "type": "(visible) => ReactNode",
+          "default": "(visible) => (visible ? &lt;EyeOutlined /> : &lt;EyeInvisibleOutlined />)",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Semantic DOM style",
+          "type": "Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "visibilityToggle",
+          "desc": "Whether show toggle button or control password visible",
+          "type": "boolean | VisibilityToggle",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.OTP",
+      "rows": [
+        {
+          "prop": "autoComplete",
+          "desc": "The autocomplete attribute for input elements, e.g. one-time-code for OTP autofill",
+          "type": "string",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Default value",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether the input is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "formatter",
+          "desc": "Format display, blank fields will be filled with",
+          "type": "(value: string) => string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "separator",
+          "desc": "render the separator after the input box of the specified index",
+          "type": "ReactNode |((i: number) => ReactNode)",
+          "default": "-",
+          "version": "5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Custom display, the original value will not be modified",
+          "type": "boolean | string",
+          "default": "false",
+          "version": "5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "length",
+          "desc": "The number of input elements",
+          "type": "number",
+          "default": "6",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of the input box",
+          "type": "small | medium | large",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of Input",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The input content value",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Trigger when all the fields are filled",
+          "type": "(value: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onInput",
+          "desc": "Trigger when the input value changes",
+          "type": "(value: string[]) => void",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.OTP",
+      "rows": [
+        {
+          "prop": "tabIndex",
+          "desc": "Set the tabIndex of the toggle button",
+          "type": "number",
+          "default": "0",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "visible",
+          "desc": "Whether the password is show or hide",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onVisibleChange",
+          "desc": "Callback executed when visibility of the password is changed",
+          "type": "(visible) => void",
+          "default": "-",
+          "version": "4.24.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Input.OTP",
+      "rows": [
+        {
+          "prop": "blur",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "option - 4.10.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "slug": "upload",
+  "title": "Upload",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Upload",
+      "rows": [
+        {
+          "prop": "accept",
+          "desc": "File types that can be accepted. See input accept Attribute",
+          "type": "string | AcceptObject",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "action",
+          "desc": "Uploading URL",
+          "type": "string | (file) => Promise&lt;string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "beforeUpload",
+          "desc": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. When returned value is Upload.LIST_IGNORE, the list of files that have been uploaded will ignore it. **Warning：this function is not supported in IE9**",
+          "type": "(file: RcFile, fileList: [RcFile[]](#rcfile)) => boolean | Promise&lt;File> | Upload.LIST_IGNORE",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "customRequest",
+          "desc": "Override for the default xhr behavior allowing for additional customization and the ability to implement your own XMLHttpRequest",
+          "type": "( options: RequestOptions, info: { defaultRequest: (option: RequestOptions) => void | { abort: () => void }; } ) => void | { abort: () => void }",
+          "default": "-",
+          "version": "defaultRequest: 5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "data",
+          "desc": "Uploading extra params or function which can return uploading extra params",
+          "type": "object | (file) => object | Promise&lt;object>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultFileList",
+          "desc": "Default list of files that have been uploaded",
+          "type": "object\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "directory",
+          "desc": "Support upload whole directory (caniuse)",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable upload button. When customizing Upload children, please pass the disabled attribute to the child node at the same time to ensure the disabled rendering effect is consistent.",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fileList",
+          "desc": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it",
+          "type": "UploadFile\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "headers",
+          "desc": "Set request headers, valid above IE10",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "iconRender",
+          "desc": "Custom show icon",
+          "type": "(file: UploadFile, listType?: UploadListType) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isImageUrl",
+          "desc": "Customize if render &lt;img /> in thumbnail",
+          "type": "(file: UploadFile) => boolean",
+          "default": "(inside implementation)",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "itemRender",
+          "desc": "Custom item of uploadList",
+          "type": "(originNode: ReactElement, file: UploadFile, fileList: object\\[], actions: { download: function, preview: function, remove: function }) => React.ReactNode",
+          "default": "-",
+          "version": "4.16.0",
+          "deprecated": false
+        },
+        {
+          "prop": "listType",
+          "desc": "Built-in stylesheets, support for four types: text, picture, picture-card or picture-circle",
+          "type": "string",
+          "default": "text",
+          "version": "picture-circle(5.2.0+)",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Limit the number of uploaded files. Will replace current one when maxCount is 1",
+          "type": "number",
+          "default": "-",
+          "version": "4.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "method",
+          "desc": "The http method of upload request",
+          "type": "string",
+          "default": "post",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Whether to support selected multiple files. IE10+ supported. You can select multiple files with CTRL holding down while multiple is set to be true",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "The name of uploading file",
+          "type": "string",
+          "default": "file",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "openFileDialogOnClick",
+          "desc": "Click open file dialog",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pastable",
+          "desc": "Support paste file",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "previewFile",
+          "desc": "Customize preview file logic",
+          "type": "(file: File | Blob) => Promise&lt;dataURL: string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "progress",
+          "desc": "Custom progress bar",
+          "type": "ProgressProps (support type=\"line\" only)",
+          "default": "{ strokeWidth: 2, showInfo: false }",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "showUploadList",
+          "desc": "Whether to show default upload list, could be an object to specify extra, showPreviewIcon, showRemoveIcon, showDownloadIcon, removeIcon and downloadIcon individually",
+          "type": "boolean | { extra?: ReactNode | (file: UploadFile) => ReactNode, showPreviewIcon?: boolean | (file: UploadFile) => boolean, showDownloadIcon?: boolean | (file: UploadFile) => boolean, showRemoveIcon?: boolean | (file: UploadFile) => boolean, previewIcon?: ReactNode | (file: UploadFile) => ReactNode, removeIcon?: ReactNode | (file: UploadFile) => ReactNode, downloadIcon?: ReactNode | (file: UploadFile) => ReactNode }",
+          "default": "true",
+          "version": "extra: 5.20.0, showPreviewIcon function: 5.21.0, showRemoveIcon function: 5.21.0, showDownloadIcon function: 5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "withCredentials",
+          "desc": "The ajax upload with cookie sent",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "A callback function, can be executed when uploading state is changing. It will trigger by every uploading phase. see onChange",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDrop",
+          "desc": "A callback function executed when files are dragged and dropped into the upload area",
+          "type": "(event: React.DragEvent) => void",
+          "default": "-",
+          "version": "4.16.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onDownload",
+          "desc": "Click the method to download the file, pass the method to perform the method logic, and do not pass the default jump to the new TAB",
+          "type": "function(file): void",
+          "default": "(Jump to new TAB)",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFocus",
+          "desc": "Called when focus enters the Upload component",
+          "type": "(event: React.FocusEvent&lt;HTMLSpanElement>) => void",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onPreview",
+          "desc": "A callback function, will be executed when the file link or preview icon is clicked",
+          "type": "function(file)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onRemove",
+          "desc": "A callback function, will be executed when removing file button is clicked, remove event will be prevented when the return value is false or a Promise which resolve(false) or reject",
+          "type": "function(file): boolean | Promise",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RcFile",
+      "rows": [
+        {
+          "prop": "uid",
+          "desc": "unique id. Will auto-generate when not provided",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "lastModifiedDate",
+          "desc": "A Date object indicating the date and time at which the file was last modified",
+          "type": "date",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "UploadFile",
+      "rows": [
+        {
+          "prop": "crossOrigin",
+          "desc": "CORS settings attributes",
+          "type": "'anonymous' | 'use-credentials' | ''",
+          "default": "-",
+          "version": "4.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "File name",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "percent",
+          "desc": "Upload progress percent",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Upload status. Show different style when configured",
+          "type": "error | done | uploading | removed",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "thumbUrl",
+          "desc": "Thumb image url",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "uid",
+          "desc": "unique id. Will auto-generate when not provided",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "url",
+          "desc": "Download url",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "RequestOptions",
+      "rows": [
+        {
+          "prop": "action",
+          "desc": "Uploading URL",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "data",
+          "desc": "Uploading extra params or function which can return uploading extra params",
+          "type": "Record<string, unknown>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filename",
+          "desc": "file name",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "file",
+          "desc": "File object containing upload information",
+          "type": "UploadFile",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "withCredentials",
+          "desc": "The ajax upload with cookie sent",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "headers",
+          "desc": "Set request headers, valid above IE10",
+          "type": "Record<string, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "method",
+          "desc": "The http method of upload request",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onProgress",
+          "desc": "Progress event callback",
+          "type": "(event: object, file: UploadFile) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onError",
+          "desc": "Error callback when upload fails",
+          "type": "(event: object, body?: object) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSuccess",
+          "desc": "Success callback when upload completes",
+          "type": "(body: object, fileOrXhr?: UploadFile | XMLHttpRequest) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AcceptObject",
+      "rows": [
+        {
+          "prop": "format",
+          "desc": "Accepted file types, same as native input accept attribute. Supports MIME types, file extensions, etc. See input accept Attribute",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filter",
+          "desc": "File filtering rule. When set to 'native', uses browser native filtering behavior; when set to a function, allows custom filtering logic. Function returns true to accept the file, false to reject",
+          "type": "'native' | (file: RcFile) => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "slug": "tag",
+  "title": "Tag",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Tag",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether to show the close button. An object can configure the close icon and aria-* attributes",
+          "type": "boolean | ({ closeIcon?: ReactNode } & React.AriaAttributes)",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon, as a shorthand for closable. When closable is not set, true shows the default close button, while null or false hides it (supported since 5.7.0)",
+          "type": "ReactNode",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "color",
+          "desc": "Color of the Tag",
+          "type": "string",
+          "default": "default when variant=\"solid\"",
+          "version": "solid default color: 6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether the tag is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "href",
+          "desc": "The address to jump when clicking, when this property is specified, the tag component will be rendered as an <a> tag",
+          "type": "string",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Set the icon of tag",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Callback executed when tag is closed (can be prevented by e.preventDefault())",
+          "type": "(e: React.MouseEvent<HTMLElement, MouseEvent>) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "target",
+          "desc": "Same as target attribute of a, works when href is specified",
+          "type": "string",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variant of the tag",
+          "type": "'filled' | 'solid' | 'outlined'",
+          "default": "'filled'",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant=\"filled\" instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "Tag.CheckableTag",
+      "rows": [
+        {
+          "prop": "checked",
+          "desc": "Checked status of Tag",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Set the icon of tag",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.27.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback executed when Tag is checked/unchecked",
+          "type": "(checked) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Tag.CheckableTagGroup",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props }) => Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Initial value",
+          "type": "string | number | Array<string | number> | null",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable check/uncheck",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Multiple select mode",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "Option list. Object options support per-item className and style.",
+          "type": "Array<{ className?: string; label: ReactNode; style?: CSSProperties; value: string | number } | string | number>",
+          "default": "-",
+          "version": "className and style: 6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props }) => Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Value of checked tag(s)",
+          "type": "string | number | Array<string | number> | null",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when Tag is checked/unchecked",
+          "type": "(value: string | number | Array<string | number> | null) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

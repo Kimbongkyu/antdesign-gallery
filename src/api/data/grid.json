@@ -1,0 +1,153 @@
+{
+  "slug": "grid",
+  "title": "Grid",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Row",
+      "rows": [
+        {
+          "prop": "align",
+          "desc": "Vertical alignment",
+          "type": "top | middle | bottom | stretch | {[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl']: 'top' | 'middle' | 'bottom' | 'stretch'}",
+          "default": "top",
+          "version": "object: 4.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "gutter",
+          "desc": "Spacing between grids, could be a string CSS units or a object like { xs: 8, sm: 16, md: 24}. Or you can use array to make horizontal and vertical spacing work at the same time [horizontal, vertical]",
+          "type": "number | string | object | array",
+          "default": "0",
+          "version": "string: 5.28.0",
+          "deprecated": false
+        },
+        {
+          "prop": "justify",
+          "desc": "Horizontal arrangement",
+          "type": "start | end | center | space-around | space-between | space-evenly | {[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl']: 'start' | 'end' | 'center' | 'space-around' | 'space-between' | 'space-evenly'}",
+          "default": "start",
+          "version": "object: 4.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "wrap",
+          "desc": "Auto wrap line",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.8.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Col",
+      "rows": [
+        {
+          "prop": "flex",
+          "desc": "Flex layout style. Number for 'flex: n n auto', string is applied directly (e.g. pure number string 'n' for 'flex: n 1 0')",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "offset",
+          "desc": "The number of cells to offset Col from the left",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "order",
+          "desc": "Raster order",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pull",
+          "desc": "The number of cells that raster is moved to the left",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "push",
+          "desc": "The number of cells that raster is moved to the right",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "span",
+          "desc": "Raster number of cells to occupy, 0 corresponds to display: none",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xs",
+          "desc": "screen < 576px and also default setting, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "sm",
+          "desc": "screen ≥ 576px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "md",
+          "desc": "screen ≥ 768px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "lg",
+          "desc": "screen ≥ 992px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xl",
+          "desc": "screen ≥ 1200px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xxl",
+          "desc": "screen ≥ 1600px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "xxxl",
+          "desc": "screen ≥ 1920px, could be a span value or an object containing above props",
+          "type": "number | object",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

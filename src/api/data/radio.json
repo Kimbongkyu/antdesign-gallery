@@ -1,0 +1,275 @@
+{
+  "slug": "radio",
+  "title": "Radio",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Radio/Radio.Button",
+      "rows": [
+        {
+          "prop": "checked",
+          "desc": "Specifies whether the radio is selected",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultChecked",
+          "desc": "Specifies the initial state: whether or not the radio is selected",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable radio",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "According to value for comparison, to determine whether the selected",
+          "type": "any",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Radio.Group",
+      "rows": [
+        {
+          "prop": "block",
+          "desc": "Option to fit RadioGroup width to its parent width",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "buttonStyle",
+          "desc": "The style type of radio button",
+          "type": "outline | solid",
+          "default": "outline",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Default selected value",
+          "type": "any",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable all radio buttons",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "name",
+          "desc": "The name property of all input[type=\"radio\"] children. If not set, it will fallback to a randomly generated name",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "Set children optional",
+          "type": "string\\[] | number\\[] | Array&lt;CheckboxOptionType>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "optionType",
+          "desc": "Set Radio optionType",
+          "type": "default | button",
+          "default": "default",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "Orientation",
+          "type": "horizontal | vertical",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The size of radio button style",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Used for setting the currently selected value",
+          "type": "any",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "vertical",
+          "desc": "If true, the Radio group will be vertical. Simultaneously existing with orientation, orientation takes priority",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "The callback function that is triggered when the state changes",
+          "type": "function(e:Event)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "CheckboxOptionType",
+      "rows": [
+        {
+          "prop": "label",
+          "desc": "The text used to display as the Radio option",
+          "type": "string",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The value associated with the Radio option",
+          "type": "string | number | boolean",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "The style to apply to the Radio option",
+          "type": "React.CSSProperties",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "className",
+          "desc": "className of the Radio option",
+          "type": "string",
+          "default": "-",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Specifies whether the Radio option is disabled",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Adds the Title attribute value",
+          "type": "string",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "id",
+          "desc": "Adds the Radio Id attribute value",
+          "type": "string",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Triggered when the value of the Radio Group changes",
+          "type": "(e: CheckboxChangeEvent) => void;",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "required",
+          "desc": "Specifies whether the Radio option is required",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.4.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Radio",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

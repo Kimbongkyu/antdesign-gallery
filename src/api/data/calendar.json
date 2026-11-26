@@ -1,0 +1,148 @@
+{
+  "slug": "calendar",
+  "title": "Calendar",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Calendar",
+      "rows": [
+        {
+          "prop": "cellRender",
+          "desc": "Customize cell content",
+          "type": "function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dateFullCellRender",
+          "desc": "Customize the display of the date cell, the returned content will override the cell. Please use fullCellRender instead in 5.4.0 and later",
+          "type": "function(date: Dayjs): ReactNode",
+          "default": "-",
+          "version": "< 5.4.0",
+          "deprecated": true
+        },
+        {
+          "prop": "fullCellRender",
+          "desc": "Customize cell content",
+          "type": "function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode",
+          "default": "-",
+          "version": "5.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "The date selected by default",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledDate",
+          "desc": "Function that specifies the dates that cannot be selected, currentDate is same dayjs object as value prop which you shouldn't mutate it (https://github.com/ant-design/ant-design/issues/30987)",
+          "type": "(currentDate: Dayjs) => boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fullscreen",
+          "desc": "Whether to display in full-screen",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showWeek",
+          "desc": "Whether to display week number",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "headerRender",
+          "desc": "Render custom header in panel",
+          "type": "function(object:{value: Dayjs, type: 'year' | 'month', onChange: f(), onTypeChange: f()})",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "locale",
+          "desc": "The calendar's locale",
+          "type": "object",
+          "default": "(default)",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "The display mode of the calendar",
+          "type": "month | year",
+          "default": "month",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "validRange",
+          "desc": "To set valid range",
+          "type": "\\[dayjs, dayjs]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "The current selected date",
+          "type": "dayjs",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback for when date changes",
+          "type": "function(date: Dayjs)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPanelChange",
+          "desc": "Callback for when panel changes",
+          "type": "function(date: Dayjs, mode: string)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelect",
+          "desc": "Callback for when a date is selected, include source info",
+          "type": "function(date: Dayjs, info: { source: 'year' | 'month' | 'date' | 'customize' })",
+          "default": "-",
+          "version": "info: 5.6.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

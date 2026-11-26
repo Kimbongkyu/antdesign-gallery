@@ -1,0 +1,371 @@
+{
+  "slug": "notification",
+  "title": "Notification",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Notification",
+      "rows": [
+        {
+          "prop": "actions",
+          "desc": "Customized button group",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "btn",
+          "desc": "Customized close button group, please use actions instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "className",
+          "desc": "Customized CSS class",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closable",
+          "desc": "Whether to show the close button",
+          "type": "boolean | ClosableType",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "true",
+          "version": "5.7.0: close button will be hidden when setting to null or false",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "The content of notification box (required)",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "duration",
+          "desc": "Time in seconds before Notification is closed. When set to 0 or false, it will never be closed automatically",
+          "type": "number | false",
+          "default": "4.5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showProgress",
+          "desc": "Show progress bar for auto-closing notification",
+          "type": "boolean",
+          "default": "",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "pauseOnHover",
+          "desc": "keep the timer running or not on hover",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Customized icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "The unique identifier of the Notification",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title of notification box",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "message",
+          "desc": "The title of notification box (deprecated), please use title instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "placement",
+          "desc": "Position of Notification, can be one of top | topLeft | topRight | bottom | bottomLeft | bottomRight",
+          "type": "string",
+          "default": "topRight",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "role",
+          "desc": "The semantics of notification content recognized by screen readers. The default value is alert. When set as the default value, the screen reader will promptly interrupt any ongoing content reading and prioritize the notification content for immediate attention.",
+          "type": "alert | status",
+          "default": "alert",
+          "version": "5.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "style",
+          "desc": "Customized inline style",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Specify a function that will be called when the notification is clicked",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Trigger when notification closed",
+          "type": "function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "props",
+          "desc": "An object that can contain data-*, aria-*, or role props, to be put on the notification div. This currently only allows data-testid instead of data-* in TypeScript. See https://github.com/microsoft/TypeScript/issues/28960.",
+          "type": "Object",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Notification",
+      "rows": [
+        {
+          "prop": "bottom",
+          "desc": "Distance from the bottom of the viewport, when placement is bottom bottomRight or bottomLeft (unit: pixels)",
+          "type": "number",
+          "default": "24",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "true",
+          "version": "5.7.0: close button will be hidden when setting to null or false",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Return the mount node for Notification",
+          "type": "() => HTMLNode",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Position of Notification, can be one of top | topLeft | topRight | bottom | bottomLeft | bottomRight",
+          "type": "string",
+          "default": "topRight",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showProgress",
+          "desc": "Show progress bar for auto-closing notification",
+          "type": "boolean",
+          "default": "",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "pauseOnHover",
+          "desc": "keep the timer running or not on hover",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rtl",
+          "desc": "Whether to enable RTL mode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "stack",
+          "desc": "Notifications will be stacked when amount is over threshold",
+          "type": "boolean | { threshold: number }",
+          "default": "{ threshold: 3 }",
+          "version": "5.10.0",
+          "deprecated": false
+        },
+        {
+          "prop": "top",
+          "desc": "Distance from the top of the viewport, when placement is top topRight or topLeft (unit: pixels)",
+          "type": "number",
+          "default": "24",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Max Notification show, drop oldest if exceed limit",
+          "type": "number",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ClosableType",
+      "rows": [
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "undefined",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Trigger when notification close",
+          "type": "Function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Global configuration",
+      "rows": [
+        {
+          "prop": "bottom",
+          "desc": "Distance from the bottom of the viewport, when placement is bottom bottomRight or bottomLeft (unit: pixels)",
+          "type": "number",
+          "default": "24",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "ReactNode",
+          "default": "true",
+          "version": "5.7.0: close button will be hidden when setting to null or false",
+          "deprecated": false
+        },
+        {
+          "prop": "duration",
+          "desc": "Time in seconds before Notification is closed. When set to 0 or null, it will never be closed automatically",
+          "type": "number",
+          "default": "4.5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Return the mount node for Notification, but still display at fullScreen",
+          "type": "() => HTMLNode",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Position of Notification, can be one of top topLeft topRight bottom bottomLeft bottomRight",
+          "type": "string",
+          "default": "topRight",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showProgress",
+          "desc": "Show progress bar for auto-closing notification",
+          "type": "boolean",
+          "default": "",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "pauseOnHover",
+          "desc": "keep the timer running or not on hover",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rtl",
+          "desc": "Whether to enable RTL mode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "top",
+          "desc": "Distance from the top of the viewport, when placement is top topRight or topLeft (unit: pixels)",
+          "type": "number",
+          "default": "24",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "Max Notification show, drop oldest if exceed limit",
+          "type": "number",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

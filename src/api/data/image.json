@@ -1,0 +1,666 @@
+{
+  "slug": "image",
+  "title": "Image",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Image",
+      "rows": [
+        {
+          "prop": "alt",
+          "desc": "Image description",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fallback",
+          "desc": "Fallback URL when load fails",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "height",
+          "desc": "Image height",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "Loading placeholder, supports ReactNode or config object",
+          "type": "PlaceholderType",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "preview",
+          "desc": "Preview configuration; set to false to disable",
+          "type": "boolean | PreviewType",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "src",
+          "desc": "Image URL",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "width",
+          "desc": "Image width",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onError",
+          "desc": "Callback when loading error occurs",
+          "type": "(event: Event) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "PlaceholderType",
+      "rows": [
+        {
+          "prop": "progress",
+          "desc": "Progress config, set to true to show gradient animation, set { percent: number } to show progress, render for custom rendering",
+          "type": "boolean | ImageProgressConfig",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "ImageProgressConfig",
+      "rows": [
+        {
+          "prop": "percent",
+          "desc": "Progress value",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "render",
+          "desc": "Custom rendering, receives default progress UI and percentage",
+          "type": "(progress: React.ReactNode, percent: number) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "PreviewType",
+      "rows": [
+        {
+          "prop": "actionsRender",
+          "desc": "Custom toolbar render",
+          "type": "(originalNode: React.ReactElement, info: ToolbarRenderInfoType) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cover",
+          "desc": "Custom preview mask",
+          "type": "React.ReactNode | CoverConfig",
+          "default": "-",
+          "version": "CoverConfig support after v6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "focusTrap",
+          "desc": "Whether to trap focus within the preview when open",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "destroyOnClose",
+          "desc": "Destroy child elements on preview close (removed, no longer supported)",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Force render preview image (removed, no longer supported)",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Specify container for preview mounting; still full screen; false mounts at current location",
+          "type": "string | HTMLElement | (() => HTMLElement) | false",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "imageRender",
+          "desc": "Custom preview content",
+          "type": "(originalNode: React.ReactElement, info: { transform: TransformType, image: ImgInfo }) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "preview mask effect",
+          "type": "boolean | { enabled?: boolean, blur?: boolean, closable?: boolean }",
+          "default": "true",
+          "version": "mask.closable: 6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maskClassName",
+          "desc": "Thumbnail mask class name; please use 'classNames.cover' instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "maxScale",
+          "desc": "Maximum zoom scale",
+          "type": "number",
+          "default": "50",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "minScale",
+          "desc": "Minimum zoom scale",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "movable",
+          "desc": "Whether the preview image can be dragged when it is larger than the viewport",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether to display preview",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rootClassName",
+          "desc": "Root DOM class name for preview; applies to both image and preview wrapper",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "scaleStep",
+          "desc": "Each step's zoom multiplier is 1 + scaleStep",
+          "type": "number",
+          "default": "0.5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "src",
+          "desc": "Custom preview src",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Custom semantic structure styles",
+          "type": "Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "wheel",
+          "desc": "Whether to enable mouse wheel zoom",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "toolbarRender",
+          "desc": "Custom toolbar; please use 'actionsRender' instead",
+          "type": "(originalNode: React.ReactElement, info: Omit<ToolbarRenderInfoType, 'current' | 'total'>) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "visible",
+          "desc": "Whether to show; please use 'open' instead",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback when preview open state changes",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTransform",
+          "desc": "Callback for preview transform changes",
+          "type": "{ transform: TransformType, action: TransformAction }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onVisibleChange",
+          "desc": "Callback when 'visible' changes; please use 'onOpenChange' instead",
+          "type": "(visible: boolean, prevVisible: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "PreviewGroup",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fallback",
+          "desc": "Fallback URL for load error",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Array of preview items",
+          "type": "string[] | { src: string, crossOrigin: string, ... }[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "preview",
+          "desc": "Preview configuration; disable by setting to false",
+          "type": "boolean | PreviewGroupType",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "PreviewGroupType",
+      "rows": [
+        {
+          "prop": "actionsRender",
+          "desc": "Custom toolbar render",
+          "type": "(originalNode: React.ReactElement, info: ToolbarRenderInfoType) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Custom close icon",
+          "type": "React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "countRender",
+          "desc": "Custom preview count render",
+          "type": "(current: number, total: number) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focusTrap",
+          "desc": "Whether to trap focus within the preview when open",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "current",
+          "desc": "Index of the current preview image",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "forceRender",
+          "desc": "Force render preview image (removed, no longer supported)",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Specify container for preview mounting; still full screen; false mounts at current location",
+          "type": "string | HTMLElement | (() => HTMLElement) | false",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "imageRender",
+          "desc": "Custom preview content",
+          "type": "(originalNode: React.ReactElement, info: { transform: TransformType, image: ImgInfo, current: number }) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "preview mask effect",
+          "type": "boolean | { enabled?: boolean, blur?: boolean, closable?: boolean }",
+          "default": "true",
+          "version": "mask.closable: 6.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maskClassName",
+          "desc": "Thumbnail mask class name; please use 'classNames.cover' instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "minScale",
+          "desc": "Minimum zoom scale",
+          "type": "number",
+          "default": "1",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxScale",
+          "desc": "Maximum zoom scale",
+          "type": "number",
+          "default": "50",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "movable",
+          "desc": "Whether the preview image can be dragged when it is larger than the viewport",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Whether to display preview",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "rootClassName",
+          "desc": "Root DOM class name for preview; applies to both image and preview wrapper. Use 'classNames.root' instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "styles",
+          "desc": "Custom semantic structure styles",
+          "type": "Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "wheel",
+          "desc": "Whether to enable mouse wheel zoom",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "scaleStep",
+          "desc": "Each step's zoom multiplier is 1 + scaleStep",
+          "type": "number",
+          "default": "0.5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "toolbarRender",
+          "desc": "Custom toolbar; please use 'actionsRender' instead",
+          "type": "(originalNode: React.ReactElement, info: ToolbarRenderInfoType) => React.ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "visible",
+          "desc": "Whether to show; please use 'open' instead",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback when preview open state changes, includes current preview index",
+          "type": "(open: boolean, info: { current: number }) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when changing preview image",
+          "type": "(current: number, prevCurrent: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTransform",
+          "desc": "Callback for preview transform changes",
+          "type": "{ transform: TransformType, action: TransformAction }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onVisibleChange",
+          "desc": "Callback when 'visible' changes; please use 'onOpenChange' instead",
+          "type": "(visible: boolean, prevVisible: boolean, current: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        }
+      ]
+    },
+    {
+      "section": "TransformAction",
+      "rows": [
+        {
+          "prop": "'flipX'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'rotateLeft'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'rotateRight'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'zoomIn'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'zoomOut'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'close'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'prev'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'next'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'wheel'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'doubleClick'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'move'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'dragRebound'",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "'reset';",
+          "desc": "",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -40,6 +40,9 @@ const COLUMN: Record<string, keyof Omit<ApiRow, 'prop' | 'deprecated'>> = {
   version: 'version',
 };
 
+// ## API 뒤에 나오지만 속성 표가 아닌 2단계 제목 (6.7.2 문서 전체에서 확인)
+const NOT_API = /^(Design Token|Semantic DOM|FAQ|Notes?|Warning|Using in TypeScript|Design Guide|Built-in images)$/;
+
 function frontmatter(md: string): {title: string; group: string} {
   const m = md.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   const fm = m ? m[1] : '';
@@ -60,7 +63,10 @@ export function parseApiMarkdown(slug: string, md: string): ApiDoc {
 
   for (const line of lines) {
     if (/^## /.test(line)) {
-      inApi = /^## API\s*$/.test(line);
+      const h = line.replace(/^##\s+/, '').replace(/\s*\{#.*\}\s*$/, '').trim();
+      if (h === 'API') inApi = true;
+      else if (NOT_API.test(h)) inApi = false;
+      else if (inApi) name = h; // Form.Item, Methods 처럼 ## API 뒤에 이어지는 API 구역
       header = null;
       continue;
     }

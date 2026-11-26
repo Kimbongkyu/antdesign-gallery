@@ -1,0 +1,174 @@
+{
+  "slug": "watermark",
+  "title": "Watermark",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Watermark",
+      "rows": [
+        {
+          "prop": "width",
+          "desc": "The width of the watermark, the default value of content is its own width",
+          "type": "number",
+          "default": "120",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "height",
+          "desc": "The height of the watermark, the default value of content is its own height",
+          "type": "number",
+          "default": "64",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "inherit",
+          "desc": "Pass the watermark to the pop-up component such as Modal, Drawer",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.11.0",
+          "deprecated": false
+        },
+        {
+          "prop": "rotate",
+          "desc": "When the watermark is drawn, the rotation Angle, unit °",
+          "type": "number",
+          "default": "-22",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "zIndex",
+          "desc": "The z-index of the appended watermark element",
+          "type": "number",
+          "default": "999",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "image",
+          "desc": "Image source, it is recommended to export 2x or 3x image, high priority (support base64 format)",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "content",
+          "desc": "Watermark text content",
+          "type": "string | WatermarkText | (string | WatermarkText)[]",
+          "default": "-",
+          "version": "WatermarkText: 6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "font",
+          "desc": "Text style",
+          "type": "Font",
+          "default": "Font",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "gap",
+          "desc": "The spacing between watermarks",
+          "type": "\\[number, number\\]",
+          "default": "\\[100, 100\\]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "offset",
+          "desc": "The offset of the watermark from the upper left corner of the container. The default is gap/2",
+          "type": "\\[number, number\\]",
+          "default": "\\[gap\\[0\\]/2, gap\\[1\\]/2\\]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onRemove",
+          "desc": "Callback when the watermark is removed by DOM mutation",
+          "type": "() => void",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "WatermarkText",
+      "rows": [
+        {
+          "prop": "font",
+          "desc": "Custom line text style",
+          "type": "Font",
+          "default": "-",
+          "version": "6.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "text",
+          "desc": "Line text",
+          "type": "string",
+          "default": "-",
+          "version": "6.5.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Font",
+      "rows": [
+        {
+          "prop": "color",
+          "desc": "font color",
+          "type": "CanvasFillStrokeStyles.fillStyle",
+          "default": "rgba(0,0,0,.15)",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fontSize",
+          "desc": "font size",
+          "type": "number",
+          "default": "16",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fontWeight",
+          "desc": "font weight",
+          "type": "normal | lighter | bold | bolder | number",
+          "default": "400",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fontFamily",
+          "desc": "font family",
+          "type": "string",
+          "default": "sans-serif",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fontStyle",
+          "desc": "font style",
+          "type": "none | normal | italic | oblique",
+          "default": "normal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "textAlign",
+          "desc": "specify the text alignment direction",
+          "type": "CanvasTextAlign",
+          "default": "center",
+          "version": "5.10.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "popconfirm",
+  "title": "Popconfirm",
+  "group": "Feedback",
+  "sections": [
+    {
+      "section": "Popconfirm",
+      "rows": [
+        {
+          "prop": "cancelButtonProps",
+          "desc": "The cancel button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "cancelText",
+          "desc": "The text of the Cancel button",
+          "type": "string",
+          "default": "Cancel",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether show popconfirm when click its childrenNode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "icon",
+          "desc": "Customize icon of confirmation",
+          "type": "ReactNode",
+          "default": "&lt;ExclamationCircleFilled />",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okButtonProps",
+          "desc": "The ok button props",
+          "type": "ButtonProps",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okText",
+          "desc": "The text of the Confirm button",
+          "type": "string",
+          "default": "OK",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "okType",
+          "desc": "Button type of the Confirm button",
+          "type": "string",
+          "default": "primary",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showCancel",
+          "desc": "Show cancel button",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The title of the confirmation box",
+          "type": "ReactNode | () => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "The description of the confirmation box title",
+          "type": "ReactNode | () => ReactNode",
+          "default": "-",
+          "version": "5.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onCancel",
+          "desc": "A callback of cancel",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onConfirm",
+          "desc": "A callback of confirmation",
+          "type": "function(e)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPopupClick",
+          "desc": "A callback of popup click",
+          "type": "function(e)",
+          "default": "-",
+          "version": "5.5.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

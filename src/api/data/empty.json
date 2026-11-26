@@ -1,0 +1,52 @@
+{
+  "slug": "empty",
+  "title": "Empty",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Empty",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "Customize description",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "image",
+          "desc": "Customize image. Will treat as image url when string provided",
+          "type": "ReactNode",
+          "default": "Empty.PRESENTED_IMAGE_DEFAULT",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "imageStyle",
+          "desc": "The style of image, please use styles.image instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

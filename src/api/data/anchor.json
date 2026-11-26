@@ -1,0 +1,222 @@
+{
+  "slug": "anchor",
+  "title": "Anchor",
+  "group": "Navigation",
+  "sections": [
+    {
+      "section": "Anchor Props",
+      "rows": [
+        {
+          "prop": "affix",
+          "desc": "Fixed mode of Anchor",
+          "type": "boolean | Omit<AffixProps, 'offsetTop' | 'target' | 'children'>",
+          "default": "true",
+          "version": "object: 5.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "bounds",
+          "desc": "Bounding distance of anchor area",
+          "type": "number",
+          "default": "5",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getContainer",
+          "desc": "Scrolling container",
+          "type": "() => HTMLElement",
+          "default": "() => window",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getCurrentAnchor",
+          "desc": "Customize the anchor highlight",
+          "type": "(activeLink: string) => string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "offsetTop",
+          "desc": "Pixels to offset from top when calculating position of scroll",
+          "type": "number",
+          "default": "0",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showInkInFixed",
+          "desc": "Whether show ink-square when affix={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "targetOffset",
+          "desc": "Anchor scroll offset, default as offsetTop, example",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Listening for anchor link change",
+          "type": "(currentActiveLink: string) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClick",
+          "desc": "Set the handler to handle click event",
+          "type": "(e: MouseEvent, link: object) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Data configuration option content, support nesting through children",
+          "type": "{ key, href, title, target, children }\\[] see",
+          "default": "-",
+          "version": "5.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "direction",
+          "desc": "Set Anchor direction",
+          "type": "vertical | horizontal",
+          "default": "vertical",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "replace",
+          "desc": "Replace items' href in browser history instead of pushing it",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AnchorItem",
+      "rows": [
+        {
+          "prop": "key",
+          "desc": "The unique identifier of the Anchor Link",
+          "type": "string | number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "href",
+          "desc": "The target of hyperlink",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "target",
+          "desc": "Specifies where to display the linked URL",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The content of hyperlink",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Nested Anchor Link, Attention: This attribute does not support horizontal orientation",
+          "type": "AnchorItem\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "replace",
+          "desc": "Replace item href in browser history instead of pushing it",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "targetOffset",
+          "desc": "Customize scroll offset for this anchor link. It takes precedence over the targetOffset prop of the Anchor component",
+          "type": "number",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Link Props",
+      "rows": [
+        {
+          "prop": "href",
+          "desc": "The target of hyperlink",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "target",
+          "desc": "Specifies where to display the linked URL",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "The content of hyperlink",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "targetOffset",
+          "desc": "Customize scroll offset for this anchor link. It takes precedence over the targetOffset prop of the Anchor component",
+          "type": "number",
+          "default": "-",
+          "version": "6.4.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

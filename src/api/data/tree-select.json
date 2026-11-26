@@ -1,0 +1,712 @@
+{
+  "slug": "tree-select",
+  "title": "TreeSelect",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Tree props",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "autoClearSearchValue",
+          "desc": "If auto clear search input value when multiple select is selected/deselected",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpen",
+          "desc": "Initial open state of dropdown",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "To set the initial selected treeNode(s)",
+          "type": "string | string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disabled or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownClassName",
+          "desc": "The className of dropdown menu, please use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownMatchSelectWidth",
+          "desc": "Determine whether the popup menu and the select input are the same width, please use popupMatchSelectWidth instead",
+          "type": "boolean | number",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "The className of dropdown menu, use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "4.23.0",
+          "deprecated": true
+        },
+        {
+          "prop": "popupMatchSelectWidth",
+          "desc": "Determine whether the popup menu and the select input are the same width. Default set min-width same as input. Will ignore when value less than select width. false will disable virtual scroll",
+          "type": "boolean | number",
+          "default": "true",
+          "version": "5.5.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownRender",
+          "desc": "Customize dropdown content, use popupRender instead",
+          "type": "(originNode: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize dropdown content",
+          "type": "(originNode: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownStyle",
+          "desc": "To set the style of the dropdown menu, use styles.popup.root instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "fieldNames",
+          "desc": "Customize node label, value, children field name",
+          "type": "object",
+          "default": "{ label: label, value: value, children: children }",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "filterTreeNode",
+          "desc": "Whether to filter treeNodes by input value. The value of treeNodeFilterProp is used for filtering by default",
+          "type": "boolean | function(inputValue: string, treeNode: TreeNode) (should return boolean)",
+          "default": "function",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "To set the container of the dropdown menu. The default is to create a div element in body, you can reset it to the scrolling area and make a relative reposition. example",
+          "type": "function(triggerNode)",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "labelInValue",
+          "desc": "Whether to embed label in value, turn the format of value from string to {value: string, label: ReactNode, halfChecked: boolean (Is the option list in a semi selected state and not displayed in the values)}",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "listHeight",
+          "desc": "Config popup height",
+          "type": "number",
+          "default": "256",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadData",
+          "desc": "Load data asynchronously. Will not load when filtering. Check FAQ for more info",
+          "type": "function(node)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxCount",
+          "desc": "The maximum number of items that can be selected. Only takes effect when multiple=true. If (showCheckedStrategy = 'SHOW_ALL' and treeCheckStrictly is disabled) or showCheckedStrategy = 'SHOW_PARENT' is used, maxCount will not take effect.",
+          "type": "number",
+          "default": "-",
+          "version": "5.23.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagCount",
+          "desc": "Max tag count to show. responsive will cost render performance",
+          "type": "number | responsive",
+          "default": "-",
+          "version": "responsive: 4.10",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagPlaceholder",
+          "desc": "Placeholder for not showing tags",
+          "type": "ReactNode | function(omittedValues)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagTextLength",
+          "desc": "Max tag text length to show",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "multiple",
+          "desc": "Support multiple or not, will be true when enable treeCheckable",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "notFoundContent",
+          "desc": "Specify content to show when no result matches",
+          "type": "ReactNode",
+          "default": "No data",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Controlled open state of dropdown",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "Placeholder of the select input",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "The position where the selection box pops up",
+          "type": "bottomLeft bottomRight topLeft topRight",
+          "default": "bottomLeft",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The custom prefix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "searchValue",
+          "desc": "Work with onSearch to make search value controlled",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "showArrow",
+          "desc": "Whether to show the arrow icon, please use suffix={null} instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "showCheckedStrategy",
+          "desc": "The way show selected item in box when treeCheckable set. **Default:** just show child nodes. **TreeSelect.SHOW_ALL:** show all checked treeNodes (include parent treeNode). **TreeSelect.SHOW_PARENT:** show checked treeNodes (just show parent treeNode)",
+          "type": "TreeSelect.SHOW_ALL | TreeSelect.SHOW_PARENT | TreeSelect.SHOW_CHILD",
+          "default": "TreeSelect.SHOW_CHILD",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showSearch",
+          "desc": "Support search or not",
+          "type": "boolean | Object",
+          "default": "single: false | multiple: true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "To set the size of the select input",
+          "type": "large | medium | small",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The custom suffix. Custom suffixes will not respond to clicks to open, because the replaced suffix may be designed for other interactions. You can use pointer-events: none style to bypass",
+          "type": "ReactNode | (props) => ReactNode",
+          "default": "<DownOutlined />",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "suffixIcon",
+          "desc": "The custom suffix icon. Please use suffix instead",
+          "type": "ReactNode",
+          "default": "<DownOutlined />",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "switcherIcon",
+          "desc": "Customize collapse/expand icon of tree node",
+          "type": "ReactNode | ((props: AntTreeNodeProps) => ReactNode)",
+          "default": "-",
+          "version": "renderProps: 4.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Customize tag render when multiple",
+          "type": "(props) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeCheckable",
+          "desc": "Whether to show checkbox on the treeNodes",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeCheckStrictly",
+          "desc": "Whether to check nodes precisely (in the checkable mode), means parent and child nodes are not associated, and it will make labelInValue be true",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeData",
+          "desc": "Data of the treeNodes, manual construction work is no longer needed if this property has been set(ensure the Uniqueness of each value)",
+          "type": "array&lt;{ value, title, children, \\[disabled, disableCheckbox, selectable, checkable] }>",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeDataSimpleMode",
+          "desc": "Enable simple mode of treeData. Changes the treeData schema to: \\[{id:1, pId:0, value:'1', title:\"test1\",...},...] where pId is parent node's id). It is possible to replace the default id and pId keys by providing object to treeDataSimpleMode",
+          "type": "boolean | object&lt;{ id: string, pId: string, rootPId: string }>",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeDefaultExpandAll",
+          "desc": "Whether to expand all treeNodes by default",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeDefaultExpandedKeys",
+          "desc": "Default expanded treeNodes",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeExpandAction",
+          "desc": "Tree title open logic when click, optional: false | click | doubleClick",
+          "type": "string | boolean",
+          "default": "false",
+          "version": "4.21.0",
+          "deprecated": false
+        },
+        {
+          "prop": "treeExpandedKeys",
+          "desc": "Set expanded keys",
+          "type": "string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeIcon",
+          "desc": "Shows the icon before a TreeNode's title. There is no default style; you must set a custom style for it if set to true",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeLine",
+          "desc": "Show the line. Ref Tree - showLine",
+          "type": "boolean | object",
+          "default": "false",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "treeLoadedKeys",
+          "desc": "(Controlled) Set loaded tree nodes, work with loadData only",
+          "type": "string[]",
+          "default": "[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeNodeFilterProp",
+          "desc": "Will be used for filtering if filterTreeNode returns true",
+          "type": "string",
+          "default": "value",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "treeNodeLabelProp",
+          "desc": "Will render as content of select",
+          "type": "string",
+          "default": "title",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeTitleRender",
+          "desc": "Customize tree node title render",
+          "type": "(nodeData) => ReactNode",
+          "default": "-",
+          "version": "5.12.0",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "To set the current selected treeNode(s)",
+          "type": "string | string\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of selector",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "virtual",
+          "desc": "Disable virtual scroll when set to false",
+          "type": "boolean",
+          "default": "true",
+          "version": "4.1.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "A callback function, can be executed when selected treeNodes or input value change",
+          "type": "function(value, label, extra)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Called when clear",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDropdownVisibleChange",
+          "desc": "Called when dropdown open, use onOpenChange instead",
+          "type": "function(open)",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Called when dropdown open",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPopupScroll",
+          "desc": "Called when dropdown scrolls",
+          "type": "(event: UIEvent) => void",
+          "default": "-",
+          "version": "5.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "A callback function, can be executed when the search input changes",
+          "type": "function(value: string)",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "onSelect",
+          "desc": "A callback function, can be executed when you select a treeNode",
+          "type": "function(value, node, extra)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onTreeExpand",
+          "desc": "A callback function, can be executed when treeNode expanded",
+          "type": "function(expandedKeys)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "showSearch",
+      "rows": [
+        {
+          "prop": "autoClearSearchValue",
+          "desc": "If auto clear search input value when multiple select is selected/deselected",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filterTreeNode",
+          "desc": "Whether to filter treeNodes by input value. The value of treeNodeFilterProp is used for filtering by default",
+          "type": "boolean | function(inputValue: string, treeNode: TreeNode) (should return boolean)",
+          "default": "function",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "searchValue",
+          "desc": "Work with onSearch to make search value controlled",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "treeNodeFilterProp",
+          "desc": "Will be used for filtering if filterTreeNode returns true",
+          "type": "string",
+          "default": "value",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "A callback function, can be executed when the search input changes",
+          "type": "function(value: string)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Tree Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "TreeNode props",
+      "rows": [
+        {
+          "prop": "checkable",
+          "desc": "When Tree is checkable, set TreeNode display Checkbox or not",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disableCheckbox",
+          "desc": "Disables the checkbox of the treeNode",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disabled or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "isLeaf",
+          "desc": "Leaf node or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "key",
+          "desc": "Required property (unless using treeDataSimpleMode), should be unique in the tree",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectable",
+          "desc": "Whether can be selected",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "Content showed on the treeNodes",
+          "type": "ReactNode",
+          "default": "---",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "value",
+          "desc": "Will be treated as treeNodeFilterProp by default, should be unique in the tree",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

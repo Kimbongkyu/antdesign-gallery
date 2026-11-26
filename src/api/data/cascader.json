@@ -1,0 +1,563 @@
+{
+  "slug": "cascader",
+  "title": "Cascader",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Cascader",
+      "rows": [
+        {
+          "prop": "allowClear",
+          "desc": "Whether to show a clear button",
+          "type": "boolean | AllowClearConfig",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "autoClearSearchValue",
+          "desc": "Whether the current search will be cleared on selecting an item. Only applies when multiple is true",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.9.0",
+          "deprecated": true
+        },
+        {
+          "prop": "bordered",
+          "desc": "Whether has border style, please use variant instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "changeOnSelect",
+          "desc": "Change value on each selection if set to true, see above demo for details",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultOpen",
+          "desc": "Initial visible of cascader popup",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "defaultValue",
+          "desc": "Initial selected value",
+          "type": "string\\[] | number\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether disabled select",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "displayRender",
+          "desc": "The render function of displaying selected options",
+          "type": "(label, selectedOptions) => ReactNode",
+          "default": "label => label.join(/)",
+          "version": "multiple: 4.18.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tagRender",
+          "desc": "Custom render function for tags in multiple mode",
+          "type": "({ label: string, onClose: function, value: string }) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "popupClassName",
+          "desc": "The additional className of popup overlay, use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "4.23.0",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownClassName",
+          "desc": "The additional className of popup overlay, please use classNames.popup.root instead",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownRender",
+          "desc": "Customize dropdown content, use popupRender instead",
+          "type": "(menus: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": true
+        },
+        {
+          "prop": "popupRender",
+          "desc": "Customize dropdown content",
+          "type": "(menus: ReactElement) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "dropdownStyle",
+          "desc": "The style of dropdown menu, use styles.popup.root instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "expandIcon",
+          "desc": "Customize the current item expand icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.4.0",
+          "deprecated": false
+        },
+        {
+          "prop": "expandTrigger",
+          "desc": "expand current item when click or hover, one of click hover",
+          "type": "string",
+          "default": "click",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "fieldNames",
+          "desc": "Custom field name for label and value and children",
+          "type": "object",
+          "default": "{ label: label, value: value, children: children }",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative. example",
+          "type": "function(triggerNode)",
+          "default": "() => document.body",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadData",
+          "desc": "To load option lazily, and it cannot work with showSearch",
+          "type": "(selectedOptions) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "loadingIcon",
+          "desc": "Customize the loading icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagCount",
+          "desc": "Max tag count to show. responsive will cost render performance",
+          "type": "number | responsive",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagPlaceholder",
+          "desc": "Placeholder for not showing tags",
+          "type": "ReactNode | function(omittedValues)",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "maxTagTextLength",
+          "desc": "Max tag text length to show",
+          "type": "number",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "notFoundContent",
+          "desc": "Specify content to show when no result matches",
+          "type": "ReactNode",
+          "default": "No data",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Set visible of cascader popup",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "options",
+          "desc": "The data options of cascade",
+          "type": "Option\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placeholder",
+          "desc": "The input placeholder",
+          "type": "string",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Use preset popup align config from builtinPlacements",
+          "type": "bottomLeft bottomRight topLeft topRight",
+          "default": "bottomLeft",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "prefix",
+          "desc": "The custom prefix",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.22.0",
+          "deprecated": false
+        },
+        {
+          "prop": "showArrow",
+          "desc": "Whether to show the arrow icon, please use suffix={null} instead",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "showSearch",
+          "desc": "Whether show search input",
+          "type": "boolean | Object",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The input size",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "suffix",
+          "desc": "The custom suffix. Custom suffixes will not respond to clicks to open, because the replaced suffix may be designed for other interactions. You can use pointer-events: none style to bypass",
+          "type": "ReactNode | (props) => ReactNode",
+          "default": "<DownOutlined />",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "suffixIcon",
+          "desc": "The custom suffix icon. Please use suffix instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "value",
+          "desc": "The selected value",
+          "type": "string\\[] | number\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Variants of selector",
+          "type": "outlined | borderless | filled | underlined",
+          "default": "outlined",
+          "version": "5.13.0 | underlined: 5.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when finishing cascader select",
+          "type": "(value, selectedOptions) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClear",
+          "desc": "Called when clear",
+          "type": "() => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onDropdownVisibleChange",
+          "desc": "Callback when popup shown or hidden, use onOpenChange instead",
+          "type": "(value) => void",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "onOpenChange",
+          "desc": "Callback when popup shown or hidden",
+          "type": "(open: boolean) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onPopupVisibleChange",
+          "desc": "Callback when popup shown or hidden, please use onOpenChange instead",
+          "type": "(value) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "multiple",
+          "desc": "Support multiple or not",
+          "type": "boolean",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "removeIcon",
+          "desc": "The custom remove icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showCheckedStrategy",
+          "desc": "The way to show selected items in the box (only effective when multiple is true). Cascader.SHOW_CHILD: just show child treeNode. Cascader.SHOW_PARENT: just show parent treeNode (when all child treeNode under the parent treeNode are checked)",
+          "type": "Cascader.SHOW_PARENT | Cascader.SHOW_CHILD",
+          "default": "Cascader.SHOW_PARENT",
+          "version": "4.20.0",
+          "deprecated": false
+        },
+        {
+          "prop": "searchValue",
+          "desc": "Set search value, Need work with showSearch",
+          "type": "string",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "onSearch",
+          "desc": "The callback function triggered when input changed",
+          "type": "(search: string) => void",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": true
+        },
+        {
+          "prop": "dropdownMenuColumnStyle",
+          "desc": "The style of the drop-down menu column, use styles.popup.listItem instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "popupMenuColumnStyle",
+          "desc": "The style of the drop-down menu column, use styles.popup.listItem instead",
+          "type": "CSSProperties",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "optionRender",
+          "desc": "Customize the rendering dropdown options",
+          "type": "(option: Option) => React.ReactNode",
+          "default": "-",
+          "version": "5.16.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "AllowClearConfig",
+      "rows": [
+        {
+          "prop": "clearIcon",
+          "desc": "Custom clear icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "When true, equivalent to allowClear={false}",
+          "type": "boolean",
+          "default": "false",
+          "version": "6.7.0",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Accessible name of the clear button",
+          "type": "string",
+          "default": "Component locale text",
+          "version": "6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "tabIndex",
+          "desc": "Tab order of the clear button. -1 excludes it from Tab navigation",
+          "type": "number",
+          "default": "0",
+          "version": "6.7.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "showSearch",
+      "rows": [
+        {
+          "prop": "autoClearSearchValue",
+          "desc": "Whether the current search will be cleared on selecting an item. Only applies when multiple is true",
+          "type": "boolean",
+          "default": "true",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "filter",
+          "desc": "The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded",
+          "type": "function(inputValue, path): boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "limit",
+          "desc": "Set the count of filtered items",
+          "type": "number | false",
+          "default": "50",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "matchInputWidth",
+          "desc": "Whether the width of list matches input, (how it looks)",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "render",
+          "desc": "Used to render filtered options",
+          "type": "function(inputValue, path): ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "sort",
+          "desc": "Used to sort filtered options",
+          "type": "function(a, b, inputValue)",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "searchValue",
+          "desc": "Set search value, Need work with showSearch",
+          "type": "string",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "The callback function triggered when input changed",
+          "type": "(search: string) => void",
+          "default": "-",
+          "version": "4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "searchIcon",
+          "desc": "Customize the search icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "6.3.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Methods",
+      "rows": [
+        {
+          "prop": "blur()",
+          "desc": "Remove focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "focus()",
+          "desc": "Get focus",
+          "type": "",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

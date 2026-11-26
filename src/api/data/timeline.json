@@ -1,0 +1,177 @@
+{
+  "slug": "timeline",
+  "title": "Timeline",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Timeline",
+      "rows": [
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "items",
+          "desc": "Each node of timeline",
+          "type": "Items[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mode",
+          "desc": "By sending alternate the timeline will distribute the nodes to the left and right",
+          "type": "start | alternate | end",
+          "default": "start",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "orientation",
+          "desc": "Set the direction of the timeline",
+          "type": "vertical | horizontal",
+          "default": "vertical",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "pending",
+          "desc": "Set the last ghost node's existence or its content. Use item.loading instead",
+          "type": "ReactNode",
+          "default": "false",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "pendingDot",
+          "desc": "Set the dot of the last ghost node when pending is true. Use item.icon instead",
+          "type": "ReactNode",
+          "default": "&lt;LoadingOutlined /&gt;",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "reverse",
+          "desc": "Whether reverse nodes or not",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "titleSpan",
+          "desc": "Set the title span space. It is the distance to the center of the dot <InlinePopover previewURL=\"https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*1NJISa7bpqgAAAAAR5AAAAgAerJ8AQ/original\"></InlinePopover>",
+          "type": "number | string",
+          "default": "12",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "variant",
+          "desc": "Config style variant",
+          "type": "filled | outlined",
+          "default": "outlined",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Items",
+      "rows": [
+        {
+          "prop": "color",
+          "desc": "Set the circle's color to blue, red, green, gray or other custom colors",
+          "type": "string",
+          "default": "blue",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "content",
+          "desc": "Set the content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "children",
+          "desc": "Set the content. Please use content instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "dot",
+          "desc": "Customize timeline dot. Please use icon instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "icon",
+          "desc": "Customize node icon",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "label",
+          "desc": "Set the label. Please use title instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "loading",
+          "desc": "Set loading state",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Customize node placement",
+          "type": "start | end",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "position",
+          "desc": "Customize node position. Please use placement instead",
+          "type": "start | end",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "title",
+          "desc": "Set the title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

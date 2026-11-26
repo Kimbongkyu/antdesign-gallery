@@ -1,0 +1,150 @@
+{
+  "slug": "space",
+  "title": "Space",
+  "group": "Layout",
+  "sections": [
+    {
+      "section": "Space",
+      "rows": [
+        {
+          "prop": "align",
+          "desc": "Align items",
+          "type": "start | end | center | baseline | stretch",
+          "default": "-",
+          "version": "4.2.0 | stretch: 6.6.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props: SpaceProps })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "direction",
+          "desc": "The space direction",
+          "type": "vertical | horizontal",
+          "default": "horizontal",
+          "version": "4.1.0",
+          "deprecated": true
+        },
+        {
+          "prop": "orientation",
+          "desc": "The space direction",
+          "type": "vertical | horizontal",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "The space size",
+          "type": "Size | [Size\\[\\]](#size)",
+          "default": "small",
+          "version": "4.1.0 | Array: 4.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "split",
+          "desc": "Set split, please use separator instead",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "4.7.0",
+          "deprecated": true
+        },
+        {
+          "prop": "separator",
+          "desc": "Set separator",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props: SpaceProps })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "vertical",
+          "desc": "Orientation, Simultaneously configure with orientation and prioritize orientation",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "wrap",
+          "desc": "Auto wrap line, when horizontal effective",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.9.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Space.Compact",
+      "rows": [
+        {
+          "prop": "block",
+          "desc": "Option to fit width to its parent\\'s width",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.24.0",
+          "deprecated": false
+        },
+        {
+          "prop": "direction",
+          "desc": "Set direction of layout",
+          "type": "vertical | horizontal",
+          "default": "horizontal",
+          "version": "4.24.0",
+          "deprecated": true
+        },
+        {
+          "prop": "orientation",
+          "desc": "Set direction of layout",
+          "type": "vertical | horizontal",
+          "default": "horizontal",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "vertical",
+          "desc": "Orientation, Simultaneously configure with orientation and prioritize orientation",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "size",
+          "desc": "Set child component size",
+          "type": "large | medium | small",
+          "default": "medium",
+          "version": "4.24.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Space.Addon",
+      "rows": [
+        {
+          "prop": "children",
+          "desc": "Custom content",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "5.29.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

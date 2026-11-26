@@ -1,0 +1,273 @@
+{
+  "slug": "transfer",
+  "title": "Transfer",
+  "group": "Data Entry",
+  "sections": [
+    {
+      "section": "Transfer",
+      "rows": [
+        {
+          "prop": "actions",
+          "desc": "A set of operations that are sorted from top to bottom. When an array of strings is provided, default buttons will be used; when an array of ReactNode is provided, custom elements will be used",
+          "type": "ReactNode\\[]",
+          "default": "\\[>, <]",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "dataSource",
+          "desc": "Used for setting the source data. The elements that are part of this array will be present the left column. Except the elements whose keys are included in targetKeys prop",
+          "type": "RecordType extends TransferItem = TransferItem\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Whether disabled transfer",
+          "type": "boolean",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectionsIcon",
+          "desc": "custom dropdown icon",
+          "type": "React.ReactNode",
+          "default": "",
+          "version": "5.8.0",
+          "deprecated": false
+        },
+        {
+          "prop": "filterOption",
+          "desc": "A function to determine whether an item should show in search result list, only works when searching, (add direction support since 5.9.0+)",
+          "type": "(inputValue, option, direction: left | right): boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "footer",
+          "desc": "A function used for rendering the footer",
+          "type": "(props, { direction }) => ReactNode",
+          "default": "-",
+          "version": "direction: 4.17.0",
+          "deprecated": false
+        },
+        {
+          "prop": "listStyle",
+          "desc": "A custom CSS style used for rendering the transfer columns. Use styles.section instead",
+          "type": "object | ({direction: left | right}) => object",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "locale",
+          "desc": "The i18n text including filter, empty text, item unit, etc",
+          "type": "{ itemUnit: string; itemsUnit: string; searchPlaceholder: string; notFoundContent: ReactNode | ReactNode[]; }",
+          "default": "{ itemUnit: item, itemsUnit: items, notFoundContent: No data, searchPlaceholder: Search here }",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "oneWay",
+          "desc": "Display as single direction style",
+          "type": "boolean",
+          "default": "false",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "operations",
+          "desc": "A set of operations that are sorted from top to bottom. Use actions instead.",
+          "type": "string\\[]",
+          "default": "\\[>, <]",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "operationStyle",
+          "desc": "A custom CSS style used for rendering the operations column. Use styles.actions instead.",
+          "type": "object",
+          "default": "-",
+          "version": "",
+          "deprecated": true
+        },
+        {
+          "prop": "pagination",
+          "desc": "Use pagination. Not work in render props",
+          "type": "boolean | { pageSize: number, simple: boolean, showSizeChanger?: boolean, showLessItems?: boolean }",
+          "default": "false",
+          "version": "4.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "render",
+          "desc": "The function to generate the item shown on a column. Based on an record (element of the dataSource array), this function should return a React element which is generated from that record. Also, it can return a plain object with value and label, label is a React element and value is for title",
+          "type": "(record) => ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectAllLabels",
+          "desc": "A set of customized labels for select all checkboxes on the header",
+          "type": "(ReactNode | (info: { selectedCount: number, totalCount: number }) => ReactNode)\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectedKeys",
+          "desc": "A set of keys of selected items",
+          "type": "string\\[] | number\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showSearch",
+          "desc": "If included, a search box is shown on each column",
+          "type": "boolean | { placeholder:string,defaultValue:string }",
+          "default": "false",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "showSelectAll",
+          "desc": "Show select all checkbox on the header",
+          "type": "boolean",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "status",
+          "desc": "Set validation status",
+          "type": "'error' | 'warning'",
+          "default": "-",
+          "version": "4.19.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "6.0.0",
+          "deprecated": false
+        },
+        {
+          "prop": "targetKeys",
+          "desc": "A set of keys of elements that are listed on the right column",
+          "type": "string\\[] | number\\[]",
+          "default": "\\[]",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "titles",
+          "desc": "A set of titles that are sorted from left to right",
+          "type": "ReactNode\\[]",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "A callback function that is executed when the transfer between columns is complete",
+          "type": "(targetKeys, direction, moveKeys): void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onScroll",
+          "desc": "A callback function which is executed when scroll options list",
+          "type": "(direction, event): void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSearch",
+          "desc": "A callback function which is executed when search field are changed",
+          "type": "(direction: left | right, value: string): void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onSelectChange",
+          "desc": "A callback function which is executed when selected items are changed",
+          "type": "(sourceSelectedKeys, targetSelectedKeys): void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "Render Props",
+      "rows": [
+        {
+          "prop": "direction",
+          "desc": "List render direction",
+          "type": "left | right",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "disabled",
+          "desc": "Disable list or not",
+          "type": "boolean",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "filteredItems",
+          "desc": "Filtered items",
+          "type": "RecordType\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "selectedKeys",
+          "desc": "Selected items",
+          "type": "string\\[] | number\\[]",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onItemSelect",
+          "desc": "Select item",
+          "type": "(key: string | number, selected: boolean)",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onItemSelectAll",
+          "desc": "Select a group of items",
+          "type": "(keys: string\\[] | number\\[], selected: boolean)",
+          "default": "",
+          "version": "",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

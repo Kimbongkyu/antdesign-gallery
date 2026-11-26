@@ -1,0 +1,36 @@
+{
+  "slug": "app",
+  "title": "App",
+  "group": "Other",
+  "sections": [
+    {
+      "section": "App",
+      "rows": [
+        {
+          "prop": "component",
+          "desc": "Config render element, if false will not create DOM node",
+          "type": "ComponentType | false",
+          "default": "div",
+          "version": "5.11.0",
+          "deprecated": false
+        },
+        {
+          "prop": "message",
+          "desc": "Global config for Message",
+          "type": "MessageConfig",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "notification",
+          "desc": "Global config for Notification",
+          "type": "NotificationConfig",
+          "default": "-",
+          "version": "5.3.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "slug": "tour",
+  "title": "Tour",
+  "group": "Data Display",
+  "sections": [
+    {
+      "section": "Tour",
+      "rows": [
+        {
+          "prop": "arrow",
+          "desc": "Whether to show the arrow, including the configuration whether to point to the center of the element",
+          "type": "boolean | { pointAtCenter: boolean }",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "classNames",
+          "desc": "Customize class for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, string> | (info: { props })=> Record<SemanticDOM, string>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Customize close icon",
+          "type": "React.ReactNode",
+          "default": "true",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "disabledInteraction",
+          "desc": "Disable interaction on highlighted area.",
+          "type": "boolean",
+          "default": "false",
+          "version": "5.13.0",
+          "deprecated": false
+        },
+        {
+          "prop": "gap",
+          "desc": "Control the radius of the highlighted area and the offset between highlighted area and the element.",
+          "type": "{ offset?: number | [number, number]; radius?: number }",
+          "default": "{ offset?: 6 ; radius?: 2 }",
+          "version": "5.0.0 (array type offset: 5.9.0)",
+          "deprecated": false
+        },
+        {
+          "prop": "keyboard",
+          "desc": "Whether to enable keyboard shortcuts",
+          "type": "boolean",
+          "default": "true",
+          "version": "6.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Position of the guide card relative to the target element",
+          "type": "center | left | leftTop | leftBottom | right | rightTop | rightBottom | top | topLeft | topRight | bottom | bottomLeft | bottomRight",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Callback function on shutdown",
+          "type": "Function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onFinish",
+          "desc": "Callback when the tour is finished",
+          "type": "Function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Whether to enable masking, change mask style and fill color by pass custom props",
+          "type": "boolean | { style?: React.CSSProperties; color?: string; }",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Type, affects the background color and text color",
+          "type": "default | primary",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "open",
+          "desc": "Open tour",
+          "type": "boolean",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onChange",
+          "desc": "Callback when the step changes. Current is the previous step",
+          "type": "(current: number) => void",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "current",
+          "desc": "What is the current step",
+          "type": "number",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollIntoViewOptions",
+          "desc": "support pass custom scrollIntoView options",
+          "type": "boolean | ScrollIntoViewOptions",
+          "default": "true",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "styles",
+          "desc": "Customize inline style for each semantic structure inside the component. Supports object or function.",
+          "type": "Record<SemanticDOM, CSSProperties> | (info: { props })=> Record<SemanticDOM, CSSProperties>",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "indicatorsRender",
+          "desc": "custom indicator",
+          "type": "(current: number, total: number) => ReactNode",
+          "default": "-",
+          "version": "5.2.0",
+          "deprecated": false
+        },
+        {
+          "prop": "actionsRender",
+          "desc": "custom action",
+          "type": "(originNode: ReactNode, info: { current: number, total: number }) => ReactNode",
+          "default": "-",
+          "version": "5.25.0",
+          "deprecated": false
+        },
+        {
+          "prop": "zIndex",
+          "desc": "Tour's zIndex",
+          "type": "number",
+          "default": "1001",
+          "version": "5.3.0",
+          "deprecated": false
+        },
+        {
+          "prop": "getPopupContainer",
+          "desc": "Set the rendering node of Tour floating layer",
+          "type": "(node: HTMLElement) => HTMLElement",
+          "default": "body",
+          "version": "5.12.0",
+          "deprecated": false
+        }
+      ]
+    },
+    {
+      "section": "TourStep",
+      "rows": [
+        {
+          "prop": "target",
+          "desc": "Get the element the guide card points to. Empty makes it show in center of screen",
+          "type": "() => HTMLElement | HTMLElement",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "arrow",
+          "desc": "Whether to show the arrow, including the configuration whether to point to the center of the element",
+          "type": "boolean | { pointAtCenter: boolean}",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "closeIcon",
+          "desc": "Customize close icon",
+          "type": "React.ReactNode",
+          "default": "true",
+          "version": "5.9.0",
+          "deprecated": false
+        },
+        {
+          "prop": "cover",
+          "desc": "Displayed pictures or videos",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "title",
+          "desc": "title",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "description",
+          "desc": "description",
+          "type": "ReactNode",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "placement",
+          "desc": "Position of the guide card relative to the target element",
+          "type": "center | left | leftTop | leftBottom | right | rightTop | rightBottom | top | topLeft | topRight | bottom | bottomLeft | bottomRight",
+          "default": "bottom",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "onClose",
+          "desc": "Callback function on shutdown",
+          "type": "Function",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "mask",
+          "desc": "Whether to enable masking, change mask style and fill color by pass custom props, the default follows the mask property of Tour",
+          "type": "boolean | { style?: React.CSSProperties; color?: string; }",
+          "default": "true",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "type",
+          "desc": "Type, affects the background color and text color",
+          "type": "default | primary",
+          "default": "default",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "nextButtonProps",
+          "desc": "Properties of the Next button",
+          "type": "{ children: ReactNode; onClick: Function }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "prevButtonProps",
+          "desc": "Properties of the previous button",
+          "type": "{ children: ReactNode; onClick: Function }",
+          "default": "-",
+          "version": "",
+          "deprecated": false
+        },
+        {
+          "prop": "scrollIntoViewOptions",
+          "desc": "support pass custom scrollIntoView options, the default follows the scrollIntoViewOptions property of Tour",
+          "type": "boolean | ScrollIntoViewOptions",
+          "default": "true",
+          "version": "5.2.0",
+          "deprecated": false
+        }
+      ]
+    }
+  ]
+}
