@@ -94,4 +94,4 @@ test('모든 속성 표가 React 경고(중복 key 등) 없이 그려진다', ()
   for (const doc of Object.values(API_DOCS)) render(<ApiTable doc={doc} />).unmount();
   expect(err.mock.calls.map((c) => String(c[0]).slice(0, 120))).toEqual([]);
   err.mockRestore();
-});
+}, 60_000); // 73개 표를 다 그려서 CI 에서 10초 넘게 걸림
