@@ -48,7 +48,7 @@ function ControlRow({c, value, onChange}: {c: Control; value: V; onChange: (v: V
             size="small"
             aria-label={c.label}
             value={String(value)}
-            options={c.options.map((o) => ({value: o, label: o}))}
+            options={c.options.map((o) => ({value: o, label: o === '' ? '(없음)' : o}))}
             onChange={onChange}
           />
         </div>

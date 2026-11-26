@@ -1,10 +1,11 @@
 import type {Demo, Values} from './demoTypes';
 import {GENERAL_LAYOUT_OTHER} from './demos/general-layout-other';
 import {NAVIGATION_FEEDBACK} from './demos/navigation-feedback';
+import {ENTRY} from './demos/entry';
 
 export type {Control, Demo, Values} from './demoTypes';
 
-export const DEMOS: Record<string, Demo> = {...GENERAL_LAYOUT_OTHER, ...NAVIGATION_FEEDBACK};
+export const DEMOS: Record<string, Demo> = {...GENERAL_LAYOUT_OTHER, ...NAVIGATION_FEEDBACK, ...ENTRY};
 
 export function defaultValues(demo: Demo): Values {
   return Object.fromEntries(demo.controls.map((c) => [c.key, c.default]));
