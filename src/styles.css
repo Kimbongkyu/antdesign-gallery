@@ -240,3 +240,15 @@ html {
 .gx-api td {
   overflow-wrap: anywhere;
 }
+
+.gx-box {
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border-radius: 6px;
+  background: #e6f4ff;
+  color: #0958d9;
+  font-size: 13px;
+}

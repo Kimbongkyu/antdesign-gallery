@@ -50,7 +50,7 @@ export function ApiTable({doc}: {doc: ApiDoc}) {
       render: (d: string, r: ApiRow) =>
         ko[r.prop] ?? (
           <>
-            {d} <Tag bordered={false}>영문</Tag>
+            {d} <Tag variant="filled">영문</Tag>
           </>
         ),
     },

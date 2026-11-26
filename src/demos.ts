@@ -1,8 +1,9 @@
 import type {Demo, Values} from './demoTypes';
+import {GENERAL_LAYOUT_OTHER} from './demos/general-layout-other';
 
 export type {Control, Demo, Values} from './demoTypes';
 
-export const DEMOS: Record<string, Demo> = {};
+export const DEMOS: Record<string, Demo> = {...GENERAL_LAYOUT_OTHER};
 
 export function defaultValues(demo: Demo): Values {
   return Object.fromEntries(demo.controls.map((c) => [c.key, c.default]));
