@@ -6,7 +6,7 @@ import {Providers} from '../src/main';
 import {BY_NAME, ENTRIES} from '../src/registry';
 
 // 데모를 다 만든 그룹. 그룹을 끝낼 때마다 늘린다.
-const DONE_GROUPS = ['general', 'layout', 'other'];
+const DONE_GROUPS = ['general', 'layout', 'other', 'navigation', 'feedback'];
 
 test.each(Object.entries(DEMOS))('%s 데모가 오류 없이 그려진다', (_name, demo) => {
   if (demo.noPreview) {
