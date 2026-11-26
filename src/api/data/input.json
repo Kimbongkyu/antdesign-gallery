@@ -326,7 +326,7 @@
           "prop": "iconRender",
           "desc": "Custom toggle button",
           "type": "(visible) => ReactNode",
-          "default": "(visible) => (visible ? &lt;EyeOutlined /> : &lt;EyeInvisibleOutlined />)",
+          "default": "(visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />)",
           "version": "4.3.0",
           "deprecated": false
         },

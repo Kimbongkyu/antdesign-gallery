@@ -19,6 +19,9 @@ function clean(cell: string): string {
   return cell
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/`/g, '')
+    .replace(/\\([[\]])/g, '$1')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
     .trim();
 }
 
@@ -74,7 +77,7 @@ export function parseApiMarkdown(slug: string, md: string): ApiDoc {
 
   for (const line of lines) {
     if (/^## /.test(line)) {
-      const h = line.replace(/^##\s+/, '').replace(/\s*\{#.*\}\s*$/, '').trim();
+      const h = clean(line.replace(/^##\s+/, '').replace(/\s*\{#.*\}\s*$/, ''));
       if (h === 'API') inApi = true;
       else if (NOT_API.test(h)) inApi = false;
       else if (inApi) name = h; // Form.Item, Methods 처럼 ## API 뒤에 이어지는 API 구역
@@ -83,7 +86,7 @@ export function parseApiMarkdown(slug: string, md: string): ApiDoc {
     }
     if (!inApi) continue;
     if (/^### /.test(line)) {
-      name = line.replace(/^###\s+/, '').replace(/\s*\{#.*\}\s*$/, '').trim();
+      name = clean(line.replace(/^###\s+/, '').replace(/\s*\{#.*\}\s*$/, ''));
       header = null;
       continue;
     }

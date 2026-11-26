@@ -89,7 +89,7 @@
         {
           "prop": "prefix",
           "desc": "Set trigger prefix keyword",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "@",
           "version": "",
           "deprecated": false
@@ -210,7 +210,7 @@
           "prop": "options",
           "desc": "Option Configuration",
           "type": "Options",
-          "default": "\\[]",
+          "default": "[]",
           "version": "5.1.0",
           "deprecated": false
         },

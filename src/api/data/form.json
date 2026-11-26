@@ -41,7 +41,7 @@
         {
           "prop": "fields",
           "desc": "Control of form fields through state management (such as redux). Not recommended for non-strong demand. View example",
-          "type": "FieldData\\[]",
+          "type": "FieldData[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -169,7 +169,7 @@
         {
           "prop": "validateTrigger",
           "desc": "Config field validate trigger",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "onChange",
           "version": "4.3.0",
           "deprecated": false
@@ -246,7 +246,7 @@
         {
           "prop": "dependencies",
           "desc": "Set the dependency field. See below",
-          "type": "NamePath\\[]",
+          "type": "NamePath[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -262,7 +262,7 @@
         {
           "prop": "getValueFromEvent",
           "desc": "Specify how to get value from event or other onChange arguments",
-          "type": "(..args: any\\[]) => any",
+          "type": "(..args: any[]) => any",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -342,7 +342,7 @@
         {
           "prop": "messageVariables",
           "desc": "The default validate field info, description see below",
-          "type": "Record&lt;string, string>",
+          "type": "Record<string, string>",
           "default": "-",
           "version": "4.7.0",
           "deprecated": false
@@ -390,7 +390,7 @@
         {
           "prop": "rules",
           "desc": "Rules for field validation. Click here to see an example",
-          "type": "Rule\\[]",
+          "type": "Rule[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -446,7 +446,7 @@
         {
           "prop": "validateTrigger",
           "desc": "When to validate the value of children node",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "onChange",
           "version": "",
           "deprecated": false
@@ -483,7 +483,7 @@
         {
           "prop": "children",
           "desc": "Render function",
-          "type": "(fields: Field\\[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode",
+          "type": "(fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -491,7 +491,7 @@
         {
           "prop": "initialValue",
           "desc": "Config sub default value. Form initialValues get higher priority when conflict",
-          "type": "any\\[]",
+          "type": "any[]",
           "default": "-",
           "version": "4.9.0",
           "deprecated": false
@@ -507,7 +507,7 @@
         {
           "prop": "rules",
           "desc": "Validate rules, only support customize validator. Should work with ErrorList",
-          "type": "{ validator, message }\\[]",
+          "type": "{ validator, message }[]",
           "default": "-",
           "version": "4.7.0",
           "deprecated": false
@@ -536,8 +536,8 @@
         {
           "prop": "remove",
           "desc": "remove form item",
-          "type": "(index: number | number\\[]) => void",
-          "default": "number\\[]",
+          "type": "(index: number | number[]) => void",
+          "default": "number[]",
           "version": "4.5.0",
           "deprecated": false
         }
@@ -549,7 +549,7 @@
         {
           "prop": "errors",
           "desc": "Error list",
-          "type": "ReactNode\\[]",
+          "type": "ReactNode[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -583,7 +583,7 @@
         {
           "prop": "getFieldError",
           "desc": "Get the error messages by the field name",
-          "type": "(name: NamePath) => string\\[]",
+          "type": "(name: NamePath) => string[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -599,7 +599,7 @@
         {
           "prop": "getFieldsError",
           "desc": "Get the error messages by the fields name. Return as an array",
-          "type": "(nameList?: NamePath\\[]) => FieldError\\[]",
+          "type": "(nameList?: NamePath[]) => FieldError[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -623,7 +623,7 @@
         {
           "prop": "isFieldsTouched",
           "desc": "Check if fields have been operated. Check if all fields is touched when allTouched is true",
-          "type": "(nameList?: NamePath\\[], allTouched?: boolean) => boolean",
+          "type": "(nameList?: NamePath[], allTouched?: boolean) => boolean",
           "default": "",
           "version": "",
           "deprecated": false
@@ -647,7 +647,7 @@
         {
           "prop": "resetFields",
           "desc": "Reset fields to initialValues",
-          "type": "(fields?: NamePath\\[]) => void",
+          "type": "(fields?: NamePath[]) => void",
           "default": "",
           "version": "",
           "deprecated": false
@@ -663,7 +663,7 @@
         {
           "prop": "setFields",
           "desc": "Set fields status",
-          "type": "(fields: FieldData\\[]) => void",
+          "type": "(fields: FieldData[]) => void",
           "default": "",
           "version": "",
           "deprecated": false
@@ -695,7 +695,7 @@
         {
           "prop": "validateFields",
           "desc": "Validate fields. Use recursive to validate all the field in the path",
-          "type": "(nameList?: NamePath\\[], config?: ValidateConfig) => Promise",
+          "type": "(nameList?: NamePath[], config?: ValidateConfig) => Promise",
           "default": "",
           "version": "",
           "deprecated": false
@@ -708,7 +708,7 @@
         {
           "prop": "errors",
           "desc": "Error messages",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -716,7 +716,7 @@
         {
           "prop": "warnings",
           "desc": "Warning messages",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -724,7 +724,7 @@
         {
           "prop": "name",
           "desc": "Field name path",
-          "type": "NamePath\\[]",
+          "type": "NamePath[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -769,7 +769,7 @@
         {
           "prop": "enum",
           "desc": "Match enum value. You need to set type to enum to enable this",
-          "type": "any\\[]",
+          "type": "any[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -777,7 +777,7 @@
         {
           "prop": "fields",
           "desc": "Validate rule for child elements, valid when type is array or object",
-          "type": "Record&lt;string, rule>",
+          "type": "Record<string, rule>",
           "default": "",
           "version": "",
           "deprecated": false
@@ -849,7 +849,7 @@
         {
           "prop": "validateTrigger",
           "desc": "Set validate trigger event. Must be the sub set of validateTrigger in Form.Item",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "",
           "version": "",
           "deprecated": false

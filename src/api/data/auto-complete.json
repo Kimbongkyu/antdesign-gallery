@@ -25,8 +25,8 @@
         {
           "prop": "children",
           "desc": "Customize input element",
-          "type": "HTMLInputElement | HTMLTextAreaElement | React.ReactElement&lt;InputProps>",
-          "default": "&lt;Input />",
+          "type": "HTMLInputElement | HTMLTextAreaElement | React.ReactElement<InputProps>",
+          "default": "<Input />",
           "version": "",
           "deprecated": false
         },
@@ -169,7 +169,7 @@
         {
           "prop": "options",
           "desc": "Select options. Will get better perf than jsx definition",
-          "type": "{ label, value }\\[]",
+          "type": "{ label, value }[]",
           "default": "-",
           "version": "",
           "deprecated": false

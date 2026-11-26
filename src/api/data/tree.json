@@ -41,8 +41,8 @@
         {
           "prop": "checkedKeys",
           "desc": "(Controlled) Specifies the keys of the checked treeNodes (PS: When this specifies the key of a treeNode which is also a parent treeNode, all the children treeNodes of will be checked; and vice versa, when it specifies the key of a treeNode which is a child treeNode, its parent treeNode will also be checked. When checkable and checkStrictly is true, its object has checked and halfChecked property. Regardless of whether the child or parent treeNode is checked, they won't impact each other",
-          "type": "string\\[] | {checked: string\\[], halfChecked: string\\[]}",
-          "default": "\\[]",
+          "type": "string[] | {checked: string[], halfChecked: string[]}",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -65,8 +65,8 @@
         {
           "prop": "defaultCheckedKeys",
           "desc": "Specifies the keys of the default checked treeNodes",
-          "type": "string\\[]",
-          "default": "\\[]",
+          "type": "string[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -81,8 +81,8 @@
         {
           "prop": "defaultExpandedKeys",
           "desc": "Specify the keys of the default expanded treeNodes",
-          "type": "string\\[]",
-          "default": "\\[]",
+          "type": "string[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -97,8 +97,8 @@
         {
           "prop": "defaultSelectedKeys",
           "desc": "Specifies the keys of the default selected treeNodes",
-          "type": "string\\[]",
-          "default": "\\[]",
+          "type": "string[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -121,8 +121,8 @@
         {
           "prop": "expandedKeys",
           "desc": "(Controlled) Specifies the keys of the expanded treeNodes",
-          "type": "string\\[]",
-          "default": "\\[]",
+          "type": "string[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -169,8 +169,8 @@
         {
           "prop": "loadedKeys",
           "desc": "(Controlled) Set loaded tree nodes. Need to work with loadData",
-          "type": "string\\[]",
-          "default": "\\[]",
+          "type": "string[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -209,7 +209,7 @@
         {
           "prop": "selectedKeys",
           "desc": "(Controlled) Specifies the keys of the selected treeNodes, multiple selection needs to set multiple to true",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -265,7 +265,7 @@
         {
           "prop": "treeData",
           "desc": "The treeNodes data Array, if set it then you need not to construct children TreeNode. (key should be unique across the whole array)",
-          "type": "array&lt;{ key, title, children, \\[disabled, selectable] }>",
+          "type": "array<{ key, title, children, [disabled, selectable] }>",
           "default": "-",
           "version": "",
           "deprecated": false

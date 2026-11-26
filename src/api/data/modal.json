@@ -58,7 +58,7 @@
           "prop": "closeIcon",
           "desc": "Custom close icon. 5.7.0: close button will be hidden when setting to null or false",
           "type": "ReactNode",
-          "default": "&lt;CloseOutlined />",
+          "default": "<CloseOutlined />",
           "version": "",
           "deprecated": false
         },
@@ -383,7 +383,7 @@
           "prop": "icon",
           "desc": "Custom icon",
           "type": "ReactNode",
-          "default": "&lt;ExclamationCircleFilled />",
+          "default": "<ExclamationCircleFilled />",
           "version": "",
           "deprecated": false
         },

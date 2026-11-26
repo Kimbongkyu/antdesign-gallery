@@ -73,16 +73,16 @@
         {
           "prop": "gap",
           "desc": "The spacing between watermarks",
-          "type": "\\[number, number\\]",
-          "default": "\\[100, 100\\]",
+          "type": "[number, number]",
+          "default": "[100, 100]",
           "version": "",
           "deprecated": false
         },
         {
           "prop": "offset",
           "desc": "The offset of the watermark from the upper left corner of the container. The default is gap/2",
-          "type": "\\[number, number\\]",
-          "default": "\\[gap\\[0\\]/2, gap\\[1\\]/2\\]",
+          "type": "[number, number]",
+          "default": "[gap[0]/2, gap[1]/2]",
           "version": "",
           "deprecated": false
         },

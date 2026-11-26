@@ -17,7 +17,7 @@
         {
           "prop": "activeKey",
           "desc": "Key of the active panel",
-          "type": "string\\[] | string <br/> number\\[] | number",
+          "type": "string[] | string <br/> number[] | number",
           "default": "No default value. In accordion mode, it's the key of the first panel",
           "version": "",
           "deprecated": false
@@ -49,7 +49,7 @@
         {
           "prop": "defaultActiveKey",
           "desc": "Key of the initial active panel",
-          "type": "string\\[] | string <br/> number\\[] | number",
+          "type": "string[] | string <br/> number[] | number",
           "default": "-",
           "version": "",
           "deprecated": false

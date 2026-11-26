@@ -25,7 +25,7 @@
         {
           "prop": "items",
           "desc": "The routing stack information of router (>=5.3.0 recommended, use Breadcrumb.Item children for older versions)",
-          "type": "[ItemType\\[\\]](#itemtype)",
+          "type": "[ItemType[]](#itemtype)",
           "default": "-",
           "version": "5.3.0",
           "deprecated": false

@@ -57,8 +57,8 @@
         {
           "prop": "defaultValue",
           "desc": "Initial selected value",
-          "type": "string\\[] | number\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -217,7 +217,7 @@
         {
           "prop": "options",
           "desc": "The data options of cascade",
-          "type": "Option\\[]",
+          "type": "Option[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -305,7 +305,7 @@
         {
           "prop": "value",
           "desc": "The selected value",
-          "type": "string\\[] | number\\[]",
+          "type": "string[] | number[]",
           "default": "-",
           "version": "",
           "deprecated": false

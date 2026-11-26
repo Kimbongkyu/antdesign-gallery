@@ -26,7 +26,7 @@
           "prop": "character",
           "desc": "The custom character of rate",
           "type": "ReactNode | (RateProps) => ReactNode",
-          "default": "&lt;StarFilled />",
+          "default": "<StarFilled />",
           "version": "function(): 4.4.0",
           "deprecated": false
         },
@@ -73,7 +73,7 @@
         {
           "prop": "tooltips",
           "desc": "Customize tooltip by each character",
-          "type": "TooltipProps[] | string\\[]",
+          "type": "TooltipProps[] | string[]",
           "default": "-",
           "version": "",
           "deprecated": false

@@ -105,7 +105,7 @@
         {
           "prop": "size",
           "desc": "Progress size",
-          "type": "number | \\[number | string, number] | { width: number, height: number } | \"small\" | \"medium\"",
+          "type": "number | [number | string, number] | { width: number, height: number } | \"small\" | \"medium\"",
           "default": "\"medium\"",
           "version": "5.3.0, Object: 5.18.0",
           "deprecated": false
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "section": "`type=\"line\"`",
+      "section": "type=\"line\"",
       "rows": [
         {
           "prop": "steps",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "section": "`type=\"circle\"`",
+      "section": "type=\"circle\"",
       "rows": [
         {
           "prop": "steps",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "section": "`type=\"dashboard\"`",
+      "section": "type=\"dashboard\"",
       "rows": [
         {
           "prop": "steps",

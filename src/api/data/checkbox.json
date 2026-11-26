@@ -94,8 +94,8 @@
         {
           "prop": "defaultValue",
           "desc": "Default selected value",
-          "type": "(string | number)\\[]",
-          "default": "\\[]",
+          "type": "(string | number)[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -118,8 +118,8 @@
         {
           "prop": "options",
           "desc": "Specifies options",
-          "type": "string\\[] | number\\[] | Option\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[] | Option[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -134,8 +134,8 @@
         {
           "prop": "value",
           "desc": "Used for setting the currently selected value",
-          "type": "(string | number | boolean)\\[]",
-          "default": "\\[]",
+          "type": "(string | number | boolean)[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },

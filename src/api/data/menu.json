@@ -17,7 +17,7 @@
         {
           "prop": "defaultOpenKeys",
           "desc": "Array with the keys of default opened sub menus",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -25,7 +25,7 @@
         {
           "prop": "defaultSelectedKeys",
           "desc": "Array with the keys of default selected menu items",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -65,7 +65,7 @@
         {
           "prop": "items",
           "desc": "Menu item content",
-          "type": "[ItemType\\[\\]](#itemtype)",
+          "type": "[ItemType[]](#itemtype)",
           "default": "-",
           "version": "4.20.0",
           "deprecated": false
@@ -89,7 +89,7 @@
         {
           "prop": "openKeys",
           "desc": "Array with the keys of currently opened sub-menus",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -113,7 +113,7 @@
         {
           "prop": "selectedKeys",
           "desc": "Array with the keys of currently selected menu items",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -185,7 +185,7 @@
         {
           "prop": "onOpenChange",
           "desc": "Called when sub-menus are opened or closed",
-          "type": "function(openKeys: string\\[])",
+          "type": "function(openKeys: string[])",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -275,7 +275,7 @@
         {
           "prop": "children",
           "desc": "Sub-menus or sub-menu items",
-          "type": "[ItemType\\[\\]](#itemtype)",
+          "type": "[ItemType[]](#itemtype)",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -323,7 +323,7 @@
         {
           "prop": "popupOffset",
           "desc": "Sub-menu offset, not working when mode=\"inline\"",
-          "type": "\\[number, number]",
+          "type": "[number, number]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -360,7 +360,7 @@
         {
           "prop": "children",
           "desc": "Sub-menu items",
-          "type": "[MenuItemType\\[\\]](#menuitemtype)",
+          "type": "[MenuItemType[]](#menuitemtype)",
           "default": "-",
           "version": "",
           "deprecated": false

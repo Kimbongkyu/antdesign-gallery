@@ -97,7 +97,7 @@
         {
           "prop": "items",
           "desc": "Data configuration option content, support nesting through children",
-          "type": "{ key, href, title, target, children }\\[] see",
+          "type": "{ key, href, title, target, children }[] see",
           "default": "-",
           "version": "5.1.0",
           "deprecated": false
@@ -158,7 +158,7 @@
         {
           "prop": "children",
           "desc": "Nested Anchor Link, Attention: This attribute does not support horizontal orientation",
-          "type": "AnchorItem\\[]",
+          "type": "AnchorItem[]",
           "default": "-",
           "version": "",
           "deprecated": false

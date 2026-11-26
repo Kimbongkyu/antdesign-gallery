@@ -112,7 +112,7 @@
         {
           "prop": "width",
           "desc": "Set the width of paragraph. When width is an Array, it can set the width of each row. Otherwise only set the last row width",
-          "type": "number | string | Array&lt;number | string>",
+          "type": "number | string | Array<number | string>",
           "default": "-",
           "version": "",
           "deprecated": false

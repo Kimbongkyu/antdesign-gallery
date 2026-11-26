@@ -121,8 +121,8 @@
         {
           "prop": "trigger",
           "desc": "The trigger mode which executes the dropdown action. Note that hover can't be used on touchscreens",
-          "type": "Array&lt;click|hover|contextMenu>",
-          "default": "\\[hover]",
+          "type": "Array<click|hover|contextMenu>",
+          "default": "[hover]",
           "version": "",
           "deprecated": false
         },

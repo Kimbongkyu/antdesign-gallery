@@ -49,7 +49,7 @@
         {
           "prop": "options",
           "desc": "Set children optional",
-          "type": "string\\[] | number\\[] | SegmentedItemType\\[]",
+          "type": "string[] | number[] | SegmentedItemType[]",
           "default": "[]",
           "version": "",
           "deprecated": false

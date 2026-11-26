@@ -50,7 +50,7 @@
           "prop": "pendingDot",
           "desc": "Set the dot of the last ghost node when pending is true. Use item.icon instead",
           "type": "ReactNode",
-          "default": "&lt;LoadingOutlined /&gt;",
+          "default": "<LoadingOutlined />",
           "version": "",
           "deprecated": true
         },

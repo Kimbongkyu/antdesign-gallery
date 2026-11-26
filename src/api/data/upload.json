@@ -17,7 +17,7 @@
         {
           "prop": "action",
           "desc": "Uploading URL",
-          "type": "string | (file) => Promise&lt;string>",
+          "type": "string | (file) => Promise<string>",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -25,7 +25,7 @@
         {
           "prop": "beforeUpload",
           "desc": "Hook function which will be executed before uploading. Uploading will be stopped with false or a rejected Promise returned. When returned value is Upload.LIST_IGNORE, the list of files that have been uploaded will ignore it. **Warning：this function is not supported in IE9**",
-          "type": "(file: RcFile, fileList: [RcFile[]](#rcfile)) => boolean | Promise&lt;File> | Upload.LIST_IGNORE",
+          "type": "(file: RcFile, fileList: [RcFile[]](#rcfile)) => boolean | Promise<File> | Upload.LIST_IGNORE",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -49,7 +49,7 @@
         {
           "prop": "data",
           "desc": "Uploading extra params or function which can return uploading extra params",
-          "type": "object | (file) => object | Promise&lt;object>",
+          "type": "object | (file) => object | Promise<object>",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -57,7 +57,7 @@
         {
           "prop": "defaultFileList",
           "desc": "Default list of files that have been uploaded",
-          "type": "object\\[]",
+          "type": "object[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -81,7 +81,7 @@
         {
           "prop": "fileList",
           "desc": "List of files that have been uploaded (controlled). Here is a common issue #2423 when using it",
-          "type": "UploadFile\\[]",
+          "type": "UploadFile[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -104,7 +104,7 @@
         },
         {
           "prop": "isImageUrl",
-          "desc": "Customize if render &lt;img /> in thumbnail",
+          "desc": "Customize if render <img /> in thumbnail",
           "type": "(file: UploadFile) => boolean",
           "default": "(inside implementation)",
           "version": "",
@@ -113,7 +113,7 @@
         {
           "prop": "itemRender",
           "desc": "Custom item of uploadList",
-          "type": "(originNode: ReactElement, file: UploadFile, fileList: object\\[], actions: { download: function, preview: function, remove: function }) => React.ReactNode",
+          "type": "(originNode: ReactElement, file: UploadFile, fileList: object[], actions: { download: function, preview: function, remove: function }) => React.ReactNode",
           "default": "-",
           "version": "4.16.0",
           "deprecated": false
@@ -177,7 +177,7 @@
         {
           "prop": "previewFile",
           "desc": "Customize preview file logic",
-          "type": "(file: File | Blob) => Promise&lt;dataURL: string>",
+          "type": "(file: File | Blob) => Promise<dataURL: string>",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -241,7 +241,7 @@
         {
           "prop": "onFocus",
           "desc": "Called when focus enters the Upload component",
-          "type": "(event: React.FocusEvent&lt;HTMLSpanElement>) => void",
+          "type": "(event: React.FocusEvent<HTMLSpanElement>) => void",
           "default": "-",
           "version": "6.7.0",
           "deprecated": false

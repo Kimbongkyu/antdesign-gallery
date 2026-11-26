@@ -110,7 +110,7 @@
         {
           "prop": "options",
           "desc": "Set children optional",
-          "type": "string\\[] | number\\[] | Array&lt;CheckboxOptionType>",
+          "type": "string[] | number[] | Array<CheckboxOptionType>",
           "default": "-",
           "version": "",
           "deprecated": false

@@ -17,7 +17,7 @@
         {
           "prop": "dataSource",
           "desc": "DataSource array for list",
-          "type": "any\\[]",
+          "type": "any[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -224,7 +224,7 @@
         {
           "prop": "actions",
           "desc": "The actions content of list item. If itemLayout is vertical, shows the content on bottom, otherwise shows content on the far right",
-          "type": "Array&lt;ReactNode>",
+          "type": "Array<ReactNode>",
           "default": "-",
           "version": "",
           "deprecated": false

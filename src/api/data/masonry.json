@@ -33,7 +33,7 @@
         {
           "prop": "gutter",
           "desc": "Spacing, can be a fixed value, responsive configuration, or a configuration for horizontal and vertical spacing",
-          "type": "Gap | \\[Gap, Gap\\]",
+          "type": "Gap | [Gap, Gap]",
           "default": "0",
           "version": "",
           "deprecated": false

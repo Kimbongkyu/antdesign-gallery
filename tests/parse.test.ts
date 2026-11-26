@@ -90,3 +90,10 @@ test('inlineEmbeds: embed 줄을 내용으로 바꿔 API 표가 이어서 읽힌
     {section: 'Common API', rows: [{prop: 'placement', desc: 'Position', type: 'string', default: 'top', version: '', deprecated: false}]},
   ]);
 });
+
+test('마크다운 이스케이프(\\[ \\] &lt; &gt;)를 풀어 쓴다', () => {
+  const md = '---\ntitle: X\ngroup: Other\n---\n## API\n\n### DatePicker\\[picker=year]\n\n| Property | Description | Type | Default |\n| --- | --- | --- | --- |\n| keys | a | string\\[] | - |\n| trigger | b | Array&lt;click\\|hover&gt; | - |\n';
+  expect(parseApiMarkdown('x', md).sections[0].section).toBe('DatePicker[picker=year]');
+  const rows = parseApiMarkdown('x', md).sections[0].rows;
+  expect(rows.map((r) => r.type)).toEqual(['string[]', 'Array<click|hover>']);
+});

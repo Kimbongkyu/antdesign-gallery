@@ -49,7 +49,7 @@
         {
           "prop": "defaultValue",
           "desc": "To set the initial selected treeNode(s)",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -353,15 +353,15 @@
         {
           "prop": "treeData",
           "desc": "Data of the treeNodes, manual construction work is no longer needed if this property has been set(ensure the Uniqueness of each value)",
-          "type": "array&lt;{ value, title, children, \\[disabled, disableCheckbox, selectable, checkable] }>",
-          "default": "\\[]",
+          "type": "array<{ value, title, children, [disabled, disableCheckbox, selectable, checkable] }>",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
         {
           "prop": "treeDataSimpleMode",
-          "desc": "Enable simple mode of treeData. Changes the treeData schema to: \\[{id:1, pId:0, value:'1', title:\"test1\",...},...] where pId is parent node's id). It is possible to replace the default id and pId keys by providing object to treeDataSimpleMode",
-          "type": "boolean | object&lt;{ id: string, pId: string, rootPId: string }>",
+          "desc": "Enable simple mode of treeData. Changes the treeData schema to: [{id:1, pId:0, value:'1', title:\"test1\",...},...] where pId is parent node's id). It is possible to replace the default id and pId keys by providing object to treeDataSimpleMode",
+          "type": "boolean | object<{ id: string, pId: string, rootPId: string }>",
           "default": "false",
           "version": "",
           "deprecated": false
@@ -377,7 +377,7 @@
         {
           "prop": "treeDefaultExpandedKeys",
           "desc": "Default expanded treeNodes",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -393,7 +393,7 @@
         {
           "prop": "treeExpandedKeys",
           "desc": "Set expanded keys",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -449,7 +449,7 @@
         {
           "prop": "value",
           "desc": "To set the current selected treeNode(s)",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "-",
           "version": "",
           "deprecated": false

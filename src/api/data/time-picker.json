@@ -145,7 +145,7 @@
         {
           "prop": "placeholder",
           "desc": "Display when there's no value",
-          "type": "string | \\[string, string]",
+          "type": "string | [string, string]",
           "default": "Select a time",
           "version": "",
           "deprecated": false
@@ -281,7 +281,7 @@
         {
           "prop": "onCalendarChange",
           "desc": "Callback function, can be executed when the start time or the end time of the range is changing. info argument is added in 4.4.0",
-          "type": "function(dates: \\[dayjs, dayjs], dateStrings: \\[string, string], info: { range:start|end })",
+          "type": "function(dates: [dayjs, dayjs], dateStrings: [string, string], info: { range:start|end })",
           "default": "-",
           "version": "",
           "deprecated": false

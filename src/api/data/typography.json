@@ -436,8 +436,8 @@
         },
         {
           "prop": "icon",
-          "desc": "Custom copy icon: \\[copyIcon, copiedIcon]",
-          "type": "\\[ReactNode, ReactNode]",
+          "desc": "Custom copy icon: [copyIcon, copiedIcon]",
+          "type": "[ReactNode, ReactNode]",
           "default": "-",
           "version": "4.6.0",
           "deprecated": false
@@ -461,8 +461,8 @@
         {
           "prop": "tooltips",
           "desc": "Custom tooltip text, hide when it is false",
-          "type": "\\[ReactNode, ReactNode]",
-          "default": "\\[Copy, Copied]",
+          "type": "[ReactNode, ReactNode]",
+          "default": "[Copy, Copied]",
           "version": "4.4.0",
           "deprecated": false
         },
@@ -507,7 +507,7 @@
           "prop": "icon",
           "desc": "Custom editable icon",
           "type": "ReactNode",
-          "default": "&lt;EditOutlined />",
+          "default": "<EditOutlined />",
           "version": "4.6.0",
           "deprecated": false
         },
@@ -546,8 +546,8 @@
         {
           "prop": "triggerType",
           "desc": "Edit mode trigger - icon, text or both (not specifying icon as trigger hides it)",
-          "type": "Array&lt;icon|text>",
-          "default": "\\[icon]",
+          "type": "Array<icon|text>",
+          "default": "[icon]",
           "version": "",
           "deprecated": false
         },
@@ -668,7 +668,7 @@
         {
           "prop": "duration",
           "desc": "Motion time in seconds. A number uses a 1-second wait; a tuple sets the motion and wait times separately",
-          "type": "number | \\[motionTime: number, waitTime: number\\]",
+          "type": "number | [motionTime: number, waitTime: number]",
           "default": "1",
           "version": "6.7.0",
           "deprecated": false

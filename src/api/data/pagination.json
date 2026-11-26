@@ -89,8 +89,8 @@
         {
           "prop": "pageSizeOptions",
           "desc": "Specify the sizeChanger options",
-          "type": "number\\[]",
-          "default": "\\[10, 20, 50, 100]",
+          "type": "number[]",
+          "default": "[10, 20, 50, 100]",
           "version": "",
           "deprecated": false
         },

@@ -9,8 +9,8 @@
         {
           "prop": "actions",
           "desc": "A set of operations that are sorted from top to bottom. When an array of strings is provided, default buttons will be used; when an array of ReactNode is provided, custom elements will be used",
-          "type": "ReactNode\\[]",
-          "default": "\\[>, <]",
+          "type": "ReactNode[]",
+          "default": "[>, <]",
           "version": "6.0.0",
           "deprecated": false
         },
@@ -25,8 +25,8 @@
         {
           "prop": "dataSource",
           "desc": "Used for setting the source data. The elements that are part of this array will be present the left column. Except the elements whose keys are included in targetKeys prop",
-          "type": "RecordType extends TransferItem = TransferItem\\[]",
-          "default": "\\[]",
+          "type": "RecordType extends TransferItem = TransferItem[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -89,8 +89,8 @@
         {
           "prop": "operations",
           "desc": "A set of operations that are sorted from top to bottom. Use actions instead.",
-          "type": "string\\[]",
-          "default": "\\[>, <]",
+          "type": "string[]",
+          "default": "[>, <]",
           "version": "",
           "deprecated": true
         },
@@ -121,7 +121,7 @@
         {
           "prop": "selectAllLabels",
           "desc": "A set of customized labels for select all checkboxes on the header",
-          "type": "(ReactNode | (info: { selectedCount: number, totalCount: number }) => ReactNode)\\[]",
+          "type": "(ReactNode | (info: { selectedCount: number, totalCount: number }) => ReactNode)[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -129,8 +129,8 @@
         {
           "prop": "selectedKeys",
           "desc": "A set of keys of selected items",
-          "type": "string\\[] | number\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
@@ -169,15 +169,15 @@
         {
           "prop": "targetKeys",
           "desc": "A set of keys of elements that are listed on the right column",
-          "type": "string\\[] | number\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
         {
           "prop": "titles",
           "desc": "A set of titles that are sorted from left to right",
-          "type": "ReactNode\\[]",
+          "type": "ReactNode[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -238,7 +238,7 @@
         {
           "prop": "filteredItems",
           "desc": "Filtered items",
-          "type": "RecordType\\[]",
+          "type": "RecordType[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -246,7 +246,7 @@
         {
           "prop": "selectedKeys",
           "desc": "Selected items",
-          "type": "string\\[] | number\\[]",
+          "type": "string[] | number[]",
           "default": "",
           "version": "",
           "deprecated": false
@@ -262,7 +262,7 @@
         {
           "prop": "onItemSelectAll",
           "desc": "Select a group of items",
-          "type": "(keys: string\\[] | number\\[], selected: boolean)",
+          "type": "(keys: string[] | number[], selected: boolean)",
           "default": "",
           "version": "",
           "deprecated": false

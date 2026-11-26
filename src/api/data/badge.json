@@ -41,7 +41,7 @@
         {
           "prop": "offset",
           "desc": "Set offset of the badge dot",
-          "type": "\\[number, number]",
+          "type": "[number, number]",
           "default": "-",
           "version": "",
           "deprecated": false

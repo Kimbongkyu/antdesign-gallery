@@ -33,7 +33,7 @@
         {
           "prop": "columns",
           "desc": "Columns of table",
-          "type": "ColumnsType\\[]",
+          "type": "ColumnsType[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -49,7 +49,7 @@
         {
           "prop": "dataSource",
           "desc": "Data record array to be displayed",
-          "type": "object\\[]",
+          "type": "object[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -170,7 +170,7 @@
           "prop": "sortDirections",
           "desc": "Supported sort way, could be ascend, descend",
           "type": "Array",
-          "default": "\\[ascend, descend]",
+          "default": "[ascend, descend]",
           "version": "",
           "deprecated": false
         },
@@ -225,7 +225,7 @@
         {
           "prop": "onChange",
           "desc": "Callback executed when pagination, filters or sorter is changed",
-          "type": "function(pagination, filters, sorter, extra: { currentDataSource: \\[], action: paginate | sort | filter })",
+          "type": "function(pagination, filters, sorter, extra: { currentDataSource: [], action: paginate | sort | filter })",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -307,7 +307,7 @@
         {
           "prop": "dataIndex",
           "desc": "Display field of the data record, support nest path by string array",
-          "type": "string | string\\[]",
+          "type": "string | string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -315,7 +315,7 @@
         {
           "prop": "defaultFilteredValue",
           "desc": "Default filtered values",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -363,7 +363,7 @@
         {
           "prop": "filteredValue",
           "desc": "Controlled filtered value, filter icon will highlight",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -411,7 +411,7 @@
         {
           "prop": "filters",
           "desc": "Filter menu config",
-          "type": "object\\[]",
+          "type": "object[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -451,7 +451,7 @@
         {
           "prop": "responsive",
           "desc": "The list of breakpoints at which to display this column. Always visible if not set",
-          "type": "Breakpoint\\[]",
+          "type": "Breakpoint[]",
           "default": "-",
           "version": "4.2.0",
           "deprecated": false
@@ -484,7 +484,7 @@
           "prop": "sortDirections",
           "desc": "Supported sort way, override sortDirections in Table, could be ascend, descend",
           "type": "Array",
-          "default": "\\[ascend, descend]",
+          "default": "[ascend, descend]",
           "version": "",
           "deprecated": false
         },
@@ -590,7 +590,7 @@
           "prop": "placement",
           "desc": "Specify the placement of Pagination, could betopStart | topCenter | topEnd |bottomStart | bottomCenter | bottomEnd | none",
           "type": "Array",
-          "default": "\\[bottomEnd]",
+          "default": "[bottomEnd]",
           "version": "",
           "deprecated": false
         },
@@ -598,7 +598,7 @@
           "prop": "position",
           "desc": "Specify the position of Pagination, could betopLeft | topCenter | topRight |bottomLeft | bottomCenter | bottomRight | none, please use placement instead",
           "type": "Array",
-          "default": "\\[bottomRight]",
+          "default": "[bottomRight]",
           "version": "",
           "deprecated": true
         }
@@ -642,7 +642,7 @@
         {
           "prop": "defaultExpandedRowKeys",
           "desc": "Initial expanded row keys",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -658,7 +658,7 @@
         {
           "prop": "expandedRowKeys",
           "desc": "Current expanded row keys",
-          "type": "string\\[]",
+          "type": "string[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -855,23 +855,23 @@
         {
           "prop": "selectedRowKeys",
           "desc": "Controlled selected row keys",
-          "type": "string\\[] | number\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
         {
           "prop": "defaultSelectedRowKeys",
           "desc": "Default selected row keys",
-          "type": "string\\[] | number\\[]",
-          "default": "\\[]",
+          "type": "string[] | number[]",
+          "default": "[]",
           "version": "",
           "deprecated": false
         },
         {
           "prop": "selections",
           "desc": "Custom selection config, only displays default selections when set to true",
-          "type": "object\\[] | boolean",
+          "type": "object[] | boolean",
           "default": "-",
           "version": "",
           "deprecated": false

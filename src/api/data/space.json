@@ -41,7 +41,7 @@
         {
           "prop": "size",
           "desc": "The space size",
-          "type": "Size | [Size\\[\\]](#size)",
+          "type": "Size | [Size[]](#size)",
           "default": "small",
           "version": "4.1.0 | Array: 4.9.0",
           "deprecated": false

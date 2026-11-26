@@ -16,9 +16,9 @@
         },
         {
           "prop": "defaultValue",
-          "desc": "The default value of the slider. When range is false, use number, otherwise, use \\[number, number]",
-          "type": "number | \\[number, number]",
-          "default": "0 | \\[0, 0]",
+          "desc": "The default value of the slider. When range is false, use number, otherwise, use [number, number]",
+          "type": "number | [number, number]",
+          "default": "0 | [0, 0]",
           "version": "",
           "deprecated": false
         },
@@ -56,7 +56,7 @@
         },
         {
           "prop": "marks",
-          "desc": "Tick marks of Slider. The type of key must be number, and must be in closed interval \\[min, max]. Each mark can declare its own style",
+          "desc": "Tick marks of Slider. The type of key must be number, and must be in closed interval [min, max]. Each mark can declare its own style",
           "type": "object",
           "default": "{ number: ReactNode } | { number: { style: CSSProperties, label: ReactNode } }",
           "version": "",
@@ -136,8 +136,8 @@
         },
         {
           "prop": "value",
-          "desc": "The value of slider. When range is false, use number, otherwise, use \\[number, number]",
-          "type": "number | \\[number, number]",
+          "desc": "The value of slider. When range is false, use number, otherwise, use [number, number]",
+          "type": "number | [number, number]",
           "default": "-",
           "version": "",
           "deprecated": false

@@ -65,7 +65,7 @@
         {
           "prop": "defaultValue",
           "desc": "Initial selected option",
-          "type": "string | string\\[] | <br />number | number\\[] | <br />LabeledValue | LabeledValue\\[]",
+          "type": "string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -281,7 +281,7 @@
         {
           "prop": "options",
           "desc": "Select options. Will get better perf than jsx definition",
-          "type": "{ label, value }\\[]",
+          "type": "{ label, value }[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -417,7 +417,7 @@
         {
           "prop": "value",
           "desc": "Current selected option (considered as a immutable array)",
-          "type": "string | string\\[] | <br />number | number\\[] | <br />LabeledValue | LabeledValue\\[]",
+          "type": "string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[]",
           "default": "-",
           "version": "",
           "deprecated": false
@@ -457,7 +457,7 @@
         {
           "prop": "onChange",
           "desc": "Called when select an option or input value change",
-          "type": "function(value, option:Option | Array&lt;Option>)",
+          "type": "function(value, option:Option | Array<Option>)",
           "default": "-",
           "version": "",
           "deprecated": false

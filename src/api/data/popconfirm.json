@@ -34,7 +34,7 @@
           "prop": "icon",
           "desc": "Customize icon of confirmation",
           "type": "ReactNode",
-          "default": "&lt;ExclamationCircleFilled />",
+          "default": "<ExclamationCircleFilled />",
           "version": "",
           "deprecated": false
         },
@@ -254,7 +254,7 @@
         {
           "prop": "trigger",
           "desc": "Tooltip trigger mode. Could be multiple by passing an array",
-          "type": "hover | focus | click | contextMenu | Array&lt;string>",
+          "type": "hover | focus | click | contextMenu | Array<string>",
           "default": "hover",
           "version": "",
           "deprecated": false

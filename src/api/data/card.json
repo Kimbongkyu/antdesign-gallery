@@ -9,7 +9,7 @@
         {
           "prop": "actions",
           "desc": "The action list, shows at the bottom of the Card",
-          "type": "Array&lt;ReactNode>",
+          "type": "Array<ReactNode>",
           "default": "-",
           "version": "",
           "deprecated": false
